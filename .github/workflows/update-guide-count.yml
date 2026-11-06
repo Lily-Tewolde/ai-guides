@@ -1,0 +1,38 @@
+name: Update guide count
+
+# Counts the guides listed in the README table and keeps the
+# "N guides so far" line in sync. Runs whenever the README changes.
+
+on:
+  push:
+    branches: [main]
+    paths: ["README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count guides
+        run: |
+          python3 - <<'PY'
+          import re
+          s = open("README.md").read()
+          n = len(re.findall(r"^\| \[", s, re.M))
+          line = f"{n} guide so far." if n == 1 else f"{n} guides so far."
+          new = re.sub(r"<!-- count -->.*?<!-- /count -->",
+                       f"<!-- count -->{line}<!-- /count -->", s, flags=re.S)
+          if new != s:
+              open("README.md", "w").write(new)
+          PY
+
+      - name: Save the new count
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git commit -am "Update guide count" && git push)
