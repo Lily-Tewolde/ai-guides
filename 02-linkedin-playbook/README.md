@@ -19,6 +19,7 @@ I made this to go with my LinkedIn optimization video. It walks through the same
 | [3](#step-3-skills-and-open-to-work-get-into-the-recruiter-filters) | Skills and Open to Work | Get into recruiter filters |
 | [4](#step-4-featured-section-prove-you-ship) | Featured section | Prove you ship |
 | [5](#step-5-post-about-your-work-the-one-that-compounds) | Post about your work | The step that compounds |
+| [Extras](#extras-the-finishing-touches) | Photo, banner, recommendations | Round it out |
 
 ## Start here
 
@@ -175,6 +176,50 @@ For each post:
 ```
 
 You're done when you have 9 post ideas and your first post is up.
+
+---
+
+## Extras: the finishing touches
+
+These aren't part of the 5 steps, but they round out your profile. I adapted them from Param Choudhary's [linkedin-profile-optimizer](https://github.com/Paramchoudhary/ResumeSkills/tree/main/skills/linkedin-profile-optimizer) skill (MIT).
+
+### Photo and banner
+
+It's the first thing people see on your profile, before they read anything.
+
+- **Photo:** a clear headshot where your face fills most of the frame. Good light, a plain or on-brand background, and dressed the way you would for work in your field
+- **Banner:** 1584 × 396 pixels. Use it to say what you do, or keep it simple and on brand. Skip anything busy that fights with your photo
+
+### Recommendations
+
+A few recommendations from people who actually worked with you go a long way. Aim for 5 to 10 over time.
+
+- **Who to ask:** former managers, teammates you worked closely with, and clients
+- **Give one first.** People are way more likely to write one back
+- **Make it easy.** Tell them the project or skill you'd love them to mention
+- **Time it right.** Ask right after you've wrapped something good together
+
+**Prompt**
+
+```text
+Write a short, friendly LinkedIn message asking [NAME] for a recommendation. We worked together at [COMPANY] on [PROJECT]. I'm targeting [YOUR TARGET ROLE], so I'd love them to mention [1 TO 2 SKILLS OR MOMENTS]. Keep it casual, under 80 words, and don't make it sound like a template.
+```
+
+### Keep your resume and LinkedIn in sync
+
+A recruiter will have both open. If they don't match, that's a question you didn't want them asking.
+
+- **Same job titles and dates** on both, every time
+- **Same story, told two ways.** LinkedIn can be longer and more conversational than your resume
+- **The numbers stay on your resume** (see Step 2)
+
+**Prompt**
+
+```text
+Compare my resume to my LinkedIn screenshots above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Don't rewrite anything else.
+```
+
+You're done when your photo and banner are up, you've asked for at least one recommendation, and your titles and dates match your resume.
 
 ---
 
