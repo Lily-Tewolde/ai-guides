@@ -1,5 +1,7 @@
 # The 5-Step LinkedIn Playbook
 
+*Updated Oct 2026*
+
 Get found in recruiter search, rank higher in LinkedIn results and turn profile views into interviews. There are 5 steps, and each one has a copy-paste Claude prompt.
 
 **Contents**

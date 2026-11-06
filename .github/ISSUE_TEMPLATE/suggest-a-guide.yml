@@ -1,0 +1,27 @@
+name: Suggest a guide
+description: Tell me what you'd like a guide on
+title: "Guide idea: "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you want to learn?
+      description: The thing you're trying to do, in your own words.
+      placeholder: e.g. Use Claude to tailor my resume to a job post
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: How comfortable are you with AI tools?
+      options:
+        - Just getting started
+        - I use ChatGPT or Claude sometimes
+        - I use them every day
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Anything you've tried already?
+      description: Optional. What worked, what didn't.

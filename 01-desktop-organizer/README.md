@@ -1,5 +1,7 @@
 # How to organize your Desktop with Claude
 
+*Updated Nov 2026*
+
 I wrote this rulebook after cleaning up my own Desktop with Claude. It's down to six folders now, and it stays that way because Claude follows the same rules every time it tidies up. This guide gives you that rulebook and walks you through the first cleanup.
 
 ## At a glance
