@@ -4,7 +4,7 @@ Step-by-step guides for using AI at work and in your job search. Each one comes 
 
 ## Guides
 
-<!-- count -->Counting guides...<!-- /count -->
+<!-- count -->2 guides so far.<!-- /count -->
 
 | Guide | What you'll get |
 |---|---|
