@@ -44,7 +44,13 @@ Here's the whole thing in short:
 
 ### Set up once
 
-1. **A rules file.** Layout, writing rules, file naming, and a table of canonical numbers so the same figure never shows up two different ways. If you're using the file, its My Resume Rules section is your rules file.
+1. **A rules file.** It covers:
+   - layout
+   - writing rules
+   - file naming
+   - a table of canonical numbers, so the same figure never shows up two different ways
+
+   If you're using the file, its My Resume Rules section is your rules file.
 2. **A bullet bank.** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default.
@@ -57,7 +63,7 @@ Here's the whole thing in short:
 
 1. **The full job post, word for word.** Exact title, must-haves, nice-to-haves, every tool named. Save it.
 2. **What the recruiter said they want**, if anyone said anything. One line from a recruiter ("we want someone who writes evals") can change which bullets lead.
-3. **Your rules file and bullet bank,** read first, every time. The written files beat memory, yours and the AI's.
+3. **Your rules file and bullet bank,** read first, every time. Go by the written files, not memory (yours or the AI's).
 4. **The base resume, as the .docx.** Your standard resume by default. Don't use an older role-type variant with different titles, it can contradict your LinkedIn.
 5. **Proof the base is what its name says.** A file sitting in a company folder isn't proof it was tailored. When I audited mine, several "company" versions turned out to be the same document renamed. Check size and date, not the filename.
 6. **Fresh material** from your story bank.
@@ -117,10 +123,16 @@ You're done when every must-have has proof next to it or is marked as a gap.
    2. **The summary nouns.** If the post asks for "experience in usage-based pricing" and you have it, the summary says so in those words.
    3. **The skills lines.** If the post names 5 analytics tools, list the ones you've used, in their spelling.
    4. **The nouns inside a bullet.** "Tiered pricing" can become "tiered seat-based plans" if that's what it was and that's their word for it.
-3. **Never at the cost of voice.** A recruiter spots a machine-sounding phrase faster than any keyword.
+3. **Keep it sounding like you.** If a keyword makes a line sound machine-written, leave it out. A recruiter notices that faster than any keyword.
 4. **Across many posts,** I compare the keywords that repeat in posts that got replies vs the ones that didn't. That steers which roles I search for, not the resume itself.
 
-**Fallback: count the keywords.** Mirroring is the main method, and if your resume already mirrors the posts you apply to, it's usually enough. When it isn't, count: list the words and phrases the post repeats, count how many times each one shows up in the post, and check which ones are missing from your resume. The true ones go in the 4 places above and the rest stay off.
+**Fallback: count the keywords.** Mirroring is the main method, and if your resume already mirrors the posts you apply to, it's usually enough. When it isn't, count:
+
+1. List the words and phrases the post repeats.
+2. Count how many times each one shows up in the post.
+3. Check which ones are missing from your resume.
+
+The true ones go in the 4 places above and the rest stay off.
 
 **Prompt**
 
@@ -162,7 +174,7 @@ You're done when every true keyword has a place on your resume, and nothing untr
 
 1. Exactly 2 bullets, each with a short bold label that names a kind of person ("Growth Product Manager", "Technical Builder"). If the label runs long, cut it.
 2. No metrics. Capability level. These can run 2.5 to 3 lines.
-3. **The scaffolding is a template to fill, not prose to edit.** Only the labels and the nouns change. Rewriting the clauses reopens wording you've already approved, and it's where tailored summaries start reading strangely.
+3. **Treat the scaffolding as a template you fill in.** Only the labels and the nouns change. Rewriting the clauses reopens wording you've already approved, and it's where tailored summaries start reading strangely.
 
 **The skills**
 
@@ -184,7 +196,7 @@ You're done when every role has the right number of bullets, in the right order 
 2. **Cut from the bottom of the relevance order.** Never shrink the font below 10pt to make room.
 3. **Never two bullets on one page that spend the same result.** Two bullets about the same project, or two measurements of the same outcome, read thinner than one.
 4. **Unfinished bullets stay off.** No number means not finished.
-5. **Process reads as process, not outcome.** A bullet about your intake or delivery process comes off unless the role is about running that process.
+5. **Process bullets don't show outcomes.** A bullet about your intake or delivery process comes off unless the role is about running that process.
 6. **A list of product names isn't a bullet.** A launch count can live in the summary instead.
 7. **Side-project-looking bullets go last or come off.**
 8. **When the page forces a choice between roles, you make it.** Ask for the options with the page result of each.
@@ -203,7 +215,7 @@ You're done when the PDF is one page, or two with only skills and education on p
 ## Step 7: Handle titles
 
 1. **Titles stay the same as LinkedIn and your standard resume by default.** Tailored versions keep them unchanged, and only you change them.
-2. **Consistency beats a better-sounding title.** A recruiter who sees one title on the resume and another on LinkedIn has a question you didn't want them to have.
+2. **Keep titles consistent, even if another one sounds better.** A recruiter who sees one title on the resume and another on LinkedIn has a question you didn't want them to have.
 3. **Retitle only for a real edge, and only to something true.** If your actual role was a product role on a community product, a title that says so can match a community-focused post.
 4. **Internal titles recruiters don't search.** If an employer used level codes or HR bands ("Analyst II", "Associate, Level 3"), use the functional title for the work you did, the one a recruiter would type into a search bar, and use the same one on LinkedIn.
 5. **Titles that undersell the work.** If your official title doesn't match the industry-standard name for what you actually did (an operations title for product management work, say), recruiters searching for that work won't find you. Switching to the standard title is fair when it describes the work you really did. Change the resume and LinkedIn at the same time.
@@ -233,7 +245,12 @@ You're done when your titles match LinkedIn and the file name uses the role exac
 9. **Skills:** bulleted, with bold category labels
 10. **Education:** school bold on the left, degree right-aligned on the same line
 11. **No terminal periods** on any bullet, summary line or skills line
-12. **Cold applications through job boards:** single column, no tables, standard section headings, no text in headers or footers, abbreviations spelled out once, so the parsing software reads it the way a person would
+12. **Cold applications through job boards:** keep it simple so the parsing software reads it the way a person would
+    - single column
+    - no tables
+    - standard section headings
+    - no text in headers or footers
+    - abbreviations spelled out once
 
 **Prompt**
 
@@ -282,7 +299,7 @@ You're done when every check passes and you've seen the PDF.
 ## Mistakes I keep catching
 
 1. **Rewriting the summary scaffolding** instead of only the labels and nouns
-2. **Reordering while making a swap.** Ask for one swap and get a reorder too. A swap is a swap, and reorders get proposed separately
+2. **Reordering while making a swap.** Ask for one swap and get a reorder too. Reorders should be proposed separately
 3. **The same opening verb back to back,** often across a role boundary
 4. **A stranded heading** at the foot of a page
 5. **AI-sounding trailing clauses.** And when one gets fixed on one version, it's often still sitting in the others

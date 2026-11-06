@@ -39,9 +39,21 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
    You're done when Claude tells you how many images it found and what file types they are.
 4. **Let Claude look at every image.** It opens each one and notes what it shows, like a screenshot of a receipt, a logo, a product photo or a design you saved for ideas. The filename is only a hint. What's in the picture decides where it goes.
    You're done when Claude shows you a summary of what it found and two or three ways to group it.
-5. **Pick how you want them grouped.** Choose one of Claude's options or mix them. You can group by project, by type (screenshots, inspiration, photos, logos, assets) or by date. Rename any folder, and tell Claude your project names so it can match images to them. Claude won't move a single file until you say yes.
+5. **Pick how you want them grouped.** Choose one of Claude's options or mix them. You can group:
+
+   - by project
+   - by type (screenshots, inspiration, photos, logos, assets)
+   - by date
+
+   Rename any folder, and tell Claude your project names so it can match images to them. Claude won't move a single file until you say yes.
    You're done when you've said yes to the plan.
-6. **Let Claude sort.** It moves each image into its folder, checks that every move landed and keeps both files if two share a name. Anything it isn't sure about stays where it is and gets flagged.
+6. **Let Claude sort.** It does three things:
+
+   - moves each image into its folder
+   - checks that every move landed
+   - keeps both files if two share a name
+
+   Anything it isn't sure about stays where it is and gets flagged.
    You're done when Claude reports what moved where, the delete candidates and what it flagged.
 7. **Decide on what's left.** The images still in the original folder are the delete candidates and the flagged ones. Claude lists each delete candidate next to the file that already covers it. Look through them and delete what you don't want yourself. Deleting is always your call.
    You're done when every image left in the folder is one you chose to keep there.

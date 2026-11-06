@@ -2,7 +2,11 @@
 
 *Updated Nov 2026*
 
-I made this to go with my LinkedIn optimization video. It walks through the same 5 steps, each with a copy-paste Claude prompt, so recruiters can find you, you rank higher in LinkedIn search, and more profile views turn into interviews.
+I made this to go with my LinkedIn optimization video. It walks through the same 5 steps, each with a copy-paste Claude prompt, so that:
+
+- recruiters can find you
+- you rank higher in LinkedIn search
+- more profile views turn into interviews
 
 ## At a glance
 
@@ -14,12 +18,12 @@ I made this to go with my LinkedIn optimization video. It walks through the same
 
 | Step | What you do | Key action |
 |---|---|---|
-| [1](#step-1-headline-and-titles-get-searchable) | Headline and titles | Fix search ranking |
-| [2](#step-2-about-and-experience-make-it-a-story-kill-the-metrics) | About and experience | Story + keywords |
-| [3](#step-3-skills-and-open-to-work-get-into-the-recruiter-filters) | Skills and Open to Work | Get into recruiter filters |
-| [4](#step-4-featured-section-prove-you-ship) | Featured section | Prove you ship |
-| [5](#step-5-post-about-your-work-the-one-that-compounds) | Post about your work | The step that compounds |
-| [Extras](#extras-the-finishing-touches) | Photo, banner, recommendations | Round it out |
+| [1](#step-1-get-searchable-with-your-headline-and-titles) | Headline and titles | Fix search ranking |
+| [2](#step-2-turn-your-about-and-experience-into-a-story-with-no-metrics) | About and experience | Story + keywords |
+| [3](#step-3-get-into-the-recruiter-filters-with-your-skills-and-open-to-work) | Skills and Open to Work | Get into recruiter filters |
+| [4](#step-4-prove-you-ship-with-your-featured-section) | Featured section | Prove you ship |
+| [5](#step-5-post-about-your-work) | Post about your work | The step that compounds |
+| [Extras](#extras-to-finish-your-profile) | Photo, banner, recommendations | Round it out |
 
 ## Start here
 
@@ -36,7 +40,7 @@ Run all 5 prompts in **one** Claude conversation, not five separate chats. Steps
 
 ---
 
-## Step 1. Headline and titles: get searchable
+## Step 1. Get searchable with your headline and titles
 
 Your headline is the most important field on your whole profile. It's what LinkedIn ranks you on in search. Write it as your role, three keywords, then your best credential, all under 100 characters. While you're in there, fix every job title to match what recruiters actually type. If yours says Growth Lead or IC4 but recruiters are searching Marketing Manager, you don't exist in their results.
 
@@ -50,7 +54,7 @@ Your headline is the most important field on your whole profile. It's what Linke
 **Prompt**
 
 ```text
-You are a LinkedIn SEO and recruiter-search expert. I am targeting the role of [YOUR TARGET ROLE, e.g. Marketing Manager]. Here is my resume: [PASTE RESUME]. Here are screenshots of my current LinkedIn profile: [ATTACH SCREENSHOTS]. Here are 2-3 real job posts for this role: [PASTE JOB POSTS].
+You're a LinkedIn SEO and recruiter-search expert. I'm targeting the role of [YOUR TARGET ROLE, e.g. Marketing Manager]. Here's my resume: [PASTE RESUME]. Here are screenshots of my current LinkedIn profile: [ATTACH SCREENSHOTS]. Here are 2-3 real job posts for this role: [PASTE JOB POSTS].
 
 1. Give me 5 headline options, each under 100 characters, in this exact format:
 Role | Keyword · Keyword · Keyword | Credential
@@ -63,15 +67,19 @@ You're done when your headline is under 100 characters and every job title is on
 
 ---
 
-## Step 2. About and experience: make it a story, kill the metrics
+## Step 2. Turn your About and experience into a story, with no metrics
 
-This one's going to feel wrong, but trust me. Your About section is a story, not a summary. No bullet points, no metrics. Write it like you're explaining your career to someone at dinner who actually asked. Same for every role. Then take every metric off your profile and save the numbers for your resume and interviews. A recruiter scans you in about seven seconds, and a story with the right keywords beats a wall of stats every time.
+This one's going to feel wrong, but trust me. Your About section is a story, not a summary. No bullet points, no metrics. Write it like you're explaining your career to someone at dinner who actually asked. Same for every role. Then take every metric off your profile and save the numbers for your resume and interviews. A recruiter scans you in about seven seconds, and a story with the right keywords is easier to take in than a wall of stats.
 
-**Why it matters:** Bullet-point profiles full of metrics read like a copy of your resume. Recruiters scan for keywords and credibility, not spreadsheets.
+**Why it matters:** Bullet-point profiles full of metrics read like a copy of your resume. Recruiters scan for keywords and credibility.
 
 **What to do**
 
-- Rewrite your About as a story in 4 to 6 short paragraphs: an opening hook, your career thread, your current work, and one line on what you want next
+- Rewrite your About as a story in 4 to 6 short paragraphs:
+  - an opening hook
+  - your career thread
+  - your current work
+  - one line on what you want next
 - Rewrite each job as one short paragraph, then 3 to 5 Focus Areas bullets full of searchable keywords
 - Remove every metric from every section
 
@@ -84,7 +92,7 @@ Using my resume and LinkedIn screenshots above, and targeting [YOUR TARGET ROLE]
 - An opening hook
 - The thread connecting my career
 - What I do now and how I think about the work
-- One line on what I am open to next
+- One line on what I'm open to next
 No bullet points, no metrics. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking.
 
 2. Each of my job descriptions as one short narrative paragraph (what I owned and how I worked), followed by 3 to 5 Focus Areas bullets that are each full of searchable keywords. No metrics anywhere. Write for a recruiter scanning for 7 seconds.
@@ -94,9 +102,9 @@ You're done when your About reads like a story and there are no numbers left any
 
 ---
 
-## Step 3. Skills and Open to Work: get into the recruiter filters
+## Step 3. Get into the recruiter filters with your skills and Open to Work
 
-This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five Top skills at the bottom of your About section, and recruiters filter by skills when they search. So pick the five they're actually typing, not the ones that sound impressive. Then turn on Open to Work, add your five target titles and set it to recruiters only. Every box you leave empty is a search you're invisible in.
+This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five Top skills at the bottom of your About section, and recruiters filter by skills when they search. So pick the five they're actually typing, not the ones that sound impressive. Then turn on Open to Work, add your five target titles and set it to recruiters only. If you leave a box empty, you won't show up in the searches that use it.
 
 **Why it matters:** LinkedIn Recruiter filters by skills and job titles. If yours don't match what a recruiter is filtering for, you won't show up, even if you're a perfect fit.
 
@@ -105,7 +113,9 @@ This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five
 - Add 5 Top skills to your About section (click the pencil on About), using the ones recruiters in your field filter by most
 - Put those same 5 first in your Skills section too, since only the first few show without clicking
 - Turn on Open to Work
-- Add 5 target job titles, turn on Remote if you want it, and set visibility to Recruiters only
+- Add 5 target job titles
+- Turn on Remote if you want it
+- Set visibility to Recruiters only
 
 **Prompt**
 
@@ -121,9 +131,16 @@ You're done when your About has 5 Top skills, and Open to Work has 5 titles and 
 
 ---
 
-## Step 4. Featured section: prove you ship
+## Step 4. Prove you ship with your Featured section
 
-This is the first thing a recruiter clicks after your headline, and almost everyone leaves it empty. Don't. Put one thing here that proves you do the work: a quick video walking through something you built, a post that did well, a live tool or a portfolio link. One strong piece here does more than ten perfect bullet points.
+This is the first thing a recruiter clicks after your headline, and almost everyone leaves it empty. Don't. Put one thing here that proves you do the work, like:
+
+- a quick video walking through something you built
+- a post that did well
+- a live tool
+- a portfolio link
+
+One strong piece is enough.
 
 **Why it matters:** Featured is where profile views turn into messages or drop off. An empty one says there's nothing to point to.
 
@@ -136,7 +153,7 @@ This is the first thing a recruiter clicks after your headline, and almost every
 **Prompt**
 
 ```text
-I want to fill my LinkedIn Featured section to prove I actually do the work for [YOUR TARGET ROLE]. Based on my background above, give me 3 specific Featured ideas I could realistically create in under 2 hours each, ranked by how much they would impress a recruiter.
+I want to fill my LinkedIn Featured section to prove I actually do the work for [YOUR TARGET ROLE]. Based on my background above, give me 3 specific Featured ideas I could realistically create in under 2 hours each, ranked by how much they'd impress a recruiter.
 
 For each idea:
 - Tell me exactly what it should contain
@@ -148,9 +165,9 @@ You're done when your Featured section has at least one thing you built or shipp
 
 ---
 
-## Step 5. Post about your work: the one that compounds
+## Step 5. Post about your work
 
-If you take one thing from this, take this one. Post about your actual work two to three times a week. This is the step that compounds. It took my search appearances from around 40 a week to over 200 in a month, and it's the difference between applying into the void and recruiters showing up in your inbox.
+Don't skip this one. Post about your actual work two to three times a week. This is the step that compounds. It took my search appearances from around 40 a week to over 200 in a month, and it's how recruiters start showing up in your inbox.
 
 **Why it matters:** Posting regularly about your field lifts your search appearances and shows both the algorithm and recruiters that you know your stuff.
 
@@ -162,10 +179,10 @@ If you take one thing from this, take this one. Post about your actual work two 
 **Prompt**
 
 ```text
-I am targeting [YOUR TARGET ROLE] and want to start posting on LinkedIn. Give me 9 post ideas (3 weeks, 3 posts each) based on my real experience above.
+I'm targeting [YOUR TARGET ROLE] and want to start posting on LinkedIn. Give me 9 post ideas (3 weeks, 3 posts each) based on my real experience above.
 
 Mix these three formats across the 9 posts:
-- A lesson I have learned from real work experience
+- A lesson I've learned from real work experience
 - A behind-the-scenes look at how I actually approach my work
 - A simple tip or framework from my field
 
@@ -179,7 +196,7 @@ You're done when you have 9 post ideas and your first post is up.
 
 ---
 
-## Extras: the finishing touches
+## Extras to finish your profile
 
 These aren't part of the 5 steps, but they round out your profile. I adapted them from Param Choudhary's [linkedin-profile-optimizer](https://github.com/Paramchoudhary/ResumeSkills/tree/main/skills/linkedin-profile-optimizer) skill (MIT).
 
@@ -228,7 +245,7 @@ You're done when your photo and banner are up, you've asked for at least one rec
 Fill in every bracket, attach your resume and screenshots, and paste it into Claude.
 
 ```text
-You are a LinkedIn growth strategist and recruiter-search expert.
+You're a LinkedIn growth strategist and recruiter-search expert.
 
 Optimize my LinkedIn profile so that:
 1. Recruiters searching for [YOUR TARGET ROLE] find me in search
@@ -236,13 +253,13 @@ Optimize my LinkedIn profile so that:
 3. My profile converts views into recruiter messages and interviews
 
 STEP 1 - MY INPUTS
-Here is my resume: [PASTE RESUME TEXT OR ATTACH PDF]
+Here's my resume: [PASTE RESUME TEXT OR ATTACH PDF]
 Here are screenshots of my LinkedIn: [ATTACH: header, about, every role, skills, featured]
 Here are 2-3 real job posts for my target role: [PASTE JOB POSTS]
 
 STEP 2 - TARGETING
-I am targeting this role: [YOUR TARGET ROLE] (e.g. Marketing Manager, Project Manager, Account Executive)
-Industries I am targeting: [LIST YOUR TARGET INDUSTRIES]
+I'm targeting this role: [YOUR TARGET ROLE] (e.g. Marketing Manager, Project Manager, Account Executive)
+Industries I'm targeting: [LIST YOUR TARGET INDUSTRIES]
 Company type: [STARTUP / ENTERPRISE / BOTH]
 My strongest credential: [CERTIFICATION, NOTABLE EMPLOYER, OR ACHIEVEMENT]
 My technical or domain skills: [LIST THE TOOLS AND SKILLS YOU ACTUALLY USE]
@@ -254,7 +271,7 @@ Format: [Role] | [Keyword] · [Keyword] · [Keyword] | [Credential]
 Under 100 characters. No metrics.
 
 2. TITLE AUDIT
-Flag titles that do not match real recruiter search terms. Suggest the functional replacement for each.
+Flag titles that don't match real recruiter search terms. Suggest the functional replacement for each.
 
 3. ABOUT SECTION
 Story-driven, 4 to 6 paragraphs, no metrics, no bullets. Structure: Hook, Career thread, Current work, What I want next.
@@ -280,7 +297,7 @@ No generic career advice. No metrics anywhere in LinkedIn copy. Write for a recr
 
 ### What to fill in
 
-The more specific you are, the better the output.
+Be as specific as you can, so Claude has more to work with.
 
 | Bracket | What to put |
 |---|---|
@@ -298,7 +315,7 @@ The more specific you are, the better the output.
 
 💡 **Step 3 works on its own.** You can run it without your resume for a quick answer. For a more personal result, keep it in the same chat.
 
-💡 **More detail, better ideas.** Featured and post ideas land much better when Claude knows your actual background.
+💡 **Share more detail for better ideas.** Featured and post ideas land much better when Claude knows your actual background.
 
 ⚠️ **Don't skip the job posts.** Claude can't see LinkedIn's search data, so the job posts you paste are what make its keyword picks real.
 

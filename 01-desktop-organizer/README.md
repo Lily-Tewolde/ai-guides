@@ -33,8 +33,17 @@ Read the Desktop Organizer file and organize my Desktop.
 2. **Connect your Desktop.** In Cowork, add your Desktop as a folder.
    You're done when Claude can list what's on it.
 3. **Paste the prompt** from Start here.
-   You're done when Claude tells you what it found: how many folders, how many loose files, duplicates and anything that looks important.
-4. **Answer Claude's questions.** It asks about the big areas of your life, what to keep separate, how you like folder names, and what it should never move.
+   You're done when Claude tells you what it found:
+   - how many folders
+   - how many loose files
+   - duplicates
+   - anything that looks important
+4. **Answer Claude's questions.** It asks about:
+   - the big areas of your life
+   - what to keep separate
+   - how you like folder names
+   - what it should never move
+
    You're done when Claude shows you a proposed map of 5 to 8 folders.
 5. **Check the map before anything moves.** Change anything that doesn't fit, then say yes. Claude won't move a single file until you do.
    You're done when you've said yes.
