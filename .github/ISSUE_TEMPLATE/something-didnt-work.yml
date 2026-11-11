@@ -1,0 +1,50 @@
+name: Something didn't work
+description: Tell me where a guide went wrong for you
+title: "Didn't work: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling me! Please don't paste anything private, like your resume, someone else's details or anything from work you can't share. A short description is plenty.
+  - type: dropdown
+    id: guide
+    attributes:
+      label: Which guide?
+      options:
+        - The 5-Step LinkedIn Playbook
+        - How to audit and tailor your resume with Claude
+        - How to organize your Desktop with Claude
+        - How to organize a messy image folder with Claude
+    validations:
+      required: true
+  - type: input
+    id: step
+    attributes:
+      label: Which step?
+      placeholder: e.g. Step 3, or the master prompt
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: What you did and what Claude did, in your own words.
+      placeholder: e.g. I pasted the Step 3 prompt and Claude gave me 8 skills instead of 5
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Optional. What you thought would happen instead.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you using Claude?
+      options:
+        - Claude app or website
+        - Cowork
+        - Claude Code
+        - Somewhere else
+    validations:
+      required: true
