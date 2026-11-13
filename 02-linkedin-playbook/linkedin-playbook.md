@@ -139,7 +139,7 @@ When the profile belongs to someone the user is helping, they're the one who has
 1. **Written to them, in the user's voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags.
 2. **Clear change, keep and delete.** Mark what to change, leave everything else alone, and cross out what comes off.
 3. **Open or close with a note.** The user isn't an expert in their field, so this is mostly formatting and a strong direction, and they should adjust anything that seems off.
-4. **A visual mock of the finished profile.** An HTML page laid out like their profile, with the user's notes beside each section and a switch to hide the notes, so they can see it the way a recruiter would.
+4. **A visual mock of the finished profile.** An HTML page laid out like their profile, with the user's notes beside each section and a switch to hide the notes, so they can see it the way a recruiter would. It's a file they open on their own computer, never a page published online.
 5. **Employer and client work stays out** of Featured and posts unless the employer says it's okay.
 6. **Open to Work is set to Recruiters only while they're still employed,** with the reason: LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
 7. **Their details stay private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example shared about what was learned is made up.

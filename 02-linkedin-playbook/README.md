@@ -44,7 +44,7 @@ When I ran this on a friend's profile, everything came back written about my fri
 - **Write it to them, in your voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags
 - **Make change, keep and delete clear.** Mark what to change, leave everything else alone, and cross out what comes off
 - **Say you're not an expert in their field.** Open or close with it: it's mostly formatting and a strong direction, so they should adjust anything that seems off
-- **Give them a visual mock of the finished profile.** An HTML page laid out like their profile, with your notes beside each section and a switch to hide them, so they can see it the way a recruiter would
+- **Give them a visual mock of the finished profile.** An HTML page laid out like their profile, with your notes beside each section and a switch to hide them, so they can see it the way a recruiter would. Send it as a file, never as a page published online
 - **Keep employer and client work out** of Featured and posts unless the employer says it's okay
 - **Set Open to Work to Recruiters only while they're still employed,** and tell them why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it
 - **Keep their details private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example you share about what you learned is made up

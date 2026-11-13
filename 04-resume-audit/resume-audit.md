@@ -221,7 +221,7 @@ Then:
 - If there's a Decision Log.md, check every decision from this tailor is in it
 - Show the person the PDF and **wait**. Don't upload or send anything until they say so
 
-**Then match LinkedIn**, after the person has seen the PDF:
+**Then match LinkedIn**, after the person has seen the PDF. In a handoff, these go into the next steps on the second tab instead:
 
 1. Point them to the [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
 2. Check the job titles, companies and dates match the resume exactly.
