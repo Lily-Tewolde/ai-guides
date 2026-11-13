@@ -34,7 +34,7 @@ Here's the whole thing in short:
 3. Map every must-have to proof, and mark the gaps
 4. Mirror the post's exact words, and count keywords as the fallback
 5. Swap and reorder bullets from the bank, X-Y-Z, strongest first
-6. Measure the page and cut from the bottom
+6. Keep it to one page, checked in the format that goes out
 7. Leave titles alone unless there's a real reason
 8. Format the page
 9. Run the pre-send checks, save, and review before anything goes out
@@ -46,6 +46,7 @@ Here's the whole thing in short:
 - The [`resume-audit.md`](resume-audit.md) file from this folder
 - The blank [`My Resume Rules.md`](My%20Resume%20Rules.md), [`Bullet Bank.md`](Bullet%20Bank.md) and [`Decision Log.md`](Decision%20Log.md) files from this folder
 - The full job post
+- Your current resume. A PDF is enough to start (see Step 1)
 - The files below. The prompts assume you've attached your My Resume Rules.md, your Bullet Bank.md and your base resume
 
 ### Set up once
@@ -73,7 +74,7 @@ Job search/
    - your house style: font, size, margins, header and colour
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
-4. **A standard resume** as an editable .docx. This is what goes out by default.
+4. **A standard resume** as an editable .docx. This is what goes out by default, and its layout is the template every tailored version is built from. Only have a PDF? See Step 1.
 5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed.
 6. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
 7. **A note per application** that saves the full job post word for word, because postings come down.
@@ -90,19 +91,20 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 
 ## First build: when you don't have a bullet bank yet
 
-Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
+Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, once you know the role is a fit (Step 2), you build the bank from the resume you already have:
 
 1. Every bullet gets rewritten into X-Y-Z (see Step 5)
-2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
+2. Anywhere a number is missing gets a highlighted `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
 3. Every line is marked ★, because none of them are approved yet
-4. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
+4. Your summary gets written fresh in the summary shape (Step 5), and it's marked ★ too. An old objective doesn't count as approved
+5. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
 
 After that, every tailor is a swap.
 
 **Prompt**
 
 ```
-I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md. Then write my summary in the summary shape, two bullets with bold labels and no numbers, mark it ★ too and save it at the top of the bank.
 ```
 
 You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
@@ -133,6 +135,7 @@ You're done when you've picked one direction and one title.
 2. **What the recruiter said they want**, if anyone said anything. One line from a recruiter ("we want someone who writes evals") can change which bullets lead.
 3. **Your My Resume Rules.md and Bullet Bank.md,** read first, every time. Go by the written files, not memory (yours or the AI's).
 4. **The base resume, as the .docx.** Your standard resume by default. Don't use an older role-type variant with different titles, it can contradict your LinkedIn.
+   - **Only have a PDF?** That's enough. Claude pulls the text out of the PDF, and once Step 2 says the role is a fit, builds the editable .docx from the template you chose. Nothing gets typed in by hand: the new version starts as an exact copy of the PDF text, and the rewriting happens in the [first build](#first-build-when-you-dont-have-a-bullet-bank-yet). No template yet? Pick one first.
 5. **Proof the base is what its name says.** A file sitting in a company folder isn't proof it was tailored. When I audited mine, several "company" versions turned out to be the same document renamed. Check size and date, not the filename.
 6. **Fresh material** from your story bank.
 7. **Facts only you can give.** If the post asks for something your bank doesn't cover, write down the facts yourself before anything gets drafted.
@@ -143,6 +146,12 @@ You're done when you've picked one direction and one title.
 
 ```
 I'm tailoring my resume for [ROLE AS POSTED] at [COMPANY]. Here's the full job post, keep it word for word so we still have it if they take it down: [PASTE JOB POST]. Before you touch anything read My Resume Rules.md and my Bullet Bank.md, and use my standard resume .docx as the base unless I say otherwise. Check the base is really the file you think it is by its size and date, not just its name. The recruiter told me they're looking for [WHAT THEY SAID, OR "nothing yet"]. Don't edit anything yet, just tell me what you've got, what the form asks for, anything else the post wants like a cover letter or references, and what you still need from me.
+```
+
+**If you only have a PDF**
+
+```
+All I have is my resume as a PDF. Pull the text out of it and build an editable .docx from [MY TEMPLATE FILE]. Don't type anything in by hand, every line on the new version has to come from the PDF text. Then do a first build of my bullet bank from it.
 ```
 
 You're done when Claude has the job post saved, has read your rules and bullet bank, and has told you what it still needs from you.
@@ -237,14 +246,17 @@ You're done when every true keyword has a place on your resume, and nothing untr
 10. **Say it out loud.** If it'd sound odd across a table, it's wrong on the page. "Driving impact at scale" is the kind of phrase to cut.
 11. **No repeated opening verb in adjacent bullets,** including the last bullet of one role and the first bullet of the next. Fix it by reordering, not rewording.
 12. **Mechanisms that are too specific are interview detail.** "By removing the phone-verification step and adding a guest mode" becomes "by streamlining sign-up".
-13. **New bullets** are written X-Y-Z from your story bank or your facts, added to the bank marked ★, and approved by you before they go on anything that goes out.
+13. **New bullets** are written X-Y-Z from your story bank or your facts, added to the bank marked ★, and approved by you before they go on anything that goes out. The ★ stays in the bank and never shows on the resume.
 14. **New grads: school projects go under Projects.** School and capstone projects go in a Projects section, not Experience, so the only job titles on the page are real ones that match your LinkedIn.
 
 **The summary**
 
 1. Exactly 2 bullets, each with a short bold label that names a kind of person ("Growth Product Manager", "Technical Builder"). If the label runs long, cut it.
-2. No metrics. Capability level. These can run 2.5 to 3 lines.
-3. **Treat the scaffolding as a template you fill in.** Only the labels and the nouns change. Rewriting the clauses reopens wording you've already approved, and it's where tailored summaries start reading strangely.
+2. **The first label matches the post's title.**
+3. **The first bullet opens with who you are,** like "Bilingual operations lead".
+4. High level, no metrics. These can run 2.5 to 3 lines.
+5. **Never repeat a bullet** from further down the page.
+6. **Treat the scaffolding as a template you fill in.** Only the labels and the nouns change. Rewriting the clauses reopens wording you've already approved, and it's where tailored summaries start reading strangely.
 
 **The skills**
 
@@ -262,23 +274,28 @@ You're done when every role has the right number of bullets, in the right order 
 
 ## Step 6: Decide what to cut
 
-1. **One page is the standard.** I've had interviews with a 2-page resume, so two isn't a dealbreaker, but one page is the default. Export the PDF and check the page count after every build, don't guess. If it does run to two, keep page 2 light: skills and education. If a bullet goes on, another comes off.
-2. **Cut from the bottom of the relevance order.** Never shrink the font below 10pt to make room.
+1. **Always one page.** Check the page count after every build, don't guess. Check it in the format that's going out, Google Docs or the PDF. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. If a bullet goes on, another comes off.
+2. **When it runs over, fix it in this order:**
+   1. Tighten the spacing
+   2. Tighten the wording, never the facts
+   3. Cut the weakest bullet, from the bottom of the relevance order
+
+   Never shrink the font below the minimum in your rules file to make room.
 3. **Never two bullets on one page that spend the same result.** Two bullets about the same project, or two measurements of the same outcome, read thinner than one.
-4. **Unfinished bullets stay off.** No number means not finished.
+4. **Unfinished bullets stay off anything that goes out.** No number means not finished.
 5. **Process bullets don't show outcomes.** A bullet about your intake or delivery process comes off unless the role is about running that process.
 6. **A list of product names isn't a bullet.** A launch count can live in the summary instead.
 7. **Side-project-looking bullets go last or come off.**
 8. **When the page forces a choice between roles, you make it.** Ask for the options with the page result of each.
-9. **If you go to one page,** a secondary section (consulting, advisory, volunteer) is usually the first to come off.
+9. **If a whole section has to go,** a secondary one (consulting, advisory, volunteer) is usually the first.
 
 **Prompt**
 
 ```
-Build the PDF and tell me the page count. One page is the goal, and if it has to be two, page 2 should only have my skills and education. If it runs over, cut the least relevant bullet at the bottom of a role, don't shrink the font. Make sure no two bullets on the page are the same result told twice, nothing without a number goes on, and anything too detailed moves to my interview notes instead. If the only way to fit is choosing between two roles, show me the options with the page result for each and let me pick.
+Tell me the page count in the format that's going out, the PDF or the Google Doc. It has to be one page. If it runs over, tighten the spacing first, then the wording without changing any facts, then cut the weakest bullet at the bottom of a role. Never shrink the font below the minimum in my rules file. Make sure no two bullets on the page are the same result told twice, nothing without a number goes on, and anything too detailed moves to my interview notes instead. If the only way to fit is choosing between two roles, show me the options with the page result for each and let me pick.
 ```
 
-You're done when the PDF is one page, or two with only skills and education on page 2.
+You're done when it's one page in the format that's going out.
 
 ---
 
@@ -304,8 +321,10 @@ You're done when your titles match LinkedIn and the file name uses the role exac
 
 ## Step 8: Format the page
 
-1. **Length:** one page is the standard (step 6)
-2. **Font:** 10pt body in a standard font (I use Calibri). Never shrink below 10pt to make something fit
+**Build from your own template, in the .docx first.** Every version starts from your own template .docx, never a made-up layout. If the resume is going to live in Google Docs, convert it afterwards. Right-aligned dates need tab stops, and those don't come through when you build in Google Docs from scratch.
+
+1. **Length:** always one page (step 6)
+2. **Font and margins:** whatever your rules file says. Mine is 10pt body in Calibri, but you might want 10.5. Never shrink below the minimum in your rules file (10pt if you haven't set one) to make something fit
 3. **Header:** your name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on your name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line
@@ -325,41 +344,43 @@ You're done when your titles match LinkedIn and the file name uses the role exac
 **Prompt**
 
 ```
-Format it to my house style from my rules file. That's 10pt body text, my name and the section headings in my accent colour with a thin rule under each heading, every heading set to keep with the next line, role title and dates in bold on one line, company and location in italics on the next, email and LinkedIn as live links and the phone as plain text, no location in the header, no periods at the end of bullets, en dashes only in date ranges and no em dashes. If it's a cold application through a job board also keep it single column with no tables and nothing in the header or footer. Then export the PDF and check the PDF, not the doc.
+Build it in my own template .docx, not a made-up layout, and only move it to Google Docs afterwards if that's where it's going. Format it to my house style from my rules file. That's the body size and margins from my rules file, my name and the section headings in my accent colour with a thin rule under each heading, every heading set to keep with the next line, role title and dates in bold on one line, company and location in italics on the next, email and LinkedIn as live links and the phone as plain text, no location in the header, no periods at the end of bullets, en dashes only in date ranges and no em dashes. If it's a cold application through a job board also keep it single column with no tables and nothing in the header or footer. Then check the version that's going out, not the working copy.
 ```
 
-You're done when the PDF matches your house style.
+You're done when the version that's going out matches your house style.
 
 ---
 
 ## Step 9: Build, save and check before sending
 
-**Build:** edit the .docx, export the PDF, and check the PDF, not the editor view.
+**Build:** edit the .docx made from your template, then check the version that's going out (the PDF, or the Google Doc if that's where it lives), not the editor view.
 
 **Pre-send checks**
 
-1. Page count: one page, or if it's two, page 2 holds only what you planned
+1. One page, checked in the format that's going out. If Claude can't open that format, the page count is unchecked, not passed
 2. Every heading keeps with the next line, so none is stranded at the foot of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match your canonical table, and look-alike numbers (users vs signups) are never swapped
 5. Nothing from the "never write" list
-6. Every ★ bullet has your sign-off on the wording
+6. Every ★ bullet has your sign-off on the wording, and no ★ shows on the page. On a draft going back to someone, every line still waiting for their OK has a comment asking them to check it
 7. No client or partner names you're not allowed to share, and no vendor names you've decided to keep off
 8. No repeated opening verbs in adjacent bullets, across role boundaries too
 9. No terminal periods, no first person, no experience bullet over 2 lines
-10. Summary scaffolding untouched, labels and nouns only
+10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5. On a first build the summary is new and ★ instead
 11. Header is consistent: name, then one contact line
-12. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`
-13. New bullets added back to the bank, and new facts to your story bank, the same day
-14. You see it before it's uploaded or sent
-15. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
-16. Note which resume went (standard or tailored) so you can compare reply rates later
-17. When a recruiter asks for it by message, write the note, attach the PDF and send them together
+12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet
+13. No `[__]` blanks on the version that goes out. On a draft going back to someone, every blank is still highlighted
+14. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
+15. New bullets added back to the bank, and new facts to your story bank, the same day
+16. You see it before it's uploaded or sent
+17. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
+18. Note which resume went (standard or tailored) so you can compare reply rates later
+19. When a recruiter asks for it by message, write the note, attach the PDF and send them together
 
 **Prompt**
 
 ```
-Before I send it run every pre-send check and tell me which ones passed and which didn't: the page count, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
+Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
 ```
 
 You're done when every check passes and you've seen the PDF.
@@ -370,9 +391,12 @@ You're done when every check passes and you've seen the PDF.
 
 This comes up most when you're working on someone else's resume and want to leave them questions.
 
-1. **Questions go in as comments,** anchored to the line they're about. One overall comment on the name first, then one per fix
-2. **Read the comments back afterwards** and check every anchor landed on the right text. They can land on the wrong line if the page scrolls while you're typing
-3. **Check imported docs** for stray rules or empty bullets under the headings
+1. **Build in the .docx first,** then convert it (see Step 8)
+2. **Edit in place.** Claude edits that one doc instead of making new copies. Docs already keeps the version history
+3. **Recheck highlighted blanks after every edit.** Editing text in Google Docs can strip the highlight from a `[__]` blank that's waiting for a number, and then it's easy to miss
+4. **Questions go in as comments,** anchored to the line they're about. One overall comment on the name first, then one per fix
+5. **Read the comments back afterwards** and check every anchor landed on the right text. They can land on the wrong line if the page scrolls while you're typing
+6. **Check imported docs** for stray rules or empty bullets under the headings
 
 ---
 

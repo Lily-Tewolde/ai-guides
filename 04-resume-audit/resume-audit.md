@@ -17,8 +17,8 @@ Each step is tagged:
 You (Claude) are tailoring one person's resume to one job post. The person is whoever the resume belongs to: the user, or someone the user is helping. This file is your operating spec.
 
 1. **Read this whole file first, every time.** Then read My Resume Rules.md in the person's folder. The written rules outrank anything you remember.
-2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
-3. **If there's no bullet bank yet,** do the first build below before Step 1.
+2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
+3. **If there's no bullet bank yet,** do the first build below once Step 2 says the role is a fit, before Step 3.
 4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user. If the user can't answer, don't stop: leave a highlighted `[__]` blank and a comment asking the person, and carry on. Anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
@@ -57,15 +57,16 @@ When the resume belongs to a friend or family member:
 
 ## First build: no bullet bank yet 🤖 then 🙋
 
-"Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so build it from the resume the person already has:
+"Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so once Step 2 says the role is a fit, build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
 
 1. Rewrite every bullet into X-Y-Z (see Step 5).
-2. Put a `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
+2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
 3. Mark every line ★, because none of them are approved yet.
 4. Ask the person for the missing numbers and facts, and for their OK on each line.
 5. Save it all as their Bullet Bank.md, grouped by role and tagged with what each bullet proves.
+6. Write the summary in the summary shape (Step 5), mark both lines ★ and save it at the top of Bullet Bank.md. An old objective or summary doesn't count as approved.
 
-Every tailor after this one is a swap.
+Every tailor after this one is a swap, and the summary only changes its labels and nouns.
 
 ## Step 0: Pick a direction 🙋
 
@@ -80,6 +81,12 @@ Only when the person is aiming at more than one kind of role, like two master re
 - Save the full job post word for word in the company folder, because postings come down.
 - Read My Resume Rules.md and Bullet Bank.md before touching anything.
 - Use the standard resume .docx as the base unless the person says otherwise. Check it's the right file by its size and date, not its name.
+- **Only a PDF?** That's enough to start:
+  1. Pull the text out of the PDF now.
+  2. Once Step 2 says the role is a fit, build the editable .docx from the template the person chose (see Step 8). If they don't have one, ask them to pick one. Never make one up.
+  3. Don't type anything in by hand. The new version starts as an exact copy of the PDF text, and the rewriting happens in the first build.
+
+  Don't build anything else yet. Once Step 2 says the role is a fit, do the first build.
 - Ask what the recruiter said they want, if anything. One line from a recruiter can change which bullets lead.
 - If there's an application form, check what it asks before drafting.
 - Note anything else the post asks for, like a cover letter, a transcript or references.
@@ -120,22 +127,29 @@ Only when the person is aiming at more than one kind of role, like two master re
 - **Strongest opening verb,** and no two bullets in a row with the same one, across roles too. Fix a repeat by reordering, not rewording.
 - **Weak openers to replace:** Caught, Scored, Ran, Helped, Supported, Assisted, Worked on. Lead with the real outcome instead: "Caught 7 pricing errors" becomes "Blocked 7 pricing errors from shipping".
 - **Nouns can change** to match the post's wording. Facts can't.
-- **New bullets:** write them X-Y-Z from the story bank or the person's facts, mark them ★, add them to the bank, and show the person before they go on anything.
+- **New bullets:** write them X-Y-Z from the story bank or the person's facts, mark them ★ in the bank, and show the person before they go on anything.
+- **Stars stay in the bank.** The ★ never shows on the resume itself.
 - **New grads:** school and capstone projects go under a Projects section, not Experience, so the only job titles on the page are real ones that match LinkedIn.
 - **Skills:** rebuild the categories around the post's wording.
 
 **The summary**
 
 - Exactly 2 bullets, each with a short bold label that names a kind of person, like "Growth Product Manager" or "Technical Builder". If a label runs long, cut it.
-- No metrics. Capability level. Each one can run 2.5 to 3 lines.
+- The first label matches the post's title.
+- The first bullet opens with who the person is, like "Bilingual operations lead".
+- High level, no numbers. Each one can run 2.5 to 3 lines.
+- Never repeat a bullet from further down the page.
 - Only swap the two labels and the nouns. Leave the rest of each sentence exactly as it is. Rewriting the clauses reopens wording that's already approved, and that's where tailored summaries start to read strangely.
 
 ## Step 6: Fit the page 🤖 then 🙋
 
-- Export the PDF and check the page count. Don't guess.
-- One page is the default. If it's two, page 2 only has skills and education.
-- Cut the least relevant bullet from the bottom of a role. Never shrink the font below 10pt.
-- No two bullets that tell the same result twice, and nothing without a number.
+- **Always one page.** Check the page count in the final format, Google Docs or the PDF, whichever is going out. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. Don't guess. If you can't open the final format, say the page count is unchecked and ask the person to check it. Never mark it passed.
+- **When it runs over, fix it in this order:**
+  1. Tighten the spacing
+  2. Tighten the wording, never the facts
+  3. Cut the weakest bullet, from the bottom of a role
+- **Never shrink the font** below the person's minimum in My Resume Rules.md, or 10pt if they haven't set one.
+- No two bullets that tell the same result twice, and no bullet without a number on the version that goes out.
 - If the only way to fit is choosing between two roles, show the person the options with the page result of each and let them pick.
 
 ## Step 7: Keep the titles 🙋
@@ -147,27 +161,31 @@ Only when the person is aiming at more than one kind of role, like two master re
 
 ## Step 8: Format the page 🤖
 
+- **Build from the person's own template .docx,** never a made-up layout.
+- **Build in the .docx first.** Only convert it to a Google Doc afterwards, if that's where it's going to live. Right-aligned dates need tab stops, and those don't come through when you build in Google Docs from scratch.
 - Follow the house style below, plus anything My Resume Rules.md sets differently.
 - For cold applications through a job board: single column, no tables, nothing in the header or footer.
-- Check the PDF, not the doc.
+- Check the version that's going out, not the working copy.
 
 ## Step 9: Check, save and show 🤖 then 🙋
 
 Run every check and say which passed and which didn't:
 
-1. Page count is right
+1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If you couldn't open it, this is unchecked, not passed
 2. No heading stranded at the bottom of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match the canonical numbers in My Resume Rules.md
 5. Nothing from the Never write list
-6. Every ★ bullet has the person's OK
+6. Every ★ bullet has the person's OK, and no ★ shows on the page. On a draft going back to the person, every line still waiting for their OK has a comment asking them to check it
 7. No names from the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
 9. No periods at the end, no first person, no experience bullet over 2 lines
-10. Summary unchanged except the labels and nouns
+10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
+11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
+12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
 
 Then:
-- Save the .docx and .pdf in the company folder, and move any older version to `version history/`
+- Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead
 - Add new bullets to the bank and new facts to the story bank
 - If there's a Decision Log.md, check every decision from this tailor is in it
 - Show the person the PDF and **wait**. Don't upload or send anything until they say so
@@ -176,6 +194,9 @@ Then:
 
 ## If the draft lives in Google Docs
 
+- Build in the .docx first and convert it afterwards (see Step 8).
+- **Edit in place.** Edit that one doc instead of making new copies. Docs already keeps the version history.
+- **Recheck highlighted blanks after every edit.** Editing text can strip the highlight from a `[__]` blank that's waiting for the person, and then it's easy to miss.
 - Put open questions in as comments anchored to the line they're about. One overall comment on the name first, then one comment per fix.
 - Afterwards, read the comments back and check every anchor landed on the right text. A comment can land on the wrong line if the page scrolls while you're typing.
 - When a .docx gets imported, check for stray rules or empty bullets under the headings.
@@ -184,8 +205,8 @@ Then:
 
 The default for everyone. Anything set in My Resume Rules.md wins.
 
-1. **Length:** one page is the standard (Step 6)
-2. **Font:** 10pt body in a standard font, like Calibri. Never shrink below 10pt to make something fit
+1. **Length:** always one page (Step 6)
+2. **Font and margins:** whatever My Resume Rules.md says. If it's blank, 10pt body in a standard font, like Calibri, with 10pt as the minimum. Never shrink below the person's minimum to make something fit
 3. **Header:** name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on the name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line

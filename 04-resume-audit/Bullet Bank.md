@@ -9,11 +9,18 @@ How to mark them:
 - Tag each bullet with what it proves, like `[onboarding]` `[budget]` `[training]`
 - ★ new and not approved yet. Nothing with a ★ goes out until the person says the wording is right
 - ⚠ known-weak. Use it only when nothing better covers the point
-- `[__]` a number that's still missing. The person fills it in, nobody guesses it
+- `[__]` a number or another fact that's still missing. The person fills it in, nobody guesses it
 
 Every bullet is X-Y-Z: the outcome and its number first, then how.
 
 ---
+
+## Summary
+
+The two approved summary bullets. Tailoring only swaps the labels and the nouns.
+
+- **[Label]:** 
+- **[Label]:** 
 
 ## [Title], [Company] ([Start] – [End])
 
