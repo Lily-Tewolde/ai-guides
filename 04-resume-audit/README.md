@@ -22,7 +22,9 @@ Read the Resume Audit file and tailor my resume for [ROLE] at [COMPANY]. Here's 
 
 The first time, Claude helps you fill in your [`My Resume Rules.md`](My%20Resume%20Rules.md), so every resume after that follows the same rules. It lives in your own folder next to your [`Bullet Bank.md`](Bullet%20Bank.md) and, if you want one, a [`Decision Log.md`](Decision%20Log.md). All three are blank templates in this folder (see [Set up once](#set-up-once)). No bullet bank yet? Claude starts with a [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
 
-Doing this for a friend or family member? Give them their own folder and read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first. Anything only they can answer goes to them, and new wording stays ★ until they've OKed it.
+Doing this for a friend or family member? Give them their own folder, read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first, and [hand it off](#handing-it-off-to-someone-else) at the end so they can finish it themselves. Anything only they can answer goes to them, and new wording stays ★ until they've OKed it.
+
+Want to see it before you start? The [worked example](worked-example.md) runs one made-up resume through every step, with the before and after and the decision log.
 
 Want more control? Go step by step below. Every step has its own prompt.
 
@@ -75,7 +77,7 @@ Job search/
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default, and its layout is the template every tailored version is built from. Only have a PDF? See Step 1.
-5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed.
+5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed. Always keep one when it's someone else's resume, because the handoff is built from it.
 6. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
 7. **A note per application** that saves the full job post word for word, because postings come down.
 
@@ -414,6 +416,37 @@ Before I send it run every pre-send check and tell me which ones passed and whic
 ```
 
 You're done when every check passes and you've seen the PDF.
+
+### Then match your LinkedIn
+
+The titles on your resume have to match LinkedIn before the application goes out. Once you've seen the PDF:
+
+1. **Run my [LinkedIn playbook](../02-linkedin-playbook/)** to update your profile. Its file starts from your resume's decisions and tells you what changed because of them
+2. **Check titles, companies and dates** match the resume exactly
+3. **Check skills and tools both ways.** If your About or Skills on LinkedIn mention software that isn't on your resume, or the other way around, decide which one changes
+4. **Move school and capstone projects** into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to your school with "Associated with", tag the skills and add media. The best one also goes in Featured, since LinkedIn sections can't be moved
+
+**Prompt**
+
+```
+Compare my new resume to my LinkedIn. List every job title, company, date, skill and tool that doesn't match, in both directions, and let me decide which side changes. Tell me which school or capstone projects need to move into LinkedIn's Projects section. Then I'll run the LinkedIn playbook from here.
+```
+
+You're done when your LinkedIn matches the resume you're sending.
+
+---
+
+## Handing it off to someone else
+
+When it's someone else's resume, I don't hand back a finished draft. They need to be able to carry on and check it without me.
+
+1. **Open or close with a note** that I'm not an expert in their field. It's mostly formatting and a strong direction, so they should adjust anything that seems off
+2. **Comments ask them to do the work.** "Add it if you've done it", never "Tell me and I'll add it"
+3. **A second tab in the doc** that explains every decision and why, teaches them how to write and check their own X-Y-Z bullets, and ends with what they need to do next, including anything else the post asks for, like a cover letter. For example:
+   - Fill in the 3 blanks marked `[__]` with real numbers
+   - Check every ★ bullet in your Bullet Bank.md is true, then remove the star
+   - Update your LinkedIn headline to match the new title
+4. **Their details stay private** (see [Keeping someone else's resume private](#keeping-someone-elses-resume-private))
 
 ---
 
