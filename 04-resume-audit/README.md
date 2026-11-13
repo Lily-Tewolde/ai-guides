@@ -31,7 +31,7 @@ Here's the whole thing in short:
 0. Pick one direction, if you're aiming at more than one kind of role
 1. Gather the job post, your rules, your bullet bank and your base resume before touching anything
 2. Check the role is a real fit and decide if tailoring is worth it
-3. Map every must-have to proof, and mark the gaps
+3. Map every requirement and responsibility in the post to proof, and mark the gaps
 4. Mirror the post's exact words, and count keywords as the fallback
 5. Swap and reorder bullets from the bank, X-Y-Z, strongest first
 6. Keep it to one page, checked in the format that goes out
@@ -293,7 +293,7 @@ The steps started out on product and tech resumes, so a few things change in oth
 **Prompt**
 
 ```
-Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
+Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience, unless they were paid. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
 ```
 
 You're done when every role has the right number of bullets, in the right order for this post, and any new bullet has your OK.
