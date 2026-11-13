@@ -17,7 +17,7 @@ Each step is tagged:
 You (Claude) are updating one person's LinkedIn profile for one target role. The person is whoever the profile belongs to: the user, or someone the user is helping. This file is your operating spec.
 
 1. **Read this whole file first, every time.**
-2. **Do the steps in order.** Stop any time you need facts only the person can give. When the profile belongs to someone else, those questions go through the user. Anything only the person can decide, like which headline or whether a role stays, goes back to them as a clear choice with your recommendation. Never decide it for them.
+2. **Do the steps in order.** Ask for every fact in the gather list at once, before Step 1. Stop later only for a fact that list missed. When the profile belongs to someone else, those questions go through the user. Anything only the person can decide, like which headline or whether a role stays, goes back to them as a clear choice with your recommendation. Never decide it for them. If the user can't answer for them, don't stop. For a choice, like which roles stay or which Open to Work settings, give your pick. For a fact, leave a highlighted `[__]` blank. Mark both for the person to check, and carry on.
 3. **Never post, publish or change anything on the person's profile.** Even if you can open it in the browser, don't click edit, save or post. The person makes every change themselves.
 4. **Read the live profile when you can.** If you can open it in the browser, read it there. Screenshots are the fallback.
 5. **If the Resume Audit ran first, start from the resume.** Use its titles, dates and decisions, from the person's My Resume Rules.md and Decision Log.md if they have them. Say what changes on LinkedIn because of them.
@@ -33,14 +33,24 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 - **The resume.** If the Resume Audit ran first, use that version, plus My Resume Rules.md and Decision Log.md.
 - **2 to 3 full job posts** for the target role, word for word. If you can't open a link, ask the person to paste the full post. Every keyword choice comes from these.
 - **The target role,** as recruiters search it.
+- **The facts later steps need,** all in one list, asked once:
+  - the city they live in, or the one they're moving to
+  - whether they're still employed
+  - whether unrelated roles, like seasonal or part-time work, should stay, and the months for any seasonal work
+  - remote and employment types for Open to Work
+  - whether their employer is OK with their work being shown
+  - every language they speak, and their level
+  - what each award is, if you can't look it up
+  - each licence or certification's issuing organization, and whether any is still in progress
 - Say what you've got and what you still need. Don't write anything yet.
 
 ## Step 1: Headline and titles 🤖 then 🙋
 
 - **Headline:** 5 options in this format, each under 100 characters: `Role | Keyword · Keyword · Keyword | Credential`. LinkedIn allows 220, but only about the first 100 show in search and on mobile.
-- `Role` is the target role, the way recruiters search it.
+- `Role` is the target role, or a close title recruiters search for it.
 - Use keywords that show up in the job posts and that a recruiter would actually search. No buzzwords, no numbers.
-- **The credential is real.** Only use a licence or certification the person actually holds. If they don't have one yet, leave that part off.
+- **The credential is real.** It can be a licence or certification they hold, a well-known employer or something they shipped. Never a degree, and never a certification still in progress. If they don't have one yet, leave that part off, and let `Role` vary the way recruiters search it so the 5 options really differ.
+- **Never over 100 characters.** If one runs over, shorten the credential to the form people search, then drop to two keywords. Example, made up: `Event Coordinator | Vendor Logistics · Run-of-Show | Food Safety Certified`
 - **Titles:** flag any job title that's vague, internal or creative, and give the standard title recruiters search instead. If the Resume Audit ran first, titles match the resume exactly.
 - The person picks the headline and decides on every title change.
 
@@ -61,7 +71,7 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 - Then the Focus Areas:
   1. **Format.** Each one is the skill a recruiter searches, then the specifics in brackets.
   2. **Wording comes from the job posts.** Pull it from the requirements and responsibilities, and only where it's work the person has actually done.
-  3. **The count follows the role.** 4 to 12, depending on how important the role is to where they're going.
+  3. **The count follows the role.** 4 to 12, depending on how important the role is to where they're going. An unrelated role kept with no description gets none.
   4. **"Add only if true" list.** Anything the posts ask for that the person hasn't confirmed goes on a separate list for them, never on the profile.
   5. **No numbers means any number.** That includes things that aren't results, like a team size in a project description.
 
@@ -72,14 +82,14 @@ Example, made up:
 
 ## If the person is early in their career 🙋
 
-LinkedIn doesn't let anyone move sections around, so Projects always sits low on the page. These keep Experience for real jobs and still get the projects seen.
+Early career means recently out of school, or a few years into their first field. LinkedIn doesn't let anyone move sections around, so Projects always sits low on the page. These keep Experience for real jobs and still get the projects seen.
 
-1. **Experience is for real jobs.** Ask whether unrelated roles, like seasonal or part-time work, stay or go. School projects never go in Experience.
+1. **Experience is for real jobs.** Ask whether unrelated roles, like seasonal or part-time work, stay or go. If nobody answers, the role stays with no description, and say so. School projects never go in Experience.
 2. **One Education entry per degree they actually earned.** No description or Focus Areas. An earlier program that didn't lead to the degree comes off, and the About tells that story instead.
 3. **Projects stay in the Projects section.** Link each one to the school with "Associated with", tag the skills used, and add media once it exists.
 4. **Featured is how a project gets seen first,** since the Projects section can't be moved up.
-5. **Licenses & certifications.** Add any the person holds. Recruiters filter by them.
-6. **Honors & awards.** Look up what each award is first. Keep the ones that are rare, competitive or in their field. Cut general scholarships for entry-level roles.
+5. **Licenses & certifications.** Add any the person holds, with the issuing organization LinkedIn asks for. Recruiters filter by them. One still in progress stays off until it's earned, and the About can say they're working toward it.
+6. **Honors & awards.** Look up what each award is first. If you can't, ask what it was for. Keep the ones that are rare, competitive or in their field. Cut general scholarships for entry-level roles.
 7. **The About matches the level they're aiming for.** Lead with the work they do now and what their background adds. Use school work as evidence, not as a chapter in school-to-job order.
 
 ## Step 3: Skills and Open to Work 🤖 then 🙋
@@ -88,6 +98,7 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 
 - Pick 5 Top skills for the About section, and put the same 5 first in the Skills section, since only the first few show without clicking.
 - **Be honest about the ranking.** You can't see LinkedIn's search data. Say the ranking comes from how often each skill shows up across the job posts.
+- **How to rank them.** Count each skill once per post it appears in. Group synonyms under the name recruiters search. In a tie, must-haves come ahead of nice-to-haves. Skip any skill the person doesn't have.
 
 **Skills on every entry**
 
@@ -98,8 +109,8 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 
 **Open to Work**
 
-- 5 target job titles
-- Remote on if they want it, and which employment types
+- 5 target job titles. If the posts give fewer, add close ones recruiters search and say which are your picks.
+- Remote and employment types, from what they told you. Never leave them blank. If nobody knows, give your pick and mark it for them to check.
 - **Recruiters only when they're still employed,** and say why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
 
 ## Step 4: Featured 🤖 then 🙋
@@ -108,26 +119,31 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 - For each one: what it contains, why it works as proof, and what tool or format to make it with.
 - Best: a 2 to 3 minute video walking through something they built or shipped. Also good: a strong post in their field, a live tool or a portfolio link.
 - Early career: their best project goes here (see above).
-- **Employer and client work stays out** unless the employer says it's okay.
+- **Employer and client work stays out** unless the employer says it's okay (Step 5 says what counts).
 
 ## Step 5: Posts 🤖
 
 - 9 post ideas, 3 a week for 3 weeks, from their real work.
 - Mix three formats: a lesson from real work, a behind-the-scenes look at how they work, and a simple tip or framework from their field.
 - A scroll-stopping first line for each. No generic career advice.
-- **Employer and client work stays out** unless the employer says it's okay.
+- **Employer and client work stays out** unless the employer says it's okay. That means client names, photos, documents and anything that isn't public.
+- **What's fine without asking:** what they learned and how they work, with no client named.
+- **An idea that needs the employer's OK stays on the list only if it's marked,** with "ask your manager first" next to it.
+
+Example, made up: "How I keep vendors on schedule on an event day" is fine. "Photos from a client's wedding I helped run" needs an OK.
 
 ## Extras 🤖 then 🙋
 
 - **Photo:** a clear headshot where their face fills most of the frame. Good light, a plain or on-brand background, dressed the way they would for work in their field.
 - **Banner:** 1584 × 396 pixels, and one that fits their field. Not blank. One short line on it about what they do is optional.
-- **Location is a city,** not just a country. Recruiters filter by city.
+- **Location is a city,** not just a country: the one they live in, or the one they're moving to. Recruiters filter by city.
 - **The verification badge,** with a work email or ID.
 - **Media on entries,** like a link, PDF or video on the role or project it belongs to.
 - **Languages,** every one they speak, at their real level.
 - **Recommendations: give one first.** People are far more likely to write one back. Ask former managers, close teammates and clients, say what you'd love them to mention, and ask right after wrapping something good together. Aim for 5 to 10 over time. Draft the ask in under 80 words, casual, not like a template.
 - **Connections.** Grow them at their current company, their school and the companies they're applying to.
-- **Resume sync.** Job titles, companies and dates match the resume exactly. The numbers stay on the resume.
+- **Licenses & certifications, and Honors & awards,** follow rules 5 and 6 in the early career section, at any career stage.
+- **Resume sync.** Job titles, companies and dates match the resume exactly. LinkedIn needs a month and year, so seasonal work like "Summers 2023 – 2024" goes in as its first and last months, with Seasonal as the employment type. The resume keeps its own wording, and that isn't a mismatch. The numbers stay on the resume.
 - **Skills and tools match both ways.** If the About or Skills mention software that isn't on the resume, or the resume has a tool LinkedIn doesn't, flag it and let the person decide which one changes.
 
 ---
@@ -150,19 +166,21 @@ When the profile belongs to someone the user is helping, they're the one who has
 
 Run every check and say which passed and which didn't:
 
-1. Headline under 100 characters, in the format, with a credential the person actually holds
+1. Headline under 100 characters, in the format, with a credential from Step 1 (never a degree or one in progress), or none
 2. Every job title is one a recruiter would search, and matches the resume
 3. No numbers anywhere, including team sizes and counts that aren't results
 4. The About is a story with no bullets, at the level they're aiming for
 5. Every Focus Area is in the format, worded from the job posts, and only covers work they've done
 6. Anything unconfirmed is on the "add only if true" list, not the profile
-7. Every experience, education and project entry has its exact skills, and only ones used there
+7. Every experience, education and project entry has its exact skills, and only ones used there. A role kept with no description can have none
 8. The Top 5 says the ranking comes from the job posts
 9. Location is a city
-10. Titles, companies, dates, skills and tools match the resume, or every mismatch is flagged for the person
-11. No employer or client work in Featured or posts without the employer's OK
+10. Titles, companies, dates, skills and tools match the resume, with seasonal work entered as its first and last months counting as a match, or every mismatch is flagged for the person
+11. No employer or client work in Featured or posts without the employer's OK, unless it's marked "ask your manager first"
 12. If it's someone else's profile, it's written to them, with the note and the mock
-13. Nothing on the profile was changed by you
+13. Every fact from the gather list is in, or its blank or pick is marked for the person to check
+14. Open to Work has 5 titles, with any picks marked, plus remote and employment types
+15. Nothing on the profile was changed by you
 
 Then hand it all back to the person and **wait**. They make every change.
 
