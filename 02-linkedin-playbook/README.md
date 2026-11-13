@@ -58,7 +58,7 @@ When I ran this on a friend's profile, everything came back written about my fri
 - A link to your LinkedIn profile, or screenshots of it: header, About, every role, education, projects, skills and Featured. Claude reads the live profile when it can open it in your browser, and the screenshots are the fallback
 - 2 to 3 real job posts for the role you want. Claude pulls your keywords from them, so they match what companies are actually asking for
 
-Run all 5 prompts in **one** Claude conversation, not five separate chats. Steps 2 to 5 say "above" because they build on the resume, screenshots and job posts you share in Step 1.
+Run all 5 prompts in **one** Claude conversation, not five separate chats. Steps 2 to 5 say "above" because they build on the resume, profile and job posts you share in Step 1.
 
 ---
 
@@ -71,13 +71,14 @@ Your headline is the most important field on your whole profile. It's what Linke
 **What to do**
 
 - Rewrite your headline: `[Your Role] + 3 keywords + your best credential`, under 100 characters. LinkedIn lets you use 220, but only about the first 100 show in search and on mobile, so keep the important part up front
-- Only use a credential you actually hold, like a licence or certification you've earned
+- Use your target role, the way recruiters search it
+- Only use a credential you actually hold, like a licence or certification you've earned. If you don't have one yet, leave that part off
 - Swap any internal, advisory or creative job title for the standard title recruiters search
 
 **Prompt**
 
 ```text
-You're a LinkedIn SEO and recruiter-search expert. I'm targeting the role of [YOUR TARGET ROLE, e.g. Marketing Manager]. Here's my resume: [PASTE RESUME]. Here are screenshots of my current LinkedIn profile: [ATTACH SCREENSHOTS]. Here are 2-3 real job posts for this role: [PASTE JOB POSTS].
+You're a LinkedIn SEO and recruiter-search expert. I'm targeting the role of [YOUR TARGET ROLE, e.g. Marketing Manager]. Here's my resume: [PASTE RESUME]. Here's my current LinkedIn profile, as a link or screenshots: [LINK OR SCREENSHOTS]. Here are 2-3 real job posts for this role: [PASTE JOB POSTS].
 
 1. Give me 5 headline options, each under 100 characters, in this exact format:
 Role | Keyword · Keyword · Keyword | Credential
@@ -108,7 +109,7 @@ This one's going to feel wrong, but trust me. Your About section is a story, not
   - The wording comes from the job posts' requirements and responsibilities, and only where it's work you've actually done
   - 4 to 12 per role, depending on how much that role matters for where you're going
   - Anything the posts ask for that you haven't done goes on a separate "add only if true" list, never on your profile
-- Remove every number from every section, even ones that aren't results, like a team size in a project description
+- Remove every number from every section, even ones that aren't results, like a team size in a project description. The dates on your entries are fine
 
 My Focus Areas carry a lot more context than a keyword list. Example, made up:
 
@@ -118,7 +119,7 @@ My Focus Areas carry a lot more context than a keyword list. Example, made up:
 **Prompt**
 
 ```text
-Using my resume and LinkedIn screenshots above, and targeting [YOUR TARGET ROLE], rewrite two things:
+Using my resume and LinkedIn profile above, and targeting [YOUR TARGET ROLE], rewrite two things:
 
 1. My About section as a STORY, not a summary. 4 to 6 short paragraphs:
 - An opening hook
@@ -161,7 +162,7 @@ This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five
 - Tag the exact skills on every experience, education and project entry, using the names recruiters actually search. "+4 skills" isn't something you can act on, so get the list for each one
 - Add each skill by typing it in and picking LinkedIn's exact match from the dropdown. If it doesn't come up, pick the closest suggestion
 - Only tag skills you actually used in that role or project
-- Prune your Skills section. Remove the skills that don't fit your target role, but keep all your software and tools
+- Prune your Skills section. Remove the skills that don't fit your target role, but keep all the software and tools you've actually used. Anything you've never used comes off
 - Turn on Open to Work
 - Add 5 target job titles
 - Turn on Remote if you want it
@@ -176,7 +177,7 @@ For someone targeting [YOUR TARGET ROLE] in [YOUR INDUSTRY], using my resume, pr
 
 2. For every experience, education and project entry on my profile, the exact skills to tag on it, using the names recruiters search. Only skills I actually used in that role or project.
 
-3. Which skills in my Skills section to remove because they don't fit this role. Keep all my software and tools.
+3. Which skills in my Skills section to remove because they don't fit this role, or because I've never used them. Keep all the software and tools I've actually used.
 
 4. The 5 job titles I should enter in LinkedIn's Open to Work settings to appear in the most relevant recruiter searches, plus whether I should turn on Remote and which employment types to select.
 ```
@@ -308,7 +309,7 @@ You're done when your photo and banner are up, your location is a city, you've a
 
 ## The master prompt
 
-Fill in every bracket, attach your resume and screenshots, and paste it into Claude.
+Fill in every bracket, attach your resume and your profile link or screenshots, and paste it into Claude.
 
 ```text
 You're a LinkedIn growth strategist and recruiter-search expert.
@@ -343,10 +344,10 @@ Flag titles that don't match real recruiter search terms. Suggest the functional
 Story-driven, 4 to 6 paragraphs, no metrics, no bullets. Structure: Hook, Career thread, Current work, What I want next.
 
 4. ALL EXPERIENCE ROLES
-Each role: one narrative paragraph, then 4 to 12 Focus Areas depending on how much the role matters for my target. Each Focus Area is the skill a recruiter searches, then the specifics in brackets, worded from the job posts and only for work I've actually done. No numbers of any kind. Anything the posts ask for that I haven't confirmed goes on a separate "add only if true" list, not the profile.
+Each role: one narrative paragraph, then 4 to 12 Focus Areas depending on how much the role matters for my target. Each Focus Area is the skill a recruiter searches, then the specifics in brackets, worded from the job posts and only for work I've actually done, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". No numbers of any kind. Anything the posts ask for that I haven't confirmed goes on a separate "add only if true" list, not the profile.
 
 5. SKILLS
-Top 5 to pin, ranked by how often each one shows up across the job posts (you can't see LinkedIn's search data, so say so). Then the exact skills to tag on every experience, education and project entry, only ones I used there, and which skills to remove from my Skills section. Keep all my software and tools.
+Top 5 to pin, ranked by how often each one shows up across the job posts (you can't see LinkedIn's search data, so say so). Then the exact skills to tag on every experience, education and project entry, only ones I used there, and which skills to remove from my Skills section. Keep all the software and tools I've actually used, and remove any I haven't.
 
 6. OPEN TO WORK SETTINGS
 5 titles to enter, location types, employment types.

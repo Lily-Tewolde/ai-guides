@@ -17,9 +17,9 @@ Each step is tagged:
 You (Claude) are tailoring one person's resume to one job post. The person is whoever the resume belongs to: the user, or someone the user is helping. This file is your operating spec.
 
 1. **Read this whole file first, every time.** Then read My Resume Rules.md in the person's folder. The written rules outrank anything you remember.
-2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there. Help fill it in before you tailor anything.
+2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
 3. **If there's no bullet bank yet,** do the first build below before you tailor anything.
-4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give.
+4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user, and anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **If the resume belongs to someone else,** finish with the handoff below, so they can carry on without the user.
@@ -61,12 +61,13 @@ When the resume belongs to a friend or family member:
 "Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
 
 1. Rewrite every bullet into X-Y-Z (see Step 5).
-2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number.
+2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
 3. Mark every line ★, because none of them are approved yet.
-4. Ask the person for the missing numbers and for their OK on each line.
+4. Ask the person for the missing numbers and facts, and for their OK on each line.
 5. Save it all as their Bullet Bank.md, grouped by role and tagged with what each bullet proves.
+6. Write the summary in the summary shape (Step 5), mark both lines ★ and save it at the top of Bullet Bank.md. An old objective or summary doesn't count as approved.
 
-Every tailor after this one is a swap.
+Every tailor after this one is a swap, and the summary only changes its labels and nouns.
 
 ## Step 0: Pick a direction 🙋
 
@@ -171,13 +172,13 @@ Example, made up:
 
 ## Step 6: Fit the page 🤖 then 🙋
 
-- **Always one page.** Check the page count in the final format, Google Docs or the PDF, whichever is going out. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. Don't guess.
+- **Always one page.** Check the page count in the final format, Google Docs or the PDF, whichever is going out. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. Don't guess. If you can't open the final format, say the page count is unchecked and ask the person to check it. Never mark it passed.
 - **When it runs over, fix it in this order:**
   1. Tighten the spacing
   2. Tighten the wording, never the facts
   3. Cut the weakest bullet, from the bottom of a role
-- **Never shrink the font** below the person's minimum in My Resume Rules.md.
-- No two bullets that tell the same result twice, and nothing without a number.
+- **Never shrink the font** below the person's minimum in My Resume Rules.md, or 10pt if they haven't set one.
+- No two bullets that tell the same result twice, and nothing without a number on the version that goes out.
 - If the only way to fit is choosing between two roles, show the person the options with the page result of each and let them pick.
 
 ## Step 7: Keep the titles 🙋
@@ -199,7 +200,7 @@ Example, made up:
 
 Run every check and say which passed and which didn't:
 
-1. One page, checked in the final format (Google Docs or the PDF, whichever is going out)
+1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If you couldn't open it, this is unchecked, not passed
 2. No heading stranded at the bottom of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match the canonical numbers in My Resume Rules.md
@@ -208,9 +209,9 @@ Run every check and say which passed and which didn't:
 7. No names from the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
 9. No periods at the end, no first person, nothing over 2 lines
-10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5
+10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
 11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
-12. Every `[__]` blank waiting for the person is still highlighted
+12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
 13. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
 14. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
 
@@ -260,7 +261,7 @@ When the resume belongs to someone the user is helping, it doesn't end with a fi
 The default for everyone. Anything set in My Resume Rules.md wins.
 
 1. **Length:** always one page (Step 6)
-2. **Font and margins:** whatever My Resume Rules.md says. If it's blank, 10pt body in a standard font, like Calibri. Never shrink below the person's minimum to make something fit
+2. **Font and margins:** whatever My Resume Rules.md says. If it's blank, 10pt body in a standard font, like Calibri, with 10pt as the minimum. Never shrink below the person's minimum to make something fit
 3. **Header:** name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on the name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line

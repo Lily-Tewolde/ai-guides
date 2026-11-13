@@ -22,7 +22,7 @@ Read the Resume Audit file and tailor my resume for [ROLE] at [COMPANY]. Here's 
 
 The first time, Claude helps you fill in your [`My Resume Rules.md`](My%20Resume%20Rules.md), so every resume after that follows the same rules. It lives in your own folder next to your [`Bullet Bank.md`](Bullet%20Bank.md) and, if you want one, a [`Decision Log.md`](Decision%20Log.md). All three are blank templates in this folder (see [Set up once](#set-up-once)). No bullet bank yet? Claude starts with a [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
 
-Doing this for a friend or family member? Give them their own folder, read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first, and [hand it off](#handing-it-off-to-someone-else) at the end so they can finish it themselves.
+Doing this for a friend or family member? Give them their own folder, read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first, and [hand it off](#handing-it-off-to-someone-else) at the end so they can finish it themselves. Anything only they can answer goes to them, and new wording stays ★ until they've OKed it.
 
 Want to see it before you start? The [worked example](worked-example.md) runs one made-up resume through every step, with the before and after and the decision log.
 
@@ -33,7 +33,7 @@ Here's the whole thing in short:
 0. Pick one direction, if you're aiming at more than one kind of role
 1. Gather the job post, your rules, your bullet bank and your base resume before touching anything
 2. Check the role is a real fit and decide if tailoring is worth it
-3. Map every must-have to proof, and mark the gaps
+3. Map every requirement and responsibility in the post to proof, and mark the gaps
 4. Mirror the post's exact words, and count keywords as the fallback
 5. Swap and reorder bullets from the bank, X-Y-Z, strongest first
 6. Keep it to one page, checked in the format that goes out
@@ -69,10 +69,11 @@ Job search/
 ```
 
 1. **[`My Resume Rules.md`](My%20Resume%20Rules.md).** Your rules file. Claude reads it first every time, and helps you fill it in if it's still blank. It covers:
-   - layout
-   - writing rules
-   - file naming
+   - where your standard resume, bullet bank and story bank live
    - a table of canonical numbers, so the same figure never shows up two different ways
+   - your titles, the same as LinkedIn
+   - names you can't share, like clients or partners
+   - your house style: font, size, margins, header and colour
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default, and its layout is the template every tailored version is built from. Only have a PDF? See Step 1.
@@ -95,16 +96,17 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
 
 1. Every bullet gets rewritten into X-Y-Z (see Step 5)
-2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing
+2. Anywhere a number is missing gets a highlighted `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
 3. Every line is marked ★, because none of them are approved yet
-4. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
+4. Your summary gets written fresh in the summary shape (Step 5), and it's marked ★ too. An old objective doesn't count as approved
+5. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
 
 After that, every tailor is a swap.
 
 **Prompt**
 
 ```
-I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number is missing put a [__] blank and ask me for it, don't guess. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md. Then write my summary in the summary shape, two bullets with bold labels and no numbers, mark it ★ too and save it at the top of the bank.
 ```
 
 You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
@@ -293,7 +295,7 @@ The steps started out on product and tech resumes, so a few things change in oth
 **Prompt**
 
 ```
-Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
+Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience, unless they were paid. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
 ```
 
 You're done when every role has the right number of bullets, in the right order for this post, and any new bullet has your OK.
@@ -310,7 +312,7 @@ You're done when every role has the right number of bullets, in the right order 
 
    Never shrink the font below the minimum in your rules file to make room.
 3. **Never two bullets on one page that spend the same result.** Two bullets about the same project, or two measurements of the same outcome, read thinner than one.
-4. **Unfinished bullets stay off.** No number means not finished.
+4. **Unfinished bullets stay off anything that goes out.** No number means not finished.
 5. **Process bullets don't show outcomes.** A bullet about your intake or delivery process comes off unless the role is about running that process.
 6. **A list of product names isn't a bullet.** A launch count can live in the summary instead.
 7. **Side-project-looking bullets go last or come off.**
@@ -352,7 +354,7 @@ You're done when your titles match LinkedIn and the file name uses the role exac
 **Build from your own template, in the .docx first.** Every version starts from your own template .docx, never a made-up layout. If the resume is going to live in Google Docs, convert it afterwards. Right-aligned dates need tab stops, and those don't come through when you build in Google Docs from scratch.
 
 1. **Length:** always one page (step 6)
-2. **Font and margins:** whatever your rules file says. Mine is 10pt body in Calibri, but you might want 10.5. Never shrink below the minimum in your rules file to make something fit
+2. **Font and margins:** whatever your rules file says. Mine is 10pt body in Calibri, but you might want 10.5. Never shrink below the minimum in your rules file (10pt if you haven't set one) to make something fit
 3. **Header:** your name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on your name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line
@@ -385,7 +387,7 @@ You're done when the version that's going out matches your house style.
 
 **Pre-send checks**
 
-1. One page, checked in the format that's going out
+1. One page, checked in the format that's going out. If Claude can't open that format, the page count is unchecked, not passed
 2. Every heading keeps with the next line, so none is stranded at the foot of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match your canonical table, and look-alike numbers (users vs signups) are never swapped
@@ -394,10 +396,10 @@ You're done when the version that's going out matches your house style.
 7. No client or partner names you're not allowed to share, and no vendor names you've decided to keep off
 8. No repeated opening verbs in adjacent bullets, across role boundaries too
 9. No terminal periods, no first person, no experience bullet over 2 lines
-10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5
+10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5. On a first build the summary is new and ★ instead
 11. Header is consistent: name, then one contact line
 12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet
-13. Every `[__]` blank still waiting for a number is still highlighted
+13. No `[__]` blanks on the version that goes out. On a draft going back to someone, every blank is still highlighted
 14. Every requirement and responsibility from the post is in the coverage table, and every gap went back as a question, not onto the page
 15. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
 16. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
