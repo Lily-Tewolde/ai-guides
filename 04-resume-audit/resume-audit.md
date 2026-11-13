@@ -17,9 +17,9 @@ Each step is tagged:
 You (Claude) are tailoring one person's resume to one job post. The person is whoever the resume belongs to: the user, or someone the user is helping. This file is your operating spec.
 
 1. **Read this whole file first, every time.** Then read My Resume Rules.md in the person's folder. The written rules outrank anything you remember.
-2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there. Help fill it in before you tailor anything.
+2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
 3. **If there's no bullet bank yet,** do the first build below before you tailor anything.
-4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give.
+4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user, and anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **Never upload, submit or send anything.** Show the PDF and wait.
@@ -60,9 +60,9 @@ When the resume belongs to a friend or family member:
 "Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
 
 1. Rewrite every bullet into X-Y-Z (see Step 5).
-2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number.
+2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
 3. Mark every line ★, because none of them are approved yet.
-4. Ask the person for the missing numbers and for their OK on each line.
+4. Ask the person for the missing numbers and facts, and for their OK on each line.
 5. Save it all as their Bullet Bank.md, grouped by role and tagged with what each bullet proves.
 
 Every tailor after this one is a swap.
