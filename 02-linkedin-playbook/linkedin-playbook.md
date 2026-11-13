@@ -17,11 +17,11 @@ Each step is tagged:
 You (Claude) are updating one person's LinkedIn profile for one target role. The person is whoever the profile belongs to: the user, or someone the user is helping. This file is your operating spec.
 
 1. **Read this whole file first, every time.**
-2. **Do the steps in order.** Stop any time you need facts only the person can give.
+2. **Do the steps in order.** Stop any time you need facts only the person can give. When the profile belongs to someone else, those questions go through the user. Anything only the person can decide, like which headline or whether a role stays, goes back to them as a clear choice with your recommendation. Never decide it for them.
 3. **Never post, publish or change anything on the person's profile.** Even if you can open it in the browser, don't click edit, save or post. The person makes every change themselves.
 4. **Read the live profile when you can.** If you can open it in the browser, read it there. Screenshots are the fallback.
 5. **If the Resume Audit ran first, start from the resume.** Use its titles, dates and decisions, from the person's My Resume Rules.md and Decision Log.md if they have them. Say what changes on LinkedIn because of them.
-6. **No numbers anywhere on the profile.** The person's numbers are context for you, not copy.
+6. **No numbers anywhere on the profile,** except the dates on each entry. The person's numbers are context for you, not copy.
 7. **Run the check at the end** before anything goes back to the person.
 
 ---
@@ -37,8 +37,9 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 ## Step 1: Headline and titles 🤖 then 🙋
 
 - **Headline:** 5 options in this format, each under 100 characters: `Role | Keyword · Keyword · Keyword | Credential`. LinkedIn allows 220, but only about the first 100 show in search and on mobile.
+- `Role` is the target role, the way recruiters search it.
 - Use keywords that show up in the job posts and that a recruiter would actually search. No buzzwords, no numbers.
-- **The credential is real.** Only use a licence or certification the person actually holds.
+- **The credential is real.** Only use a licence or certification the person actually holds. If they don't have one yet, leave that part off.
 - **Titles:** flag any job title that's vague, internal or creative, and give the standard title recruiters search instead. If the Resume Audit ran first, titles match the resume exactly.
 - The person picks the headline and decides on every title change.
 
@@ -92,7 +93,7 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 1. **List the exact skills for every entry.** Each experience, education and project entry gets its own list, using names recruiters actually search.
 2. **Say how to add them.** Type each one in and pick LinkedIn's exact match from the dropdown. If it doesn't come up, pick the closest suggestion.
 3. **Only skills they've used** in that role or project.
-4. **Prune the Skills section.** Remove skills that don't fit the target role, but keep all their software and tools.
+4. **Prune the Skills section.** Remove skills that don't fit the target role, but keep all the software and tools they've actually used. A tool they've never used comes off, like any other skill that isn't true.
 
 **Open to Work**
 
