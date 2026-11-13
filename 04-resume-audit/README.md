@@ -22,7 +22,7 @@ Read the Resume Audit file and tailor my resume for [ROLE] at [COMPANY]. Here's 
 
 The first time, Claude helps you fill in your [`My Resume Rules.md`](My%20Resume%20Rules.md), so every resume after that follows the same rules. It lives in your own folder next to your [`Bullet Bank.md`](Bullet%20Bank.md) and, if you want one, a [`Decision Log.md`](Decision%20Log.md). All three are blank templates in this folder (see [Set up once](#set-up-once)). No bullet bank yet? Claude starts with a [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
 
-Doing this for a friend or family member? Give them their own folder and read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first.
+Doing this for a friend or family member? Give them their own folder and read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first. Anything only they can answer goes to them, and new wording stays ★ until they've OKed it.
 
 Want more control? Go step by step below. Every step has its own prompt.
 
@@ -66,10 +66,11 @@ Job search/
 ```
 
 1. **[`My Resume Rules.md`](My%20Resume%20Rules.md).** Your rules file. Claude reads it first every time, and helps you fill it in if it's still blank. It covers:
-   - layout
-   - writing rules
-   - file naming
+   - where your standard resume, bullet bank and story bank live
    - a table of canonical numbers, so the same figure never shows up two different ways
+   - your titles, the same as LinkedIn
+   - names you can't share, like clients or partners
+   - your house style: font, size, margins, header and colour
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default.
@@ -92,7 +93,7 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
 
 1. Every bullet gets rewritten into X-Y-Z (see Step 5)
-2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing
+2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
 3. Every line is marked ★, because none of them are approved yet
 4. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
 
@@ -101,7 +102,7 @@ After that, every tailor is a swap.
 **Prompt**
 
 ```
-I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number is missing put a [__] blank and ask me for it, don't guess. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
 ```
 
 You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
