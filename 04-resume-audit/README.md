@@ -20,10 +20,15 @@ Download [`resume-audit.md`](resume-audit.md), put it in your job search folder,
 Read the Resume Audit file and tailor my resume for [ROLE] at [COMPANY]. Here's the job post: [PASTE JOB POST]
 ```
 
-The first time, Claude helps you fill in the My Resume Rules section at the bottom of the file, so every resume after that follows the same rules. Want more control? Go step by step below. Every step has its own prompt.
+The first time, Claude helps you fill in your [`My Resume Rules.md`](My%20Resume%20Rules.md), so every resume after that follows the same rules. It lives in your own folder next to your [`Bullet Bank.md`](Bullet%20Bank.md) and, if you want one, a [`Decision Log.md`](Decision%20Log.md). All three are blank templates in this folder (see [Set up once](#set-up-once)). No bullet bank yet? Claude starts with a [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
+
+Doing this for a friend or family member? Give them their own folder and read [Keeping someone else's resume private](#keeping-someone-elses-resume-private) first.
+
+Want more control? Go step by step below. Every step has its own prompt.
 
 Here's the whole thing in short:
 
+0. Pick one direction, if you're aiming at more than one kind of role
 1. Gather the job post, your rules, your bullet bank and your base resume before touching anything
 2. Check the role is a real fit and decide if tailoring is worth it
 3. Map every must-have to proof, and mark the gaps
@@ -39,23 +44,85 @@ Here's the whole thing in short:
 - Claude (any plan), or any AI assistant
 - The Claude desktop app with Cowork, if you're using the file (Claude Code works too)
 - The [`resume-audit.md`](resume-audit.md) file from this folder
+- The blank [`My Resume Rules.md`](My%20Resume%20Rules.md), [`Bullet Bank.md`](Bullet%20Bank.md) and [`Decision Log.md`](Decision%20Log.md) files from this folder
 - The full job post
-- The files below. The prompts assume you've attached your rules file, your bullet bank and your base resume
+- The files below. The prompts assume you've attached your My Resume Rules.md, your Bullet Bank.md and your base resume
 
 ### Set up once
 
-1. **A rules file.** It covers:
+Keep everything in one folder per person, even when it's your own resume. That way it still works when you're helping someone else, and nobody's facts get mixed up.
+
+```
+Job search/
+├── resume-audit.md
+└── [Your name]/
+    ├── My Resume Rules.md
+    ├── Bullet Bank.md
+    ├── Decision Log.md       (optional)
+    ├── Story bank
+    ├── Standard resume.docx
+    └── [Company]/
+        └── version history/
+```
+
+1. **[`My Resume Rules.md`](My%20Resume%20Rules.md).** Your rules file. Claude reads it first every time, and helps you fill it in if it's still blank. It covers:
    - layout
    - writing rules
    - file naming
    - a table of canonical numbers, so the same figure never shows up two different ways
-
-   If you're using the file, its My Resume Rules section is your rules file.
-2. **A bullet bank.** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
+2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default.
-5. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
-6. **A note per application** that saves the full job post word for word, because postings come down.
+5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed.
+6. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
+7. **A note per application** that saves the full job post word for word, because postings come down.
+
+### Keeping someone else's resume private
+
+I've used this on a friend's resume, and it's easy to slip when you're also writing about the method in public. When you use it on someone else's resume:
+
+1. Their details stay in their own folder, next to their My Resume Rules.md
+2. Their details never go into a public repo, an issue or a shared doc without them knowing
+3. Any example you share about what you learned is made up
+
+---
+
+## First build: when you don't have a bullet bank yet
+
+Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
+
+1. Every bullet gets rewritten into X-Y-Z (see Step 5)
+2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing
+3. Every line is marked ★, because none of them are approved yet
+4. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
+
+After that, every tailor is a swap.
+
+**Prompt**
+
+```
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number is missing put a [__] blank and ask me for it, don't guess. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
+```
+
+You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
+
+---
+
+## Step 0: Pick a direction
+
+Skip this if you know the one kind of role you're going for. If you're split between two, like two master resumes with two different objectives, pick one before you tailor anything.
+
+1. **Compare the paths** on pay, licensing and which title each one leaves on your LinkedIn
+2. **Get one recommendation:** one direction and one title, and why
+3. **You decide.** The direction goes in your My Resume Rules.md, so every tailor after that points the same way
+
+**Prompt**
+
+```
+I'm aiming at two kinds of roles: [PATH 1] and [PATH 2]. Here are both versions of my resume. Compare the two paths on pay, licensing and which title each one would leave on my LinkedIn. Then recommend one direction and one title and tell me why. I'll decide, and then add it to My Resume Rules.md.
+```
+
+You're done when you've picked one direction and one title.
 
 ---
 
@@ -63,17 +130,18 @@ Here's the whole thing in short:
 
 1. **The full job post, word for word.** Exact title, must-haves, nice-to-haves, every tool named. Save it.
 2. **What the recruiter said they want**, if anyone said anything. One line from a recruiter ("we want someone who writes evals") can change which bullets lead.
-3. **Your rules file and bullet bank,** read first, every time. Go by the written files, not memory (yours or the AI's).
+3. **Your My Resume Rules.md and Bullet Bank.md,** read first, every time. Go by the written files, not memory (yours or the AI's).
 4. **The base resume, as the .docx.** Your standard resume by default. Don't use an older role-type variant with different titles, it can contradict your LinkedIn.
 5. **Proof the base is what its name says.** A file sitting in a company folder isn't proof it was tailored. When I audited mine, several "company" versions turned out to be the same document renamed. Check size and date, not the filename.
 6. **Fresh material** from your story bank.
 7. **Facts only you can give.** If the post asks for something your bank doesn't cover, write down the facts yourself before anything gets drafted.
 8. **The application form**, if there is one. Check it before drafting, it shows what else is being asked.
+9. **Anything else the post asks for,** like a cover letter, a transcript or references. Note it now so it isn't a surprise at the end.
 
 **Prompt**
 
 ```
-I'm tailoring my resume for [ROLE AS POSTED] at [COMPANY]. Here's the full job post, keep it word for word so we still have it if they take it down: [PASTE JOB POST]. Before you touch anything read my rules file and my bullet bank, and use my standard resume .docx as the base unless I say otherwise. Check the base is really the file you think it is by its size and date, not just its name. The recruiter told me they're looking for [WHAT THEY SAID, OR "nothing yet"]. Don't edit anything yet, just tell me what you've got, what the form asks for, and what you still need from me.
+I'm tailoring my resume for [ROLE AS POSTED] at [COMPANY]. Here's the full job post, keep it word for word so we still have it if they take it down: [PASTE JOB POST]. Before you touch anything read My Resume Rules.md and my Bullet Bank.md, and use my standard resume .docx as the base unless I say otherwise. Check the base is really the file you think it is by its size and date, not just its name. The recruiter told me they're looking for [WHAT THEY SAID, OR "nothing yet"]. Don't edit anything yet, just tell me what you've got, what the form asks for, anything else the post wants like a cover letter or references, and what you still need from me.
 ```
 
 You're done when Claude has the job post saved, has read your rules and bullet bank, and has told you what it still needs from you.
@@ -152,7 +220,7 @@ You're done when every true keyword has a place on your resume, and nothing untr
 
 ## Step 5: Rewrite the bullets
 
-**Swap, don't rewrite.** The bank holds approved wording. Tailoring is choosing and ordering, and the facts don't move.
+**Swap, don't rewrite.** The bank holds approved wording. Tailoring is choosing and ordering, and the facts don't move. No bank yet? Start with the [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
 
 1. **Counts.** Current role 4 to 5, earlier roles 2 to 3, never 6, never a single-bullet role.
 2. **Order.** Inside each role, most relevant to this post at the top. Not chronology, not the biggest number. Re-rank on every tailor. The first bullet should make them think you've done this exact job. Side projects like marketing automation go last almost every time.
@@ -169,6 +237,7 @@ You're done when every true keyword has a place on your resume, and nothing untr
 11. **No repeated opening verb in adjacent bullets,** including the last bullet of one role and the first bullet of the next. Fix it by reordering, not rewording.
 12. **Mechanisms that are too specific are interview detail.** "By removing the phone-verification step and adding a guest mode" becomes "by streamlining sign-up".
 13. **New bullets** are written X-Y-Z from your story bank or your facts, added to the bank marked ★, and approved by you before they go on anything that goes out.
+14. **New grads: school projects go under Projects.** School and capstone projects go in a Projects section, not Experience, so the only job titles on the page are real ones that match your LinkedIn.
 
 **The summary**
 
@@ -183,7 +252,7 @@ Bulleted with bold category labels, and the categories get rebuilt around the po
 **Prompt**
 
 ```
-Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
+Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
 ```
 
 You're done when every role has the right number of bullets, in the right order for this post, and any new bullet has your OK.
@@ -214,7 +283,7 @@ You're done when the PDF is one page, or two with only skills and education on p
 
 ## Step 7: Handle titles
 
-1. **Titles stay the same as LinkedIn and your standard resume by default.** Tailored versions keep them unchanged, and only you change them.
+1. **Titles stay the same as LinkedIn and your standard resume by default.** Tailored versions keep them unchanged, and only you change them. When a title or date is unclear, check LinkedIn.
 2. **Keep titles consistent, even if another one sounds better.** A recruiter who sees one title on the resume and another on LinkedIn has a question you didn't want them to have.
 3. **Retitle only for a real edge, and only to something true.** If your actual role was a product role on a community product, a title that says so can match a community-focused post.
 4. **Internal titles recruiters don't search.** If an employer used level codes or HR bands ("Analyst II", "Associate, Level 3"), use the functional title for the work you did, the one a recruiter would type into a search bar, and use the same one on LinkedIn.
@@ -293,6 +362,16 @@ Before I send it run every pre-send check and tell me which ones passed and whic
 ```
 
 You're done when every check passes and you've seen the PDF.
+
+---
+
+## If your draft lives in Google Docs
+
+This comes up most when you're working on someone else's resume and want to leave them questions.
+
+1. **Questions go in as comments,** anchored to the line they're about. One overall comment on the name first, then one per fix
+2. **Read the comments back afterwards** and check every anchor landed on the right text. They can land on the wrong line if the page scrolls while you're typing
+3. **Check imported docs** for stray rules or empty bullets under the headings
 
 ---
 
