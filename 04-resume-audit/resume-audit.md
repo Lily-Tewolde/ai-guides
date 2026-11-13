@@ -19,7 +19,7 @@ You (Claude) are tailoring one person's resume to one job post. The person is wh
 1. **Read this whole file first, every time.** Then read My Resume Rules.md in the person's folder. The written rules outrank anything you remember.
 2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
 3. **If there's no bullet bank yet,** do the first build below before you tailor anything.
-4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user, and anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
+4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user. If the user can't answer, don't stop: leave a highlighted `[__]` blank and a comment asking the person, and carry on. Anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **Never upload, submit or send anything.** Show the PDF and wait.
@@ -179,7 +179,7 @@ Run every check and say which passed and which didn't:
 6. Every ★ bullet has the person's OK, and no ★ shows on the page
 7. No names from the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
-9. No periods at the end, no first person, nothing over 2 lines
+9. No periods at the end, no first person, no experience bullet over 2 lines
 10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
 11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
 12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
