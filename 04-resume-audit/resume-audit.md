@@ -78,6 +78,7 @@ Only when the person is aiming at more than one kind of role, like two master re
 ## Step 1: Gather everything 🤖
 
 - Save the full job post word for word in the company folder, because postings come down.
+- **If you can't open the link,** ask the person to paste the full post into the chat, or to open it in their browser so you can read it there. Then save it word for word. Don't work from a summary or a partial copy.
 - Read My Resume Rules.md and Bullet Bank.md before touching anything.
 - Use the standard resume .docx as the base unless the person says otherwise. Check it's the right file by its size and date, not its name.
 - **Only a PDF?** That's enough to start:
@@ -93,16 +94,36 @@ Only when the person is aiming at more than one kind of role, like two master re
 
 ## Step 2: Check the fit 🙋
 
+Before checking the must-haves, confirm:
+
+1. **The post is still open** and taking applications.
+2. **The location works,** whether it's on site, hybrid or remote.
+3. **The person can work there,** including any work authorization or visa the post asks for.
+
+If any of these fail, stop and tell the person. Don't map, tailor or build anything.
+
+Then:
+
 - Check the must-haves against the person's real background. Years can flex by about a year.
 - If the core of the role is a domain or stack that isn't anywhere on the resume, say so and suggest skipping it.
 - Say whether the standard resume is good enough or tailoring gives a real edge, and why. The person decides.
 
 ## Step 3: Map the post to proof 🤖
 
-- Quote every must-have and nice-to-have word for word, with the bullet or tag that proves it next to each one.
-- Mark the gaps. Don't fill them, and don't add any line that admits what the person hasn't done.
-- Flag gaps that might be work the person did but never wrote down. Those are questions for the person, not guesses.
+- **Make a coverage table.** Every requirement and every responsibility in the post, word for word, one row each. Must-haves, nice-to-haves and responsibilities all go in.
+- **Mark each row covered, partial or gap,** with the bullet that covers it.
+- **Gaps become questions for the person.** They never become new lines on the page, especially in a field you don't know well enough to judge what's too senior to claim. Don't add any line that admits a gap either.
+- Flag gaps that might be work the person did but never wrote down. Those are questions too, not guesses.
 - Flag it if the base leans the wrong way for this post.
+- **Back every skill.** Every skill on the skills line needs a bullet somewhere on the page that shows it. Basic tools like Excel are the exception.
+
+Example, made up:
+
+| From the post | Status | Proof on the page |
+|---|---|---|
+| Coordinate vendor contracts for events | Covered | Cut vendor costs 12% by renegotiating catering and AV contracts across 40 events a year |
+| Manage event budgets | Partial | Tracked spend on a $20K conference, with the budget owned by the director |
+| Experience with event registration software | Gap | Question for the person |
 
 ## Step 4: Mirror the true keywords 🤖
 
@@ -128,8 +149,15 @@ Only when the person is aiming at more than one kind of role, like two master re
 - **Nouns can change** to match the post's wording. Facts can't.
 - **New bullets:** write them X-Y-Z from the story bank or the person's facts, mark them ★ in the bank, and show the person before they go on anything.
 - **Stars stay in the bank.** The ★ never shows on the resume itself.
-- **New grads:** school and capstone projects go under a Projects section, not Experience, so the only job titles on the page are real ones that match LinkedIn.
-- **Skills:** rebuild the categories around the post's wording.
+- **New grads:** school and capstone projects go under a Projects section, not Experience, unless they were paid. That way the only job titles on the page are real ones that match LinkedIn.
+- **Don't claim more authority than the person had.** For junior or regulated roles, bullets say what they actually did. An engineer in training prepares and checks the work, and the engineer of record signs off. A staff accountant prepares the statements, and the CPA signs them.
+- **Skills:** rebuild the categories around the post's wording. Every skill listed needs a bullet that shows it (Step 3).
+
+**Any field, not just product**
+
+- **Section names follow the field,** like Engineering Experience and Engineering Projects for engineers, or Clinical Experience for nurses.
+- **Licences go with Education,** written the same way as the school line.
+- **Awards stay only if they're in that field.** Things like a driver's licence don't go on at all.
 
 **The summary**
 
@@ -182,6 +210,8 @@ Run every check and say which passed and which didn't:
 10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5
 11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
 12. Every `[__]` blank waiting for the person is still highlighted
+13. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
+14. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
 
 Then:
 - Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead

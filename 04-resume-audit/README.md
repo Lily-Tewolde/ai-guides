@@ -129,7 +129,7 @@ You're done when you've picked one direction and one title.
 
 ## Step 1: Gather everything before starting
 
-1. **The full job post, word for word.** Exact title, must-haves, nice-to-haves, every tool named. Save it.
+1. **The full job post, word for word.** Exact title, must-haves, nice-to-haves, every tool named. Save it. Claude often can't open posts on sites like LinkedIn by itself. If it can't, paste the full post into the chat, or open it in your browser so Claude can read it there. Never work from a summary or a partial copy.
 2. **What the recruiter said they want**, if anyone said anything. One line from a recruiter ("we want someone who writes evals") can change which bullets lead.
 3. **Your My Resume Rules.md and Bullet Bank.md,** read first, every time. Go by the written files, not memory (yours or the AI's).
 4. **The base resume, as the .docx.** Your standard resume by default. Don't use an older role-type variant with different titles, it can contradict your LinkedIn.
@@ -143,7 +143,7 @@ You're done when you've picked one direction and one title.
 **Prompt**
 
 ```
-I'm tailoring my resume for [ROLE AS POSTED] at [COMPANY]. Here's the full job post, keep it word for word so we still have it if they take it down: [PASTE JOB POST]. Before you touch anything read My Resume Rules.md and my Bullet Bank.md, and use my standard resume .docx as the base unless I say otherwise. Check the base is really the file you think it is by its size and date, not just its name. The recruiter told me they're looking for [WHAT THEY SAID, OR "nothing yet"]. Don't edit anything yet, just tell me what you've got, what the form asks for, anything else the post wants like a cover letter or references, and what you still need from me.
+I'm tailoring my resume for [ROLE AS POSTED] at [COMPANY]. Here's the full job post, keep it word for word so we still have it if they take it down: [PASTE JOB POST]. Before you touch anything read My Resume Rules.md and my Bullet Bank.md, and use my standard resume .docx as the base unless I say otherwise. Check the base is really the file you think it is by its size and date, not just its name. If you can't open the link, tell me and I'll paste the whole post, don't work from a summary. The recruiter told me they're looking for [WHAT THEY SAID, OR "nothing yet"]. Don't edit anything yet, just tell me what you've got, what the form asks for, anything else the post wants like a cover letter or references, and what you still need from me.
 ```
 
 **If you only have a PDF**
@@ -158,6 +158,16 @@ You're done when Claude has the job post saved, has read your rules and bullet b
 
 ## Step 2: Check the fit and decide whether to tailor
 
+**First, three quick checks.** Before looking at the must-haves, confirm:
+
+- **The post is still open** and taking applications
+- **The location works,** whether it's on site, hybrid or remote
+- **You can work there,** including any work authorization or visa the post asks for
+
+If any of these fail, stop there. Don't map, tailor or build anything. When I ran this on a friend's resume, one post had already stopped taking applications and another was in a different country, and neither got caught until the work had started.
+
+Then:
+
 1. **A matching job title isn't a fit.** Check the must-haves against your real background first. If the core of the role is a domain or stack you've never worked in, skip it. I learned this from a same-day rejection on a role whose domain wasn't anywhere on my resume.
 2. **My fit bar:** most or all must-haves, years can flex by about a year, ideally almost all nice-to-haves.
 3. **Tailoring works.** I still default to my standard resume when it's already getting replies, and tailor when it's a real competitive edge or necessary.
@@ -166,28 +176,37 @@ You're done when Claude has the job post saved, has read your rules and bullet b
 **Prompt**
 
 ```
-Go through the must-haves and tell me if I really meet most or all of them. Years can flex by about a year. If the core of the role is a domain or a stack that isn't anywhere on my resume, say so and we'll skip it. Then tell me if my standard resume is good enough for this one or if tailoring would give me a real edge, and why. If you think it's worth tailoring, it's bullet swaps and reordering only, titles stay the same.
+First check the post is still open and taking applications, the location works for me ([ON SITE / HYBRID / REMOTE, AND WHERE]), and I can work there, including any work authorization or visa it asks for. If any of those fail, stop and tell me. Then go through the must-haves and tell me if I really meet most or all of them. Years can flex by about a year. If the core of the role is a domain or a stack that isn't anywhere on my resume, say so and we'll skip it. Then tell me if my standard resume is good enough for this one or if tailoring would give me a real edge, and why. If you think it's worth tailoring, it's bullet swaps and reordering only, titles stay the same.
 ```
 
-You're done when you've decided to skip the role, send your standard resume, or tailor. If you skip it, stop here.
+You're done when you've decided to skip the role, send your standard resume, or tailor. If you skip it, or the post failed one of the three checks, stop here.
 
 ---
 
 ## Step 3: Compare the resume to the job post
 
-1. **Quote the must-haves and nice-to-haves verbatim,** then put your proof next to each one: the bank bullet or tag that covers it.
-2. **Mark the gaps and leave them off.** If the post lists a tool or framework you haven't used, it doesn't go on the resume, even when it's listed right next to two you have. If you've used a specific standard, write it with its number rather than a vague family name.
+1. **Put every line of the post in a coverage table.** Every requirement and every responsibility, word for word, one row each. Must-haves, nice-to-haves and responsibilities all go in. Mark each one **covered**, **partial** or **gap**, with the bullet that covers it.
+
+   Example, made up:
+
+   | From the post | Status | Proof on the page |
+   |---|---|---|
+   | Coordinate vendor contracts for events | Covered | Cut vendor costs 12% by renegotiating catering and AV contracts across 40 events a year |
+   | Manage event budgets | Partial | Tracked spend on a $20K conference, with the budget owned by the director |
+   | Experience with event registration software | Gap | Question for you |
+2. **Gaps become questions, never new lines.** If the post lists a tool or framework you haven't used, it doesn't go on the resume, even when it's listed right next to two you have. If you've used a specific standard, write it with its number rather than a vague family name. This matters most when you're helping someone in a field you don't know well. I learned that on a friend's resume in a field that isn't mine, where I couldn't judge what was too senior to claim.
 3. **Don't write the gap down either.** No lines admitting what you haven't done. Lead with what you have and let the gap go unmentioned.
 4. **Check for gaps you might actually cover.** Some are work you did that never became a bullet. Those are questions for you, not guesses for the AI.
 5. **Check the base's weighting.** A version built for one employer leans their way. If your base leads with quality and testing and the new post is about building, demote that or you'll read like a QA specialist.
+6. **Back every skill.** Every skill on your skills line needs a bullet somewhere on the page that shows it. Basic tools like Excel are the exception.
 
 **Prompt**
 
 ```
-Quote every must-have and nice-to-have from the post word for word and put my proof next to each one, the bullet or tag from my bullet bank that covers it. If nothing covers it mark it as a gap and don't write anything to fill it, and don't add any line that admits what I haven't done either. Tell me which gaps might be things I've done but never wrote down so I can give you the facts. Also tell me if my base leans too hard one way for this post.
+Put every requirement and every responsibility from the post in a table, word for word, one row each. Mark each one covered, partial or gap, and put the bullet from my bullet bank that covers it next to it. If nothing covers it, it's a gap: don't write anything to fill it, and don't add any line that admits what I haven't done either. Turn every gap into a question for me so I can tell you if I've actually done it. Check every skill on my skills line has a bullet that shows it, except basic tools like Excel. Also tell me if my base leans too hard one way for this post.
 ```
 
-You're done when every must-have has proof next to it or is marked as a gap.
+You're done when every line of the post is in the table as covered, partial or gap, and every gap is a question, not a new line.
 
 ---
 
@@ -245,7 +264,8 @@ You're done when every true keyword has a place on your resume, and nothing untr
 11. **No repeated opening verb in adjacent bullets,** including the last bullet of one role and the first bullet of the next. Fix it by reordering, not rewording.
 12. **Mechanisms that are too specific are interview detail.** "By removing the phone-verification step and adding a guest mode" becomes "by streamlining sign-up".
 13. **New bullets** are written X-Y-Z from your story bank or your facts, added to the bank marked ★, and approved by you before they go on anything that goes out. The ★ stays in the bank and never shows on the resume.
-14. **New grads: school projects go under Projects.** School and capstone projects go in a Projects section, not Experience, so the only job titles on the page are real ones that match your LinkedIn.
+14. **New grads: school projects go under Projects.** School and capstone projects go in a Projects section, not Experience, unless they were paid. That way the only job titles on the page are real ones that match your LinkedIn.
+15. **Don't claim more authority than you had.** For junior or regulated roles, bullets say what you actually did. An engineer in training prepares and checks the work, and the engineer of record signs off. A staff accountant prepares the statements, and the CPA signs them.
 
 **The summary**
 
@@ -258,7 +278,15 @@ You're done when every true keyword has a place on your resume, and nothing untr
 
 **The skills**
 
-Bulleted with bold category labels, and the categories get rebuilt around the post's language. A regulated-industry role might get its own compliance line. An AI-tools-heavy role might get a line just for the tools it names.
+Bulleted with bold category labels, and the categories get rebuilt around the post's language. A regulated-industry role might get its own compliance line. An AI-tools-heavy role might get a line just for the tools it names. Every skill listed needs a bullet that shows it (Step 3).
+
+**Any field, not just product**
+
+The steps started out on product and tech resumes, so a few things change in other fields:
+
+1. **Section names follow the field,** like Engineering Experience and Engineering Projects for engineers, or Clinical Experience for nurses
+2. **Licences go with Education,** written the same way as the school line
+3. **Awards stay only if they're in that field.** Things like a driver's licence don't go on at all
 
 **Prompt**
 
@@ -368,17 +396,19 @@ You're done when the version that's going out matches your house style.
 11. Header is consistent: name, then one contact line
 12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet
 13. Every `[__]` blank still waiting for a number is still highlighted
-14. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
-15. New bullets added back to the bank, and new facts to your story bank, the same day
-16. You see it before it's uploaded or sent
-17. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
-18. Note which resume went (standard or tailored) so you can compare reply rates later
-19. When a recruiter asks for it by message, write the note, attach the PDF and send them together
+14. Every requirement and responsibility from the post is in the coverage table, and every gap went back as a question, not onto the page
+15. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
+16. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
+17. New bullets added back to the bank, and new facts to your story bank, the same day
+18. You see it before it's uploaded or sent
+19. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
+20. Note which resume went (standard or tailored) so you can compare reply rates later
+21. When a recruiter asks for it by message, write the note, attach the PDF and send them together
 
 **Prompt**
 
 ```
-Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
+Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, every line of the post in the coverage table with the gaps as questions, every listed skill backed by a bullet, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
 ```
 
 You're done when every check passes and you've seen the PDF.
