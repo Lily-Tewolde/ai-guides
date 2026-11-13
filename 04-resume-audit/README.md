@@ -94,16 +94,17 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
 
 1. Every bullet gets rewritten into X-Y-Z (see Step 5)
-2. Anywhere a number is missing gets a `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
+2. Anywhere a number is missing gets a highlighted `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
 3. Every line is marked ★, because none of them are approved yet
-4. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
+4. Your summary gets written fresh in the summary shape (Step 5), and it's marked ★ too. An old objective doesn't count as approved
+5. You fill in the blanks and OK each line, and it all goes into your Bullet Bank.md
 
 After that, every tailor is a swap.
 
 **Prompt**
 
 ```
-I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md.
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md. Then write my summary in the summary shape, two bullets with bold labels and no numbers, mark it ★ too and save it at the top of the bank.
 ```
 
 You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
@@ -281,7 +282,7 @@ You're done when every role has the right number of bullets, in the right order 
 
    Never shrink the font below the minimum in your rules file to make room.
 3. **Never two bullets on one page that spend the same result.** Two bullets about the same project, or two measurements of the same outcome, read thinner than one.
-4. **Unfinished bullets stay off.** No number means not finished.
+4. **Unfinished bullets stay off anything that goes out.** No number means not finished.
 5. **Process bullets don't show outcomes.** A bullet about your intake or delivery process comes off unless the role is about running that process.
 6. **A list of product names isn't a bullet.** A launch count can live in the summary instead.
 7. **Side-project-looking bullets go last or come off.**
@@ -323,7 +324,7 @@ You're done when your titles match LinkedIn and the file name uses the role exac
 **Build from your own template, in the .docx first.** Every version starts from your own template .docx, never a made-up layout. If the resume is going to live in Google Docs, convert it afterwards. Right-aligned dates need tab stops, and those don't come through when you build in Google Docs from scratch.
 
 1. **Length:** always one page (step 6)
-2. **Font and margins:** whatever your rules file says. Mine is 10pt body in Calibri, but you might want 10.5. Never shrink below the minimum in your rules file to make something fit
+2. **Font and margins:** whatever your rules file says. Mine is 10pt body in Calibri, but you might want 10.5. Never shrink below the minimum in your rules file (10pt if you haven't set one) to make something fit
 3. **Header:** your name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on your name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line
@@ -356,7 +357,7 @@ You're done when the version that's going out matches your house style.
 
 **Pre-send checks**
 
-1. One page, checked in the format that's going out
+1. One page, checked in the format that's going out. If Claude can't open that format, the page count is unchecked, not passed
 2. Every heading keeps with the next line, so none is stranded at the foot of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match your canonical table, and look-alike numbers (users vs signups) are never swapped
@@ -365,10 +366,10 @@ You're done when the version that's going out matches your house style.
 7. No client or partner names you're not allowed to share, and no vendor names you've decided to keep off
 8. No repeated opening verbs in adjacent bullets, across role boundaries too
 9. No terminal periods, no first person, no experience bullet over 2 lines
-10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5
+10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5. On a first build the summary is new and ★ instead
 11. Header is consistent: name, then one contact line
 12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet
-13. Every `[__]` blank still waiting for a number is still highlighted
+13. No `[__]` blanks on the version that goes out. On a draft going back to someone, every blank is still highlighted
 14. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
 15. New bullets added back to the bank, and new facts to your story bank, the same day
 16. You see it before it's uploaded or sent

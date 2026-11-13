@@ -64,8 +64,9 @@ When the resume belongs to a friend or family member:
 3. Mark every line ★, because none of them are approved yet.
 4. Ask the person for the missing numbers and facts, and for their OK on each line.
 5. Save it all as their Bullet Bank.md, grouped by role and tagged with what each bullet proves.
+6. Write the summary in the summary shape (Step 5), mark both lines ★ and save it at the top of Bullet Bank.md. An old objective or summary doesn't count as approved.
 
-Every tailor after this one is a swap.
+Every tailor after this one is a swap, and the summary only changes its labels and nouns.
 
 ## Step 0: Pick a direction 🙋
 
@@ -142,13 +143,13 @@ Only when the person is aiming at more than one kind of role, like two master re
 
 ## Step 6: Fit the page 🤖 then 🙋
 
-- **Always one page.** Check the page count in the final format, Google Docs or the PDF, whichever is going out. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. Don't guess.
+- **Always one page.** Check the page count in the final format, Google Docs or the PDF, whichever is going out. Different apps lay out pages a little differently, so a .docx that fits can spill over once it's converted. Don't guess. If you can't open the final format, say the page count is unchecked and ask the person to check it. Never mark it passed.
 - **When it runs over, fix it in this order:**
   1. Tighten the spacing
   2. Tighten the wording, never the facts
   3. Cut the weakest bullet, from the bottom of a role
-- **Never shrink the font** below the person's minimum in My Resume Rules.md.
-- No two bullets that tell the same result twice, and nothing without a number.
+- **Never shrink the font** below the person's minimum in My Resume Rules.md, or 10pt if they haven't set one.
+- No two bullets that tell the same result twice, and nothing without a number on the version that goes out.
 - If the only way to fit is choosing between two roles, show the person the options with the page result of each and let them pick.
 
 ## Step 7: Keep the titles 🙋
@@ -170,7 +171,7 @@ Only when the person is aiming at more than one kind of role, like two master re
 
 Run every check and say which passed and which didn't:
 
-1. One page, checked in the final format (Google Docs or the PDF, whichever is going out)
+1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If you couldn't open it, this is unchecked, not passed
 2. No heading stranded at the bottom of a page
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match the canonical numbers in My Resume Rules.md
@@ -179,9 +180,9 @@ Run every check and say which passed and which didn't:
 7. No names from the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
 9. No periods at the end, no first person, nothing over 2 lines
-10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5
+10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
 11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
-12. Every `[__]` blank waiting for the person is still highlighted
+12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
 
 Then:
 - Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead
@@ -205,7 +206,7 @@ Then:
 The default for everyone. Anything set in My Resume Rules.md wins.
 
 1. **Length:** always one page (Step 6)
-2. **Font and margins:** whatever My Resume Rules.md says. If it's blank, 10pt body in a standard font, like Calibri. Never shrink below the person's minimum to make something fit
+2. **Font and margins:** whatever My Resume Rules.md says. If it's blank, 10pt body in a standard font, like Calibri, with 10pt as the minimum. Never shrink below the person's minimum to make something fit
 3. **Header:** name, then one contact line: phone • email • LinkedIn. No location. Email and LinkedIn as live links, the phone as plain text
 4. **Colour:** one accent colour, only on the name and the section headings. Nothing else is coloured except the links
 5. **Section headings:** all caps and bold, with a thin rule the full text width underneath. Make the rule a paragraph bottom border, not a drawn line, so it moves with the text. Set every heading to keep with the next line
