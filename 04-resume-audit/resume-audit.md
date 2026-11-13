@@ -86,7 +86,7 @@ Only when the person is aiming at more than one kind of role, like two master re
   2. Once Step 2 says the role is a fit, build the editable .docx from the template the person chose (see Step 8). If they don't have one, ask them to pick one. Never make one up.
   3. Don't type anything in by hand. The new version starts as an exact copy of the PDF text, and the rewriting happens in the first build.
 
-  Then do the first build.
+  Don't build anything else yet. Once Step 2 says the role is a fit, do the first build.
 - Ask what the recruiter said they want, if anything. One line from a recruiter can change which bullets lead.
 - If there's an application form, check what it asks before drafting.
 - Note anything else the post asks for, like a cover letter, a transcript or references.
