@@ -77,7 +77,7 @@ Job search/
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. At the bottom, a "never write" list of claims you can't back up.
 3. **A story bank.** Your interview stories (STAR or similar). Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default, and its layout is the template every tailored version is built from. Only have a PDF? See Step 1.
-5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed.
+5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed. Always keep one when it's someone else's resume, because the handoff is built from it.
 6. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
 7. **A note per application** that saves the full job post word for word, because postings come down.
 
@@ -442,7 +442,7 @@ When it's someone else's resume, I don't hand back a finished draft. They need t
 
 1. **Open or close with a note** that I'm not an expert in their field. It's mostly formatting and a strong direction, so they should adjust anything that seems off
 2. **Comments ask them to do the work.** "Add it if you've done it", never "Tell me and I'll add it"
-3. **A second tab in the doc** that explains every decision and why, teaches them how to write and check their own X-Y-Z bullets, and ends with what they need to do next. For example:
+3. **A second tab in the doc** that explains every decision and why, teaches them how to write and check their own X-Y-Z bullets, and ends with what they need to do next, including anything else the post asks for, like a cover letter. For example:
    - Fill in the 3 blanks marked `[__]` with real numbers
    - Check every ★ bullet in your Bullet Bank.md is true, then remove the star
    - Update your LinkedIn headline to match the new title

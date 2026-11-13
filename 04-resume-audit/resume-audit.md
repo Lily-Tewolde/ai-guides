@@ -20,7 +20,7 @@ You (Claude) are tailoring one person's resume to one job post. The person is wh
 2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
 3. **If there's no bullet bank yet,** do the first build below before you tailor anything.
 4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user, and anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
-5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
+5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why. Always keep one when the resume belongs to someone else, because the handoff is built from it.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **If the resume belongs to someone else,** finish with the handoff below, so they can carry on without the user.
 8. **Never upload, submit or send anything.** Show the PDF and wait.
@@ -223,7 +223,7 @@ Then:
 
 **Then match LinkedIn**, after the person has seen the PDF:
 
-1. Point them to the [LinkedIn playbook](../02-linkedin-playbook/) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
+1. Point them to the [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
 2. Check the job titles, companies and dates match the resume exactly.
 3. Check skills and tools both ways. If the About or Skills on LinkedIn mention software that isn't on the resume, or the other way around, flag it and let the person decide which one changes.
 4. Move school and capstone projects into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to the school with "Associated with", tag the skills and add media. LinkedIn sections can't be moved, so the best project also goes in Featured.
@@ -239,7 +239,7 @@ When the resume belongs to someone the user is helping, it doesn't end with a fi
 3. **A second tab in the doc** (or a separate doc, if it isn't in Google Docs) that:
    - explains every decision and why, from the Decision Log.md
    - teaches them how to write and check their own X-Y-Z bullets
-   - ends with what they need to do next
+   - ends with what they need to do next, including every ★ line waiting for their OK and anything else the post asks for, like a cover letter
 
    Example next steps, made up:
    - Fill in the 3 blanks marked `[__]` with real numbers

@@ -151,7 +151,7 @@ When I ran this on a friend's early career profile, I had to decide on my own wh
 
 ## Step 3. Get into the recruiter filters with your skills and Open to Work
 
-This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five Top skills at the bottom of your About section, and recruiters filter by skills when they search. So pick the five they're actually typing, not the ones that sound impressive. Then turn on Open to Work, add your five target titles and set it to recruiters only. If you leave a box empty, you won't show up in the searches that use it.
+This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five Top skills at the bottom of your About section, and recruiters filter by skills when they search. So pick the five they're actually typing, not the ones that sound impressive. Then turn on Open to Work, add your five target titles and set it to recruiters only if you're still employed. If you leave a box empty, you won't show up in the searches that use it.
 
 **Why it matters:** LinkedIn Recruiter filters by skills and job titles. If yours don't match what a recruiter is filtering for, you won't show up, even if you're a perfect fit.
 
@@ -182,7 +182,7 @@ For someone targeting [YOUR TARGET ROLE] in [YOUR INDUSTRY], using my resume, pr
 4. The 5 job titles I should enter in LinkedIn's Open to Work settings to appear in the most relevant recruiter searches, plus whether I should turn on Remote and which employment types to select.
 ```
 
-You're done when your About has 5 Top skills, every entry has its skills tagged, and Open to Work has 5 titles and is set to Recruiters only.
+You're done when your About has 5 Top skills, every entry has its skills tagged, and Open to Work has 5 titles and is set to Recruiters only if you're still employed.
 
 ---
 
