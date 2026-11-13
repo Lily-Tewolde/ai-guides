@@ -74,7 +74,7 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 
 **Step 8: Format the page.** Built in her template .docx at her rules: Calibri, 10.5pt body, 10pt minimum, 0.6 inch margins. The section names follow her field. Her food safety certification moved under Education.
 
-**Step 9: Check, save and show.** All 14 checks passed once Maya had OKed every ★ line. It's one page in the PDF, with no ★ or blank on the page, and every skill has a bullet behind it. Check 10 counts as new rather than unchanged, since this was a first build. Maya saw the PDF before anything went anywhere.
+**Step 9: Check, save and show.** All 15 checks passed once Maya had OKed every ★ line. It's one page in the PDF, with no ★ or blank on the page, and every skill has a bullet behind it. Check 10 counts as new rather than unchanged, since this was a first build. Maya saw the PDF before anything went anywhere.
 
 ---
 
