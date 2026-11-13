@@ -93,7 +93,7 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 
 ## First build: when you don't have a bullet bank yet
 
-Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, you build the bank from the resume you already have:
+Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, once you know the role is a fit (Step 2), you build the bank from the resume you already have:
 
 1. Every bullet gets rewritten into X-Y-Z (see Step 5)
 2. Anywhere a number is missing gets a highlighted `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
@@ -137,7 +137,7 @@ You're done when you've picked one direction and one title.
 2. **What the recruiter said they want**, if anyone said anything. One line from a recruiter ("we want someone who writes evals") can change which bullets lead.
 3. **Your My Resume Rules.md and Bullet Bank.md,** read first, every time. Go by the written files, not memory (yours or the AI's).
 4. **The base resume, as the .docx.** Your standard resume by default. Don't use an older role-type variant with different titles, it can contradict your LinkedIn.
-   - **Only have a PDF?** That's enough. Claude pulls the text out of the PDF and builds the editable .docx from the template you chose. Nothing gets typed in by hand: every line on the new version comes from the PDF text. Then it carries on with the [first build](#first-build-when-you-dont-have-a-bullet-bank-yet).
+   - **Only have a PDF?** That's enough. Claude pulls the text out of the PDF, and once Step 2 says the role is a fit, builds the editable .docx from the template you chose. Nothing gets typed in by hand: the new version starts as an exact copy of the PDF text, and the rewriting happens in the [first build](#first-build-when-you-dont-have-a-bullet-bank-yet). No template yet? Pick one first.
 5. **Proof the base is what its name says.** A file sitting in a company folder isn't proof it was tailored. When I audited mine, several "company" versions turned out to be the same document renamed. Check size and date, not the filename.
 6. **Fresh material** from your story bank.
 7. **Facts only you can give.** If the post asks for something your bank doesn't cover, write down the facts yourself before anything gets drafted.
@@ -392,7 +392,7 @@ You're done when the version that's going out matches your house style.
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match your canonical table, and look-alike numbers (users vs signups) are never swapped
 5. Nothing from the "never write" list
-6. Every ★ bullet has your sign-off on the wording, and no ★ shows on the page
+6. Every ★ bullet has your sign-off on the wording, and no ★ shows on the page. On a draft going back to someone, every line still waiting for their OK has a comment asking them to check it
 7. No client or partner names you're not allowed to share, and no vendor names you've decided to keep off
 8. No repeated opening verbs in adjacent bullets, across role boundaries too
 9. No terminal periods, no first person, no experience bullet over 2 lines
