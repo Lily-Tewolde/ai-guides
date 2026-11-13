@@ -10,6 +10,9 @@ Keep this file in the person's own folder, next to their Bullet Bank.md. Claude 
 **Standard resume** (the .docx that goes out by default):
 - 
 
+**Template** (the .docx layout every version is built from, never a made-up one):
+- 
+
 **Bullet bank:**
 - Bullet Bank.md, in this folder
 
