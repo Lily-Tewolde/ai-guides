@@ -23,17 +23,27 @@ I made this to go with my LinkedIn optimization video. It walks through the same
 | [3](#step-3-get-into-the-recruiter-filters-with-your-skills-and-open-to-work) | Skills and Open to Work | Get into recruiter filters |
 | [4](#step-4-prove-you-ship-with-your-featured-section) | Featured section | Prove you ship |
 | [5](#step-5-post-about-your-work) | Post about your work | The step that compounds |
-| [Extras](#extras-to-finish-your-profile) | Photo, banner, recommendations | Round it out |
+| [Extras](#extras-to-finish-your-profile) | Photo, banner, location, recommendations | Round it out |
 
 ## Start here
 
-Want the whole thing in one go? Copy the [master prompt](#the-master-prompt), fill in the brackets and paste it into Claude. Want more control? Go step by step below, so you can review and tweak each part as you go. Both get you to the same place.
+Download [`linkedin-playbook.md`](linkedin-playbook.md), put it in your job search folder, then paste this into Claude:
+
+```text
+Read the LinkedIn Playbook file and update my LinkedIn for [TARGET ROLE]. Here's my profile [LINK OR SCREENSHOTS], my resume and 2 to 3 job posts: [PASTE JOB POSTS]
+```
+
+Claude reads your profile, works through the 5 steps and the extras, and writes everything out for you to change yourself. It never edits or posts anything on your profile. If you ran the [Resume Audit](../04-resume-audit/) first, it starts from your new resume.
+
+Not using the file? Copy the [master prompt](#the-master-prompt), fill in the brackets and paste it into Claude. Want more control? Go step by step below, so you can review and tweak each part as you go. All three get you to the same place.
 
 ## What you need
 
 - Claude (any plan)
+- The Claude desktop app with Cowork, if you're using the file (Claude Code works too)
+- The [`linkedin-playbook.md`](linkedin-playbook.md) file from this folder, if you're using it
 - Your resume
-- Screenshots of your LinkedIn profile: header, About, every role, skills and Featured
+- A link to your LinkedIn profile, or screenshots of it: header, About, every role, education, projects, skills and Featured. Claude reads the live profile when it can open it in your browser, and the screenshots are the fallback
 - 2 to 3 real job posts for the role you want. Claude pulls your keywords from them, so they match what companies are actually asking for
 
 Run all 5 prompts in **one** Claude conversation, not five separate chats. Steps 2 to 5 say "above" because they build on the resume, screenshots and job posts you share in Step 1.
@@ -49,6 +59,7 @@ Your headline is the most important field on your whole profile. It's what Linke
 **What to do**
 
 - Rewrite your headline: `[Your Role] + 3 keywords + your best credential`, under 100 characters. LinkedIn lets you use 220, but only about the first 100 show in search and on mobile, so keep the important part up front
+- Only use a credential you actually hold, like a licence or certification you've earned
 - Swap any internal, advisory or creative job title for the standard title recruiters search
 
 **Prompt**
@@ -58,7 +69,7 @@ You're a LinkedIn SEO and recruiter-search expert. I'm targeting the role of [YO
 
 1. Give me 5 headline options, each under 100 characters, in this exact format:
 Role | Keyword · Keyword · Keyword | Credential
-Use the keywords that show up in these job posts and that a recruiter would actually search to find someone in my field. No buzzwords, no metrics.
+Use the keywords that show up in these job posts and that a recruiter would actually search to find someone in my field. No buzzwords, no metrics. Only use a credential I actually hold.
 
 2. Review every job title on my profile. Flag any that are vague, internal, or "creative" (like Marketing Ninja or Customer Happiness Hero) and tell me the standard title recruiters actually search for instead.
 ```
@@ -80,8 +91,17 @@ This one's going to feel wrong, but trust me. Your About section is a story, not
   - your career thread
   - your current work
   - one line on what you want next
-- Rewrite each job as one short paragraph, then 3 to 5 Focus Areas bullets full of searchable keywords
-- Remove every metric from every section
+- Rewrite each job as one short paragraph, then Focus Areas:
+  - Each one is the skill a recruiter searches, then the specifics in brackets
+  - The wording comes from the job posts' requirements and responsibilities, and only where it's work you've actually done
+  - 4 to 12 per role, depending on how much that role matters for where you're going
+  - Anything the posts ask for that you haven't done goes on a separate "add only if true" list, never on your profile
+- Remove every number from every section, even ones that aren't results, like a team size in a project description
+
+My Focus Areas carry a lot more context than a keyword list. Example, made up:
+
+- Event logistics (vendor contracts, venue sourcing, run-of-show planning)
+- Budget tracking (spend reports, invoice reconciliation, cost forecasts)
 
 **Prompt**
 
@@ -95,10 +115,24 @@ Using my resume and LinkedIn screenshots above, and targeting [YOUR TARGET ROLE]
 - One line on what I'm open to next
 No bullet points, no metrics. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking.
 
-2. Each of my job descriptions as one short narrative paragraph (what I owned and how I worked), followed by 3 to 5 Focus Areas bullets that are each full of searchable keywords. No metrics anywhere. Write for a recruiter scanning for 7 seconds.
+2. Each of my job descriptions as one short narrative paragraph (what I owned and how I worked), followed by 4 to 12 Focus Areas, depending on how much the role matters for where I'm going. Write each one as the skill a recruiter searches, then the specifics in brackets, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". Take the wording from the requirements and responsibilities in the job posts above, but only where it's work I've actually done. Put anything the posts ask for that I haven't confirmed on a separate "add only if true" list for me, not on the profile. No numbers anywhere, not even a team size. Write for a recruiter scanning for 7 seconds.
 ```
 
-You're done when your About reads like a story and there are no numbers left anywhere on your profile.
+You're done when your About reads like a story, every role has its Focus Areas, and there are no numbers left anywhere on your profile.
+
+---
+
+## If you're early in your career
+
+When I ran this on a friend's early career profile, I had to decide on my own what to do with Projects, Education, Licenses and Honors, because the 5 steps don't cover them. LinkedIn also doesn't let you move sections around, so the Projects section always sits low on the page. Here's what I'd do:
+
+1. **Experience is for real jobs.** Decide whether unrelated roles, like seasonal or part-time work, stay or go. School projects never go in Experience
+2. **One Education entry per degree you actually earned.** No description or Focus Areas. An earlier program that didn't lead to the degree comes off, and your About tells that story instead
+3. **Projects stay in the Projects section.** Link each one to your school with "Associated with", tag the skills you used, and add media once you have it
+4. **Featured is how a project gets seen first,** since the Projects section can't be moved up
+5. **Licenses & certifications.** Add any you hold. Recruiters filter by them
+6. **Honors & awards.** Look up what each award is first. Keep the ones that are rare, competitive or in your field. Cut general scholarships for entry-level roles
+7. **Your About matches the level you're aiming for.** Lead with the work you do now and what your background adds. Use school work as evidence, not as a chapter in school-to-job order
 
 ---
 
@@ -112,6 +146,10 @@ This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five
 
 - Add 5 Top skills to your About section (click the pencil on About), using the ones recruiters in your field filter by most
 - Put those same 5 first in your Skills section too, since only the first few show without clicking
+- Tag the exact skills on every experience, education and project entry, using the names recruiters actually search. "+4 skills" isn't something you can act on, so get the list for each one
+- Add each skill by typing it in and picking LinkedIn's exact match from the dropdown. If it doesn't come up, pick the closest suggestion
+- Only tag skills you actually used in that role or project
+- Prune your Skills section. Remove the skills that don't fit your target role, but keep all your software and tools
 - Turn on Open to Work
 - Add 5 target job titles
 - Turn on Remote if you want it
@@ -120,14 +158,18 @@ This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five
 **Prompt**
 
 ```text
-For someone targeting [YOUR TARGET ROLE] in [YOUR INDUSTRY], tell me:
+For someone targeting [YOUR TARGET ROLE] in [YOUR INDUSTRY], using my resume, profile and the job posts above, tell me:
 
-1. The exact 5 skills I should add as my Top skills on LinkedIn, ranked by how often recruiters actually search them for this role. Base it on the job posts above and the words recruiters actually use, not what sounds most impressive.
+1. The exact 5 skills I should add as my Top skills on LinkedIn, ranked by how often each one shows up across the job posts. You can't see LinkedIn's search data, so say that's where the ranking comes from. Pick what the posts ask for, not what sounds most impressive.
 
-2. The 5 job titles I should enter in LinkedIn's Open to Work settings to appear in the most relevant recruiter searches, plus whether I should turn on Remote and which employment types to select.
+2. For every experience, education and project entry on my profile, the exact skills to tag on it, using the names recruiters search. Only skills I actually used in that role or project.
+
+3. Which skills in my Skills section to remove because they don't fit this role. Keep all my software and tools.
+
+4. The 5 job titles I should enter in LinkedIn's Open to Work settings to appear in the most relevant recruiter searches, plus whether I should turn on Remote and which employment types to select.
 ```
 
-You're done when your About has 5 Top skills, and Open to Work has 5 titles and is set to Recruiters only.
+You're done when your About has 5 Top skills, every entry has its skills tagged, and Open to Work has 5 titles and is set to Recruiters only.
 
 ---
 
@@ -207,6 +249,16 @@ It's the first thing people see on your profile, before they read anything.
 - **Photo:** a clear headshot where your face fills most of the frame. Good light, a plain or on-brand background, and dressed the way you would for work in your field
 - **Banner:** 1584 × 396 pixels. Use it to say what you do, or keep it simple and on brand. Skip anything busy that fights with your photo
 
+### Profile basics recruiters filter by
+
+When I compared a friend's profile with mine, most of the gaps weren't in the 5 steps at all. They were basics like these:
+
+- **Location is a city,** not just a country. Recruiters filter by city
+- **Get the verification badge,** with a work email or ID
+- **Add media to your entries,** like a link, PDF or video on the role or project it belongs to
+- **Languages:** add every one you speak, at your real level
+- **Connections:** grow them at your current company, your school and the companies you're applying to
+
 ### Recommendations
 
 A few recommendations from people who actually worked with you go a long way. Aim for 5 to 10 over time.
@@ -236,7 +288,7 @@ A recruiter will have both open. If they don't match, that's a question you didn
 Compare my resume to my LinkedIn screenshots above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Don't rewrite anything else.
 ```
 
-You're done when your photo and banner are up, you've asked for at least one recommendation, and your titles and dates match your resume.
+You're done when your photo and banner are up, your location is a city, you've asked for at least one recommendation, and your titles and dates match your resume.
 
 ---
 
@@ -254,7 +306,7 @@ Optimize my LinkedIn profile so that:
 
 STEP 1 - MY INPUTS
 Here's my resume: [PASTE RESUME TEXT OR ATTACH PDF]
-Here are screenshots of my LinkedIn: [ATTACH: header, about, every role, skills, featured]
+Here's my LinkedIn, as a link or screenshots: [LINK, OR ATTACH: header, about, every role, education, projects, skills, featured]
 Here are 2-3 real job posts for my target role: [PASTE JOB POSTS]
 
 STEP 2 - TARGETING
@@ -277,10 +329,10 @@ Flag titles that don't match real recruiter search terms. Suggest the functional
 Story-driven, 4 to 6 paragraphs, no metrics, no bullets. Structure: Hook, Career thread, Current work, What I want next.
 
 4. ALL EXPERIENCE ROLES
-Each role: one narrative paragraph then Focus Areas bullets. No metrics. Every bullet is a keyword cluster.
+Each role: one narrative paragraph, then 4 to 12 Focus Areas depending on how much the role matters for my target. Each Focus Area is the skill a recruiter searches, then the specifics in brackets, worded from the job posts and only for work I've actually done. No numbers of any kind. Anything the posts ask for that I haven't confirmed goes on a separate "add only if true" list, not the profile.
 
-5. TOP 5 SKILLS TO PIN
-Ranked by how often they show up in the job posts and in recruiter searches for my target role.
+5. SKILLS
+Top 5 to pin, ranked by how often each one shows up across the job posts (you can't see LinkedIn's search data, so say so). Then the exact skills to tag on every experience, education and project entry, only ones I used there, and which skills to remove from my Skills section. Keep all my software and tools.
 
 6. OPEN TO WORK SETTINGS
 5 titles to enter, location types, employment types.
@@ -313,7 +365,7 @@ Be as specific as you can, so Claude has more to work with.
 
 💡 **Keep it all in one chat.** Steps 2 to 5 build on what you shared in Step 1. A new chat means starting over.
 
-💡 **Step 3 works on its own.** You can run it without your resume for a quick answer. For a more personal result, keep it in the same chat.
+💡 **Step 3's Top 5 works on its own.** You can ask for it without your resume for a quick answer. The skills for each entry need your profile, so keep that part in the same chat.
 
 💡 **Share more detail for better ideas.** Featured and post ideas land much better when Claude knows your actual background.
 
