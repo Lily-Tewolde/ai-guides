@@ -1,0 +1,4 @@
+{
+  "allow_en_dash": "dates",
+  "readme_must_link_dirs": "^\\d{2}-"
+}
