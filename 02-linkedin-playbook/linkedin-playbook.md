@@ -22,7 +22,8 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 4. **Read the live profile when you can.** If you can open it in the browser, read it there. Screenshots are the fallback.
 5. **If the Resume Audit ran first, start from the resume.** Use its titles, dates and decisions, from the person's My Resume Rules.md and Decision Log.md if they have them. Say what changes on LinkedIn because of them.
 6. **No numbers anywhere on the profile.** The person's numbers are context for you, not copy.
-7. **Run the check at the end** before anything goes back to the person.
+7. **If the profile belongs to someone else,** write it as a handoff they can follow on their own (see Doing this for someone else).
+8. **Run the check at the end** before anything goes back to the person.
 
 ---
 
@@ -98,7 +99,7 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 
 - 5 target job titles
 - Remote on if they want it, and which employment types
-- Visibility set to Recruiters only
+- **Recruiters only when they're still employed,** and say why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
 
 ## Step 4: Featured 🤖 then 🙋
 
@@ -106,12 +107,14 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 - For each one: what it contains, why it works as proof, and what tool or format to make it with.
 - Best: a 2 to 3 minute video walking through something they built or shipped. Also good: a strong post in their field, a live tool or a portfolio link.
 - Early career: their best project goes here (see above).
+- **Employer and client work stays out** unless the employer says it's okay.
 
 ## Step 5: Posts 🤖
 
 - 9 post ideas, 3 a week for 3 weeks, from their real work.
 - Mix three formats: a lesson from real work, a behind-the-scenes look at how they work, and a simple tip or framework from their field.
 - A scroll-stopping first line for each. No generic career advice.
+- **Employer and client work stays out** unless the employer says it's okay.
 
 ## Extras 🤖 then 🙋
 
@@ -124,6 +127,21 @@ LinkedIn doesn't let anyone move sections around, so Projects always sits low on
 - **Recommendations: give one first.** People are far more likely to write one back. Ask former managers, close teammates and clients, say what you'd love them to mention, and ask right after wrapping something good together. Aim for 5 to 10 over time. Draft the ask in under 80 words, casual, not like a template.
 - **Connections.** Grow them at their current company, their school and the companies they're applying to.
 - **Resume sync.** Job titles, companies and dates match the resume exactly. The numbers stay on the resume.
+- **Skills and tools match both ways.** If the About or Skills mention software that isn't on the resume, or the resume has a tool LinkedIn doesn't, flag it and let the person decide which one changes.
+
+---
+
+## Doing this for someone else 🙋
+
+When the profile belongs to someone the user is helping, they're the one who has to make every change. Write it all to them, so they can follow it on their own.
+
+1. **Written to them, in the user's voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags.
+2. **Clear change, keep and delete.** Mark what to change, leave everything else alone, and cross out what comes off.
+3. **Open or close with a note.** The user isn't an expert in their field, so this is mostly formatting and a strong direction, and they should adjust anything that seems off.
+4. **A visual mock of the finished profile.** An HTML page laid out like their profile, with the user's notes beside each section and a switch to hide the notes, so they can see it the way a recruiter would.
+5. **Employer and client work stays out** of Featured and posts unless the employer says it's okay.
+6. **Open to Work is set to Recruiters only while they're still employed,** with the reason: LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
+7. **Their details stay private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example shared about what was learned is made up.
 
 ---
 
@@ -140,8 +158,10 @@ Run every check and say which passed and which didn't:
 7. Every experience, education and project entry has its exact skills, and only ones used there
 8. The Top 5 says the ranking comes from the job posts
 9. Location is a city
-10. Titles, companies and dates match the resume
-11. Nothing on the profile was changed by you
+10. Titles, companies, dates, skills and tools match the resume, or every mismatch is flagged for the person
+11. No employer or client work in Featured or posts without the employer's OK
+12. If it's someone else's profile, it's written to them, with the note and the mock
+13. Nothing on the profile was changed by you
 
 Then hand it all back to the person and **wait**. They make every change.
 

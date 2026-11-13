@@ -22,7 +22,8 @@ You (Claude) are tailoring one person's resume to one job post. The person is wh
 4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
-7. **Never upload, submit or send anything.** Show the PDF and wait.
+7. **If the resume belongs to someone else,** finish with the handoff below, so they can carry on without the user.
+8. **Never upload, submit or send anything.** Show the PDF and wait.
 
 ---
 
@@ -219,7 +220,31 @@ Then:
 - If there's a Decision Log.md, check every decision from this tailor is in it
 - Show the person the PDF and **wait**. Don't upload or send anything until they say so
 
+**Then match LinkedIn**, after the person has seen the PDF:
+
+1. Point them to the [LinkedIn playbook](../02-linkedin-playbook/) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
+2. Check the job titles, companies and dates match the resume exactly.
+3. Check skills and tools both ways. If the About or Skills on LinkedIn mention software that isn't on the resume, or the other way around, flag it and let the person decide which one changes.
+4. Move school and capstone projects into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to the school with "Associated with", tag the skills and add media. LinkedIn sections can't be moved, so the best project also goes in Featured.
+
 ---
+
+## Handing it off to someone else 🙋
+
+When the resume belongs to someone the user is helping, it doesn't end with a finished draft. They need to be able to carry on and check their own resume without the user.
+
+1. **Open or close with a note.** In the user's voice: they're not an expert in this person's field, so this is mostly formatting and a strong direction, and the person should adjust anything that seems off.
+2. **Comments ask them to do the work.** Write "Add it if you've done it", never "Tell me and I'll add it".
+3. **A second tab in the doc** (or a separate doc, if it isn't in Google Docs) that:
+   - explains every decision and why, from the Decision Log.md
+   - teaches them how to write and check their own X-Y-Z bullets
+   - ends with what they need to do next
+
+   Example next steps, made up:
+   - Fill in the 3 blanks marked `[__]` with real numbers
+   - Check every ★ bullet in your Bullet Bank.md is true, then remove the star
+   - Update your LinkedIn headline to match the new title
+4. **Their details stay private** (see Keeping it private).
 
 ## If the draft lives in Google Docs
 
@@ -281,7 +306,7 @@ These keep coming up. Check for them before anything goes back to the person.
 - **No gaps on the page, and no lines admitting them.**
 - **Never change a title** without the person saying so.
 - **New bullets need the person's OK** before they go anywhere.
-- **Someone else's details stay in their folder.**
+- **Someone else's details stay in their folder,** and they get a handoff they can follow on their own.
 - **Never upload, submit or send.** The person does that.
 
 ---

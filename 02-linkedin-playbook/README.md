@@ -37,6 +37,18 @@ Claude reads your profile, works through the 5 steps and the extras, and writes 
 
 Not using the file? Copy the [master prompt](#the-master-prompt), fill in the brackets and paste it into Claude. Want more control? Go step by step below, so you can review and tweak each part as you go. All three get you to the same place.
 
+### Doing this for someone else
+
+When I ran this on a friend's profile, everything came back written about my friend instead of to them, and they're the one who has to make the changes. So when it's someone else's profile:
+
+- **Write it to them, in your voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags
+- **Make change, keep and delete clear.** Mark what to change, leave everything else alone, and cross out what comes off
+- **Say you're not an expert in their field.** Open or close with it: it's mostly formatting and a strong direction, so they should adjust anything that seems off
+- **Give them a visual mock of the finished profile.** An HTML page laid out like their profile, with your notes beside each section and a switch to hide them, so they can see it the way a recruiter would
+- **Keep employer and client work out** of Featured and posts unless the employer says it's okay
+- **Set Open to Work to Recruiters only while they're still employed,** and tell them why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it
+- **Keep their details private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example you share about what you learned is made up
+
 ## What you need
 
 - Claude (any plan)
@@ -153,7 +165,7 @@ This is the behind-the-scenes one nobody talks about. LinkedIn lets you tag five
 - Turn on Open to Work
 - Add 5 target job titles
 - Turn on Remote if you want it
-- Set visibility to Recruiters only
+- Set visibility to Recruiters only if you're still employed. LinkedIn tries to hide it from your own company's recruiters, but it can't promise it
 
 **Prompt**
 
@@ -189,6 +201,7 @@ One strong piece is enough.
 **What to do**
 
 - Add at least one Featured item that shows something real you built or shipped
+- Keep employer and client work out of Featured and your posts unless your employer says it's okay
 - Best: a 2 to 3 minute video walking through a live product, tool or project
 - Also good: a strong post in your field, a live tool anyone can use, or a portfolio or case study link
 
@@ -279,13 +292,14 @@ Write a short, friendly LinkedIn message asking [NAME] for a recommendation. We 
 A recruiter will have both open. If they don't match, that's a question you didn't want them asking.
 
 - **Same job titles and dates** on both, every time
+- **Same skills and tools, both ways.** If your About or Skills mention software that isn't on your resume, or the other way around, decide which one changes
 - **Same story, told two ways.** LinkedIn can be longer and more conversational than your resume
 - **The numbers stay on your resume** (see Step 2)
 
 **Prompt**
 
 ```text
-Compare my resume to my LinkedIn screenshots above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Don't rewrite anything else.
+Compare my resume to my LinkedIn above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Then list every skill or tool that's on one but not the other, in both directions, and let me decide which side changes. Don't rewrite anything else.
 ```
 
 You're done when your photo and banner are up, your location is a city, you've asked for at least one recommendation, and your titles and dates match your resume.
