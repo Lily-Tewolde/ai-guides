@@ -60,7 +60,7 @@ When the resume belongs to a friend or family member:
 
 "Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so once Step 2 says the role is a fit, build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
 
-1. Rewrite every bullet into X-Y-Z (see Step 5).
+1. Rewrite every bullet into X-Y-Z (see Step 5). Only write "by" when the person says the how caused the outcome. If they haven't said, or only said the result came after it, ask before you write "by". If they're not sure, the result doesn't go on that line as theirs. Shared credit says so, like "with a team of 4".
 2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
 3. Mark every line ★, because none of them are approved yet.
 4. Ask the person for the missing numbers and facts, and for their OK on each line.
@@ -145,6 +145,7 @@ Example, made up:
 - **Order:** inside each role, the best match for this post goes first.
 - **Bullets stay inside their own role.**
 - **X-Y-Z:** outcome and number first, then how.
+- **"By" only when it caused it.** Write "by" only when the person says the how caused the outcome. If they haven't said, or only said the result came after it, ask before writing "by". If they're not sure, the result doesn't go on that line as theirs: keep the work as its own bullet without it. Shared credit says so, like "with a team of 4". Example, made up: they said "Complaints dropped after I started the morning check-ins". Not yet: "Cut complaints 40% by running morning check-ins". Ask first: "Did the check-ins cause the drop, or did other things change too?"
 - **Two lines max,** no periods at the end, no I, me, my, we or our.
 - **Strongest opening verb,** and no two bullets in a row with the same one, across roles too. Fix a repeat by reordering, not rewording.
 - **Weak openers to replace:** Caught, Scored, Ran, Helped, Supported, Assisted, Worked on. Lead with the real outcome instead: "Caught 7 pricing errors" becomes "Blocked 7 pricing errors from shipping".
@@ -176,10 +177,10 @@ Example, made up:
 - **When it runs over, fix it in this order:**
   1. Tighten the spacing
   2. Tighten the wording, never the facts
-  3. Cut the weakest bullet, from the bottom of a role
+  3. Cut the weakest bullet, from the bottom of a role. Never cut the only bullet that backs a skill on the skills line. Cut the next weakest instead. If that one really has to go, the skill comes off the skills line with it, and say so.
 - **Never shrink the font** below the person's minimum in My Resume Rules.md, or 10pt if they haven't set one.
 - No two bullets that tell the same result twice, and no bullet without a number on the version that goes out.
-- If the only way to fit is choosing between two roles, show the person the options with the page result of each and let them pick.
+- If the only way to fit is choosing between two roles, or a cut would leave a role with fewer bullets than Step 5 allows, show the person the options with the page result of each and let them pick.
 
 ## Step 7: Keep the titles 🙋
 
@@ -210,10 +211,11 @@ Run every check and say which passed and which didn't:
 8. No repeated opening verbs in a row, across roles too
 9. No periods at the end, no first person, no experience bullet over 2 lines
 10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
-11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
+11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and the person was told
 12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
 13. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
 14. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
+15. Every "by" is a cause the person confirmed, not just something that came first
 
 Then:
 - Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead
@@ -298,6 +300,7 @@ These keep coming up. Check for them before anything goes back to the person.
 14. **New bullets that lead with the activity** instead of the outcome
 15. **Claiming what the post lists but the person hasn't done**
 16. **Tailoring before checking the fit**
+17. **A sequence written as a cause.** "It dropped after I did this" turning into "cut it by doing this"
 
 ---
 

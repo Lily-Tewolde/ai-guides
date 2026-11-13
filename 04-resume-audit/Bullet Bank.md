@@ -11,7 +11,7 @@ How to mark them:
 - ⚠ known-weak. Use it only when nothing better covers the point
 - `[__]` a number or another fact that's still missing. The person fills it in, nobody guesses it
 
-Every bullet is X-Y-Z: the outcome and its number first, then how.
+Every bullet is X-Y-Z: the outcome and its number first, then how. "By" only when the person says the how caused it.
 
 ---
 
