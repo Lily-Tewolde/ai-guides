@@ -18,8 +18,8 @@ You (Claude) are tailoring one person's resume to one job post. The person is wh
 
 1. **Read this whole file first, every time.** Then read My Resume Rules.md in the person's folder. The written rules outrank anything you remember.
 2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything.
-3. **If there's no bullet bank yet,** do the first build below before you tailor anything.
-4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user, and anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
+3. **If there's no bullet bank yet,** do the first build below once Step 2 says the role is a fit, before Step 3.
+4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. When the resume belongs to someone else, those questions go through the user. If the user can't answer, don't stop: leave a highlighted `[__]` blank and a comment asking the person, and carry on. Anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
 5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **Never upload, submit or send anything.** Show the PDF and wait.
@@ -57,7 +57,7 @@ When the resume belongs to a friend or family member:
 
 ## First build: no bullet bank yet 🤖 then 🙋
 
-"Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
+"Swap, don't rewrite" needs a bank of approved bullets. The first time, there isn't one, so once Step 2 says the role is a fit, build it from the resume the person already has. If it's only a PDF, start with the PDF steps in Step 1.
 
 1. Rewrite every bullet into X-Y-Z (see Step 5).
 2. Put a highlighted `[__]` blank wherever a number is missing. Never guess a number. The same goes for any other missing fact, like a role's location or a LinkedIn link. If a line has no result at all, the outcome is a blank too: ask what changed because of the work, and never make one up.
@@ -83,11 +83,11 @@ Only when the person is aiming at more than one kind of role, like two master re
 - Read My Resume Rules.md and Bullet Bank.md before touching anything.
 - Use the standard resume .docx as the base unless the person says otherwise. Check it's the right file by its size and date, not its name.
 - **Only a PDF?** That's enough to start:
-  1. Pull the text out of the PDF.
-  2. Build the editable .docx from the template the person chose (see Step 8).
-  3. Don't type anything in by hand. Every line on the new version comes from the PDF text.
+  1. Pull the text out of the PDF now.
+  2. Once Step 2 says the role is a fit, build the editable .docx from the template the person chose (see Step 8). If they don't have one, ask them to pick one. Never make one up.
+  3. Don't type anything in by hand. The new version starts as an exact copy of the PDF text, and the rewriting happens in the first build.
 
-  Then carry on with the first build.
+  Then do the first build.
 - Ask what the recruiter said they want, if anything. One line from a recruiter can change which bullets lead.
 - If there's an application form, check what it asks before drafting.
 - Note anything else the post asks for, like a cover letter, a transcript or references.
@@ -177,7 +177,7 @@ Example, made up:
   2. Tighten the wording, never the facts
   3. Cut the weakest bullet, from the bottom of a role
 - **Never shrink the font** below the person's minimum in My Resume Rules.md, or 10pt if they haven't set one.
-- No two bullets that tell the same result twice, and nothing without a number on the version that goes out.
+- No two bullets that tell the same result twice, and no bullet without a number on the version that goes out.
 - If the only way to fit is choosing between two roles, show the person the options with the page result of each and let them pick.
 
 ## Step 7: Keep the titles 🙋
@@ -204,10 +204,10 @@ Run every check and say which passed and which didn't:
 3. No em dashes, and en dashes only in date ranges
 4. Numbers match the canonical numbers in My Resume Rules.md
 5. Nothing from the Never write list
-6. Every ★ bullet has the person's OK, and no ★ shows on the page
+6. Every ★ bullet has the person's OK, and no ★ shows on the page. On a draft going back to the person, every line still waiting for their OK has a comment asking them to check it
 7. No names from the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
-9. No periods at the end, no first person, nothing over 2 lines
+9. No periods at the end, no first person, no experience bullet over 2 lines
 10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead
 11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet
 12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
