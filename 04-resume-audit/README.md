@@ -95,7 +95,7 @@ I've used this on a friend's resume, and it's easy to slip when you're also writ
 
 Everything below is "swap, don't rewrite", and that only works once you have a bank of approved bullets. The first time, once you know the role is a fit (Step 2), you build the bank from the resume you already have:
 
-1. Every bullet gets rewritten into X-Y-Z (see Step 5)
+1. Every bullet gets rewritten into X-Y-Z (see Step 5). It only says "by" when you've said the work caused the result. If you haven't said, or the result only came after, Claude asks first, and if you're not sure, the result stays off that line. Shared credit says so, like "with a team of 4"
 2. Anywhere a number is missing gets a highlighted `[__]` blank, and Claude asks you for it instead of guessing. The same goes for any other missing fact, like a location. If a line has no result at all, like "Helped plan events", Claude asks what changed because of your work instead of making one up
 3. Every line is marked ★, because none of them are approved yet
 4. Your summary gets written fresh in the summary shape (Step 5), and it's marked ★ too. An old objective doesn't count as approved
@@ -106,7 +106,7 @@ After that, every tailor is a swap.
 **Prompt**
 
 ```
-I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md. Then write my summary in the summary shape, two bullets with bold labels and no numbers, mark it ★ too and save it at the top of the bank.
+I don't have a bullet bank yet. Take every bullet on my current resume and rewrite it in X-Y-Z, outcome and number first, then how. Only write "by" when I've said the work caused the result. If I haven't said, or only said it came after, ask me first, and if I'm not sure, leave the result off that line. If the work was shared, say so, like "with a team of 4". Wherever a number or another fact is missing put a [__] blank and ask me for it, don't guess. If a line has no result at all, ask me what changed because of the work, don't make one up. Mark every line ★ since none of them are approved yet, group them by role, tag each one with what it proves, and save them as my Bullet Bank.md. Then write my summary in the summary shape, two bullets with bold labels and no numbers, mark it ★ too and save it at the top of the bank.
 ```
 
 You're done when every bullet is in your bank in X-Y-Z, every blank has a real number, and you've OKed each line.
@@ -258,6 +258,7 @@ You're done when every true keyword has a place on your resume, and nothing untr
 3. **X-Y-Z.** Accomplished [X] as measured by [Y] by doing [Z]. The outcome and its number open the bullet and the method follows.
    - Good: *Cut checkout time 27% (11 min to 8 min) by shipping a one-page checkout with saved payment methods*
    - Bad: *Shipped a one-page checkout with saved payment methods, cutting checkout time 27%*
+   - **"By" means it caused it.** "Complaints dropped after I started morning check-ins" isn't the same claim as *Cut complaints 40% by running morning check-ins*. Only write "by" when the person whose resume it is has said the work caused the result. If they haven't said, or only said it came after, ask first: "Did the check-ins cause the drop, or did other things change too?" If they're not sure, the result doesn't go on that line as theirs. Shared credit says so, like "with a team of 4". The example is made up
 4. **Reframe nouns, never facts.** Use the post's word for the same thing. Don't invent.
 5. **Bullets stay inside their own role.** If you held several titles at one company, each keeps its own bullets.
 6. **Strongest verb.** Weak openers: Caught, Scored, Ran, Helped, Supported, Assisted, Worked on. "Caught 7 pricing errors" becomes "Blocked 7 pricing errors from shipping". "Scored 400+ support replies" becomes "Cut QA review to 45 minutes a week" when speed was the real outcome.
@@ -295,7 +296,7 @@ The steps started out on product and tech resumes, so a few things change in oth
 **Prompt**
 
 ```
-Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience, unless they were paid. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
+Now swap bullets, don't rewrite them. Take 4 to 5 for my current role and 2 to 3 for each earlier one from my bullet bank, keep each bullet inside its own role, and order each role by what this employer wants most with the strongest match first. Keep the X-Y-Z format with the outcome and number first, only write "by" when I've said the work caused the result and ask me first if I haven't said or only said it came after, say so when the credit was shared, like "with a team of 4", two lines max, no periods, no I or my, the strongest opening verb, and no two bullets in a row starting with the same verb, including across roles. Fix a repeated verb by reordering, not rewording. You can change a noun to match their wording but don't change any facts. If a bullet has to be written from scratch, draft it from my facts in X-Y-Z, mark it new and show me before it goes anywhere. School and capstone projects go under Projects, not Experience, unless they were paid. For the summary only swap the two labels and the nouns and leave the rest of each sentence exactly as it is. Rebuild the skills categories around their wording.
 ```
 
 You're done when every role has the right number of bullets, in the right order for this post, and any new bullet has your OK.
@@ -308,7 +309,7 @@ You're done when every role has the right number of bullets, in the right order 
 2. **When it runs over, fix it in this order:**
    1. Tighten the spacing
    2. Tighten the wording, never the facts
-   3. Cut the weakest bullet, from the bottom of the relevance order
+   3. Cut the weakest bullet, from the bottom of the relevance order. Never the only bullet that backs a skill on your skills line. Cut the next weakest instead, and if that one really has to go, the skill comes off with it, and Claude tells you
 
    Never shrink the font below the minimum in your rules file to make room.
 3. **Never two bullets on one page that spend the same result.** Two bullets about the same project, or two measurements of the same outcome, read thinner than one.
@@ -316,13 +317,13 @@ You're done when every role has the right number of bullets, in the right order 
 5. **Process bullets don't show outcomes.** A bullet about your intake or delivery process comes off unless the role is about running that process.
 6. **A list of product names isn't a bullet.** A launch count can live in the summary instead.
 7. **Side-project-looking bullets go last or come off.**
-8. **When the page forces a choice between roles, you make it.** Ask for the options with the page result of each.
-9. **If a whole section has to go,** a secondary one (consulting, advisory, volunteer) is usually the first.
+8. **When the page forces a choice between roles, you make it.** Ask for the options with the page result of each. The same goes for a cut that would leave a role with fewer bullets than Step 5 allows.
+9. **If a whole section has to go,** a secondary one (consulting, advisory, volunteer) is usually the first, as long as it isn't the only proof of a skill.
 
 **Prompt**
 
 ```
-Tell me the page count in the format that's going out, the PDF or the Google Doc. It has to be one page. If it runs over, tighten the spacing first, then the wording without changing any facts, then cut the weakest bullet at the bottom of a role. Never shrink the font below the minimum in my rules file. Make sure no two bullets on the page are the same result told twice, nothing without a number goes on, and anything too detailed moves to my interview notes instead. If the only way to fit is choosing between two roles, show me the options with the page result for each and let me pick.
+Tell me the page count in the format that's going out, the PDF or the Google Doc. It has to be one page. If it runs over, tighten the spacing first, then the wording without changing any facts, then cut the weakest bullet at the bottom of a role. Never cut the only bullet that backs a skill on my skills line. Cut the next weakest instead, and if that one really has to go, take the skill off my skills line too and tell me. Never shrink the font below the minimum in my rules file. Make sure no two bullets on the page are the same result told twice, nothing without a number goes on, and anything too detailed moves to my interview notes instead. If the only way to fit is choosing between two roles, show me the options with the page result for each and let me pick.
 ```
 
 You're done when it's one page in the format that's going out.
@@ -398,21 +399,22 @@ You're done when the version that's going out matches your house style.
 9. No terminal periods, no first person, no experience bullet over 2 lines
 10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5. On a first build the summary is new and ★ instead
 11. Header is consistent: name, then one contact line
-12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet
+12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and you were told
 13. No `[__]` blanks on the version that goes out. On a draft going back to someone, every blank is still highlighted
 14. Every requirement and responsibility from the post is in the coverage table, and every gap went back as a question, not onto the page
 15. Every skill on the skills line has a bullet that shows it, except basic tools like Excel
-16. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
-17. New bullets added back to the bank, and new facts to your story bank, the same day
-18. You see it before it's uploaded or sent
-19. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
-20. Note which resume went (standard or tailored) so you can compare reply rates later
-21. When a recruiter asks for it by message, write the note, attach the PDF and send them together
+16. Every "by" is a cause you confirmed, not just something that came first
+17. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
+18. New bullets added back to the bank, and new facts to your story bank, the same day
+19. You see it before it's uploaded or sent
+20. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
+21. Note which resume went (standard or tailored) so you can compare reply rates later
+22. When a recruiter asks for it by message, write the note, attach the PDF and send them together
 
 **Prompt**
 
 ```
-Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, every line of the post in the coverage table with the gaps as questions, every listed skill backed by a bullet, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
+Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, every line of the post in the coverage table with the gaps as questions, every listed skill backed by a bullet, every "by" a cause I confirmed, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
 ```
 
 You're done when every check passes and you've seen the PDF.
@@ -481,6 +483,7 @@ This comes up most when you're working on someone else's resume and want to leav
 14. **New bullets that lead with the activity** instead of the outcome
 15. **Claiming what the post lists but you haven't done**
 16. **Tailoring before checking the fit**
+17. **A sequence written as a cause.** "It dropped after I did this" becoming "cut it by doing this"
 
 ---
 

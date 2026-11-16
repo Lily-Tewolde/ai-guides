@@ -33,11 +33,12 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 
 | Old line | First build | After Maya filled it in |
 |---|---|---|
-| Responsible for communicating with vendors | ★ Cut day-of vendor delays from [__] to [__] per event by building a shared run-of-show and confirming every arrival [__] hours out | Cut day-of vendor delays from 6 to 1 per event by building a shared run-of-show and confirming every arrival 48 hours out |
+| Responsible for communicating with vendors | ★ Cut day-of vendor delays from [__] to [__] per event after building a shared run-of-show and confirming every arrival [__] hours out | Cut day-of vendor delays from 6 to 1 per event by building a shared run-of-show and confirming every arrival 48 hours out |
 | Managed RSVPs for events | ★ Hit [__]% registration for a [__]-guest corporate retreat by reconciling RSVPs and sending the client weekly reports | Hit 96% registration for a 250-guest corporate retreat by reconciling RSVPs and sending the client weekly reports |
 
 - The summary was written fresh in the summary shape and marked ★ too, because her old objective didn't count as an approved summary.
 - The box office and Spanish-bookings bullets were new, written from facts Maya gave when asked. Everything stayed ★ until Maya OKed the wording.
+- Maya said vendor delays dropped "after" she built the shared run-of-show and started confirming arrivals 48 hours out, so the first build wrote "after", not "by". Claude asked whether those two changes caused the drop or just came first. She said they caused it, since nothing else about the events changed, so the final bullet says "by". The Spanish-bookings bullet got the same question, and she said the families told her they rebooked because of the calls in Spanish.
 
 **Step 2: Check the fit.**
 - The post is still taking applications, it's hybrid in Chicago where Maya lives, and she can work in the US without sponsorship. All three pass.
@@ -73,7 +74,7 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 
 **Step 8: Format the page.** Built in her template .docx at her rules: Calibri, 10.5pt body, 10pt minimum, 0.6 inch margins. The section names follow her field. Her food safety certification moved under Education.
 
-**Step 9: Check, save and show.** All 14 checks passed once Maya had OKed every ★ line. It's one page in the PDF, with no ★ or blank on the page, and every skill has a bullet behind it. Check 10 counts as new rather than unchanged, since this was a first build. Maya saw the PDF before anything went anywhere.
+**Step 9: Check, save and show.** All 15 checks passed once Maya had OKed every ★ line. It's one page in the PDF, with no ★ or blank on the page, and every skill has a bullet behind it. Check 10 counts as new rather than unchanged, since this was a first build. Maya saw the PDF before anything went anywhere.
 
 ---
 
@@ -102,6 +103,7 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 |---|---|---|
 | 2026-10-05 | Rebuilt the resume from the PDF text in Maya's template | She only had a PDF, and nothing gets typed in by hand |
 | 2026-10-05 | First build of the bullet bank, every line ★ | There was no bank yet, so every bullet needed X-Y-Z and her numbers |
+| 2026-10-05 | Wrote "by building a shared run-of-show and confirming every arrival 48 hours out" | Maya confirmed those two changes caused the drop, not just came before it |
 | 2026-10-05 | Wrote a new summary in the summary shape, marked ★ | Her old objective was first person and generic, so there was no approved summary to keep |
 | 2026-10-06 | Tailored instead of sending the standard version | Her old resume didn't show any of the post's responsibilities |
 | 2026-10-06 | Left "event registration platforms" off the page | It's a gap, and Maya confirmed she hasn't used one |
