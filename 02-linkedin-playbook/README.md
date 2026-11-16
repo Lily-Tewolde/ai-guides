@@ -103,21 +103,37 @@ This one's going to feel wrong, but trust me. Your About section is a story, not
 **What to do**
 
 - Rewrite your About as a story in 4 to 6 short paragraphs:
-  - an opening hook
+  - an opening hook, from real work you've done
   - your career thread
-  - your current work
+  - your current work and how you work
   - one line on what you want next
-- Rewrite each job as one short paragraph, then Focus Areas:
+- Early in your career? Open on the work you do now, then your thread, then how you work
+- Keep every line of your About to what you've said or done. If Claude would be guessing, like why you changed paths or what you enjoy, it goes on the "add only if true" list for you to confirm
+- Rewrite each job and project as one short paragraph, then Focus Areas:
   - Each one is the skill a recruiter searches, then the specifics in brackets
   - The wording comes from the job posts' requirements and responsibilities, and only where it's work you've actually done
-  - 4 to 12 per role, depending on how much that role matters for where you're going. An unrelated role you keep with no description gets none
+  - 4 to 12 for a role that matters for where you're going, depending on how much
+  - 0 to 3 for a role far from it that you keep with a description, like seasonal work or a box office job before an events career, in the words someone hiring for that work would search
+  - 2 to 4 for a project
+  - None for an unrelated role you keep with no description
+  - Never pad to hit a number. If you've only done three things in a role, three is right, and Claude tells you why it stopped there
+  - Claude says which roles it counted as far from your target, so you can check
   - Anything the posts ask for that you haven't done goes on a separate "add only if true" list, never on your profile
-- Remove every number from every section, even ones that aren't results, like a team size in a project description. The dates on your entries are fine
+- Remove every number from your profile and posts, even ones that aren't results. The examples are made up:
+  - a team size in a project description counts
+  - spelled-out numbers and ordinals count, so "1st Place" becomes "Winner" and "2nd Place" becomes "Runner-up"
+  - job post wording loses its numbers when you reuse it, so "respond within one business day" becomes "fast client replies"
+  - the dates on your entries are fine, and so is a licence or certification's official name, even with a number in it
+  - media like a PDF, video or screenshot keeps its numbers, since it's the proof. Just don't quote them in the words around it
 
 My Focus Areas carry a lot more context than a keyword list. Example, made up:
 
 - Event logistics (vendor contracts, venue sourcing, run-of-show planning)
 - Budget tracking (spend reports, invoice reconciliation, cost forecasts)
+
+A school project gets the same, after its own short paragraph, like "Event logistics (venue booking, vendor schedule, run-of-show)".
+
+And an About line, made up: not "I've always loved bringing people together", which nobody said, but "On an event day I'm the one with the run-of-show, making sure every vendor arrives when they should."
 
 **Prompt**
 
@@ -125,16 +141,16 @@ My Focus Areas carry a lot more context than a keyword list. Example, made up:
 Using my resume and LinkedIn profile above, and targeting [YOUR TARGET ROLE], rewrite two things:
 
 1. My About section as a STORY, not a summary. 4 to 6 short paragraphs:
-- An opening hook
+- An opening hook, from real work I've done
 - The thread connecting my career
-- What I do now and how I think about the work
+- What I do now and how I work
 - One line on what I'm open to next
-No bullet points, no metrics. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking.
+If I'm early in my career, open on the work I do now, then the thread, then how I work. Only use what I've told you or what's on my resume and profile. Anything you'd be guessing, like why I changed paths or what I enjoy, goes on a separate "add only if true" list for me to confirm. No bullet points, no metrics. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking.
 
-2. Each of my job descriptions as one short narrative paragraph (what I owned and how I worked), followed by 4 to 12 Focus Areas, depending on how much the role matters for where I'm going. Write each one as the skill a recruiter searches, then the specifics in brackets, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". Take the wording from the requirements and responsibilities in the job posts above, but only where it's work I've actually done. Put anything the posts ask for that I haven't confirmed on a separate "add only if true" list for me, not on the profile. No numbers anywhere, not even a team size. Write for a recruiter scanning for 7 seconds.
+2. Each of my jobs and projects as one short narrative paragraph (what I owned and how I worked), followed by Focus Areas: 4 to 12 for a role that matters for where I'm going, 0 to 3 for a role far from it, 2 to 4 for a project, and none for an unrelated role I keep with no description. Write each one as the skill a recruiter searches, then the specifics in brackets, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". Take the wording from the requirements and responsibilities in the job posts above, but only where it's work I've actually done. For a role far from my target, use the words someone hiring for that work would search instead, and tell me which roles you counted as far. Never pad to hit a number. If a role has fewer than its range, use fewer and tell me why. Put anything the posts ask for that I haven't confirmed on the "add only if true" list too, not on the profile. No numbers anywhere, not even a team size, a spelled-out number, an ordinal like "1st", or a number in job post wording you reuse. The dates on my entries are fine, and so is a certification's official name. Media I attach, like a PDF or screenshot, keeps its own numbers, so don't tell me to blur them, just don't quote them. Write for a recruiter scanning for 7 seconds.
 ```
 
-You're done when your About reads like a story, every role has its Focus Areas, and there are no numbers left anywhere on your profile.
+You're done when your About reads like a story, every role and project has its Focus Areas, and there are no numbers left in anything written on your profile, apart from your entry dates.
 
 ---
 
@@ -143,12 +159,12 @@ You're done when your About reads like a story, every role has its Focus Areas, 
 When I ran this on a friend's early career profile, I had to decide on my own what to do with Projects, Education, Licenses and Honors, because the 5 steps don't cover them. LinkedIn also doesn't let you move sections around, so the Projects section always sits low on the page. Here's what I'd do:
 
 1. **Experience is for real jobs.** Decide whether unrelated roles, like seasonal or part-time work, stay or go. If you're not sure, keep them with no description. School projects never go in Experience
-2. **One Education entry per degree you actually earned.** No description or Focus Areas. An earlier program that didn't lead to the degree comes off, and your About tells that story instead
-3. **Projects stay in the Projects section.** Link each one to your school with "Associated with", tag the skills you used, and add media once you have it
+2. **One Education entry per degree you actually earned.** No description or Focus Areas. An earlier program that didn't lead to the degree comes off, and your About can mention it instead. Why you switched goes in only if you've said
+3. **Projects stay in the Projects section.** Give each one a short paragraph and 2 to 4 Focus Areas, like a job (see Step 2). Link each one to your school with "Associated with", tag the skills you used, and add media once you have it
 4. **Featured is how a project gets seen first,** since the Projects section can't be moved up
 5. **Licenses & certifications.** Add any you hold, with the issuing organization. Recruiters filter by them. One you're still working on stays off until you've earned it, and your About can say you're working toward it
 6. **Honors & awards.** Look up what each award is first, or say what it was for. Keep the ones that are rare, competitive or in your field. Cut general scholarships for entry-level roles
-7. **Your About matches the level you're aiming for.** Lead with the work you do now and what your background adds. Use school work as evidence, not as a chapter in school-to-job order
+7. **Your About matches the level you're aiming for.** Open on the work you do now, then your thread, then how you work. Use school work as evidence, not as a chapter in school-to-job order
 
 ---
 
@@ -234,6 +250,8 @@ Don't skip this one. Post about your actual work two to three times a week. This
 
 - Post 2 to 3 times a week about your real work, not generic career advice
 - Use Claude to plan 3 weeks of posts from your actual experience
+- Every first line comes from your real work. If Claude would have to guess, like why you changed paths, it uses your real work instead and asks you
+- No numbers in your posts either, first lines included, so a made-up "My first 3 months running vendor check-in" becomes "What running vendor check-in taught me". A screenshot or PDF you attach keeps its own
 - Keep employer and client work out unless your employer says it's okay. Client names, photos, documents and anything that isn't public count. What you learned and how you work, with no client named, is fine
 - If an idea needs your employer's OK, ask your manager first
 
@@ -248,7 +266,8 @@ Mix these three formats across the 9 posts:
 - A simple tip or framework from my field
 
 For each post:
-- Give me a scroll-stopping first line
+- Give me a scroll-stopping first line, built only from what I've told you or what's on my resume. If it would need a guess, like why I changed paths, use my real work instead and ask me
+- No numbers in the text, first line included, spelled out or as ordinals
 - Keep it specific to my actual work and field
 - No generic career advice
 - Keep employer and client work out (client names, photos, documents, anything not public) unless my employer says it's OK. Mark any idea that needs that OK with "ask your manager first"
@@ -275,7 +294,7 @@ When I compared a friend's profile with mine, most of the gaps weren't in the 5 
 
 - **Location is a city,** not just a country: the one you live in, or the one you're moving to. Recruiters filter by city
 - **Get the verification badge,** with a work email or ID
-- **Add media to your entries,** like a link, PDF or video on the role or project it belongs to
+- **Add media to your entries,** like a link, PDF or video on the role or project it belongs to. It keeps its numbers, but don't quote them in the words around it
 - **Languages:** add every one you speak, at your real level
 - **Connections:** grow them at your current company, your school and the companies you're applying to
 
@@ -348,10 +367,10 @@ Under 100 characters, never over. If one runs long, shorten the credential, then
 Flag titles that don't match real recruiter search terms. Suggest the functional replacement for each.
 
 3. ABOUT SECTION
-Story-driven, 4 to 6 paragraphs, no metrics, no bullets. Structure: Hook, Career thread, Current work, What I want next.
+Story-driven, 4 to 6 paragraphs, no metrics, no bullets. Structure: Hook from my real work, Career thread, Current work and how I work, What I want next. If I'm early in my career, open on the work I do now, then the thread, then how I work. Only use what I've told you or what's on my resume and profile. Anything you'd be guessing, like why I changed paths, goes on the "add only if true" list.
 
-4. ALL EXPERIENCE ROLES
-Each role: one narrative paragraph, then 4 to 12 Focus Areas depending on how much the role matters for my target. An unrelated role I keep with no description gets no Focus Areas. Each Focus Area is the skill a recruiter searches, then the specifics in brackets, worded from the job posts and only for work I've actually done, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". No numbers of any kind. Anything the posts ask for that I haven't confirmed goes on a separate "add only if true" list, not the profile.
+4. ALL EXPERIENCE ROLES AND PROJECTS
+Each role or project: one narrative paragraph, then Focus Areas. 4 to 12 for a role that matters for my target, 0 to 3 for a role far from it, 2 to 4 for a project, and none for an unrelated role I keep with no description. Never pad to hit a number. If a role has fewer than its range, use fewer and tell me why. Each Focus Area is the skill a recruiter searches, then the specifics in brackets, worded from the job posts and only for work I've actually done, like "Event logistics (vendor contracts, venue sourcing, run-of-show planning)". For a role far from my target, use the words someone hiring for that work would search, and tell me which roles you counted as far. No numbers of any kind, including spelled-out numbers, ordinals and numbers in job post wording you reuse. A certification keeps its official name, and media I attach keeps its own numbers. Anything the posts ask for that I haven't confirmed goes on a separate "add only if true" list, not the profile.
 
 5. SKILLS
 Top 5 to pin, ranked by how often each one shows up across the job posts, counting once per post, with synonyms grouped and must-haves first in a tie, skipping any skill I don't have (you can't see LinkedIn's search data, so say so). Then the exact skills to tag on every experience, education and project entry, only ones I used there, and which skills to remove from my Skills section. Keep all the software and tools I've actually used, and remove any I haven't.
@@ -363,13 +382,13 @@ Top 5 to pin, ranked by how often each one shows up across the job posts, counti
 3 ideas I can create in under 2 hours. Ranked by impact. No employer or client work unless my employer says it's OK.
 
 8. 9 POST IDEAS (3 weeks of content)
-3 per week: lesson learned, behind the scenes, tip or framework. One scroll-stopping first line per post. No employer or client work, like client names, photos, documents or anything that isn't public, unless my employer says it's OK. Mark any idea that needs that OK with "ask your manager first".
+3 per week: lesson learned, behind the scenes, tip or framework. One scroll-stopping first line per post, built only from what I've told you or what's on my resume. If one would need a guess, like why I changed paths, use my real work instead and ask me. No numbers in any post. No employer or client work, like client names, photos, documents or anything that isn't public, unless my employer says it's OK. Mark any idea that needs that OK with "ask your manager first".
 
 9. PROFILE BASICS
 Location set to my city, every language at my real level, and Open to Work set to Recruiters only if I'm still employed.
 
 CONSTRAINTS
-No generic career advice. No metrics anywhere in LinkedIn copy. Write for a recruiter scanning for 7 seconds.
+No generic career advice. No numbers anywhere in LinkedIn copy or posts, spelled out or as ordinals, except entry dates. Media I attach keeps its own, but don't quote it. Write for a recruiter scanning for 7 seconds.
 ```
 
 ### What to fill in
