@@ -26,7 +26,7 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 **Step 0: Pick a direction.** Skipped. Maya only wants event roles.
 
 **Step 1: Gather everything.**
-- Claude couldn't open the job board link, so Maya pasted the full post into the chat. It's saved word for word in her Brightwater folder.
+- Claude couldn't open the link to the post on Brightwater's own careers page, so Maya pasted the full post into the chat. It's saved word for word in her Brightwater folder.
 - The post also asks for a short cover letter. That's noted for later.
 - Maya only had a PDF. Claude pulled the text out of it and built an editable .docx from the template she picked, with nothing typed in by hand.
 - There was no bullet bank yet, so this was a first build. Every bullet got rewritten in X-Y-Z with highlighted blanks for the missing numbers, and every line was marked ★:
@@ -111,13 +111,13 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 | 2026-10-06 | Removed the barista role | Maya decided it doesn't help for event roles, and the space went to the capstone |
 | 2026-10-06 | Budget bullet says "flagging overages to the planner" | The planner owns the budget, so the bullet doesn't claim more than she did |
 | 2026-10-06 | Led the current role with the vendor delays bullet | Vendor logistics and run-of-show are the core of the post |
-| 2026-10-06 | Named the sections Event Experience and Event Projects | Section names follow the field |
+| 2026-10-06 | Named the sections Event Experience and Event Projects | Section names follow the field, and she's applying on Brightwater's own site, not through a job board |
 | 2026-10-06 | Took the location out of the header | House style: name, then phone • email • LinkedIn |
 | 2026-10-06 | Rebuilt Skills into three categories around the post's wording | Event Planning, Customer Service and Teamwork were too general, Microsoft Office became Excel and Google Sheets, and registration software was a gap |
 | 2026-10-07 | Moved the food safety certification under Education | Licences and certifications go with Education, written like the school line |
 | 2026-10-07 | Moved Hospitality Student of the Year under Education | It's the one award in her field, and it sits with the school it came from |
 | 2026-10-07 | Shortened the retreat bullet | Won back a line after the spacing, without changing any facts |
-| 2026-10-07 | Dropped Dean's List and the driver's licence | Only awards in her field stay, and a driver's licence never goes on |
+| 2026-10-07 | Dropped the driver's licence, and Maya chose to drop Dean's List | A licence never goes on, and a general honour is her call |
 | 2026-10-07 | Cut "Answered 50+ patron calls a day" | Weakest bullet on the page, and the last thing to go after spacing and wording |
 | 2026-10-07 | Took Spanish out of a plain list and put it under Languages | A bullet now shows it, so the skill has proof |
 
