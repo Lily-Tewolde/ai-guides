@@ -77,7 +77,7 @@ Job search/
 2. **[`Bullet Bank.md`](Bullet%20Bank.md).** Every bullet you have, grouped by role, each tagged with what it proves (`[onboarding] [experimentation] [revenue]`). Mark new, unapproved bullets ★ and known-weak ones ⚠. Use a ⚠ bullet only when nothing better covers a must-have, and never as the first bullet in a role. At the bottom, a "never write" list of claims you can't back up. Until you have a bank, that list lives in your rules file.
 3. **[`Story Bank.md`](Story%20Bank.md).** Your interview stories (STAR or similar), tagged like your bullet bank, with whether the work caused each result or the result just came after it. Claude starts one from the blank template if you don't have it yet. Prep keeps surfacing results that never made it onto the resume, and those are often your strongest bullets.
 4. **A standard resume** as an editable .docx. This is what goes out by default, and its layout is the template every tailored version is built from. Only have a PDF? See Step 1.
-5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed. Always keep one when it's someone else's resume, because the handoff is built from it.
+5. **[`Decision Log.md`](Decision%20Log.md), if you want one.** One entry for every decision: the date, the decision and why. It's how you remember later why a bullet moved or a title stayed. When a role comes off, it says whether that was only to fit the page or this post, so the LinkedIn playbook knows whether it can stay on your profile. Always keep one when it's someone else's resume, because the handoff is built from it.
 6. **One folder per company** for tailored versions, with a `version history/` folder inside for anything older.
 7. **A note per application** that saves the full job post word for word, because postings come down.
 
@@ -293,7 +293,7 @@ The steps started out on product and tech resumes, so a few things change in oth
 
 1. **Section names follow the field,** like Engineering Experience and Engineering Projects for engineers, or Clinical Experience for nurses. On a cold application through a job board, use the standard headings instead (Summary, Experience, Projects, Education, Skills), with any awards under Education. Direct applications and referrals keep the field's names
 2. **Licences and certifications go with Education,** written the same way as the school line, not on the skills line
-3. **Awards in the field stay,** meaning given for work or study in it. A general honour like Dean's List is your call. Things like a driver's licence don't go on at all
+3. **Awards in the field stay,** meaning given for work or study in it. A general honour like Dean's List is your call. Things like a driver's licence don't go on at all. LinkedIn uses a broader test on purpose, since it has room, so an award can be off your resume and still on your profile
 
 **Prompt**
 
@@ -426,17 +426,17 @@ You're done when every check passes and you've seen the PDF.
 The titles on your resume have to match LinkedIn before the application goes out. Once you've seen the PDF:
 
 1. **Run my [LinkedIn playbook](../02-linkedin-playbook/)** to update your profile. Its file starts from your resume's decisions and tells you what changed because of them
-2. **Check titles, companies and dates** match the resume exactly
-3. **Check skills and tools both ways.** If your About or Skills on LinkedIn mention software that isn't on your resume, or the other way around, decide which one changes
+2. **Check titles, companies and dates** match the resume exactly. A role you cut only to fit the page or this post can stay on LinkedIn, with the same title, company and dates as your standard resume
+3. **Check skills and tools both ways.** If your About or Skills on LinkedIn mention software that isn't on your resume, or the other way around, decide which one changes, or keep both as they are. Basic tools like Word, Google Docs or Excel can be on LinkedIn without being on your resume
 4. **Move school and capstone projects** into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to your school with "Associated with", tag the skills and add media. The best one also goes in Featured, since LinkedIn sections can't be moved
 
 **Prompt**
 
 ```
-Compare my new resume to my LinkedIn. List every job title, company, date, skill and tool that doesn't match, in both directions, and let me decide which side changes. Tell me which school or capstone projects need to move into LinkedIn's Projects section. Then I'll run the LinkedIn playbook from here.
+Compare my new resume to my LinkedIn. List every job title, company, date, skill and tool that doesn't match, in both directions. A role I cut only to fit the page or this post can stay on LinkedIn, and basic tools like Word, Google Docs or Excel can be on LinkedIn only, so don't list those. For any other title, company or date, tell me which side to change so they line up. For any other skill or tool, let me decide which side changes, or keep both as they are. Tell me which school or capstone projects need to move into LinkedIn's Projects section. Then I'll run the LinkedIn playbook from here.
 ```
 
-You're done when your LinkedIn matches the resume you're sending.
+You're done when your LinkedIn matches the resume you're sending, except where they differ on purpose.
 
 ---
 
@@ -444,13 +444,14 @@ You're done when your LinkedIn matches the resume you're sending.
 
 When it's someone else's resume, I don't hand back a finished draft. They need to be able to carry on and check it without me.
 
-1. **Start the second tab with a note** that I'm not an expert in their field, and point to it from the comment on their name. It's mostly formatting and a strong direction, so they should adjust anything that seems off
+1. **Start the second tab with a note,** and point to it from the comment on their name. It tells them to adjust anything that seems off. When I'm not an expert in their field, it says so, and that it's mostly formatting and a strong direction. Claude asks me rather than guessing
 2. **Comments ask them to do the work.** "Add it if you've done it", never "Tell me and I'll add it"
 3. **A second tab in the doc** that explains every decision and why, teaches them how to write and check their own X-Y-Z bullets, and ends with what they need to do next, including anything else the post asks for, like a cover letter. For example:
    - Fill in the 3 blanks marked `[__]` with real numbers
    - Check every ★ bullet in your Bullet Bank.md is true, then remove the star
    - Update your LinkedIn headline to match the new title
-4. **Their details stay private** (see [Keeping someone else's resume private](#keeping-someone-elses-resume-private))
+4. **The check is for me.** Claude's list of which checks passed comes after the handoff, addressed to me, so it never ends up on their second tab
+5. **Their details stay private** (see [Keeping someone else's resume private](#keeping-someone-elses-resume-private))
 
 ---
 

@@ -20,7 +20,7 @@ You (Claude) are tailoring one person's resume to one job post. The person is wh
 2. **If My Resume Rules.md doesn't exist yet,** make it in the person's folder from the blank template that comes with this guide, or with the same sections if the template isn't there: direction, standard resume, template, bullet bank, story bank, folder for tailored versions, canonical numbers, never write, titles, names I can't share and house style. Help fill it in before you tailor anything, including anything they can't claim.
 3. **If there's no bullet bank yet,** do the first build below once Step 2 says the role is a fit, before Step 3.
 4. **Do the steps in order.** Stop after Step 2 if the role isn't a fit. Stop any time you need facts only the person can give. If they can't answer yet, leave a highlighted `[__]` blank, carry on and list it at the end. A choice that's the person's call stays as it is on the page, with a comment, until they decide. When the resume belongs to someone else, those questions go through the user. If the user can't answer, don't stop: leave a highlighted `[__]` blank and a comment asking the person, and carry on. Anything only the person can approve, like new wording, stays ★ until they OK it. Never mark it approved for them.
-5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why. Always keep one when the resume belongs to someone else, because the handoff is built from it.
+5. **If the person keeps a Decision Log.md,** add an entry for every decision made: the date, the decision and why. When a role comes off, the why says whether it was only to fit the page or this post, or because the person doesn't want it shown anywhere, so the LinkedIn playbook can tell. Always keep one when the resume belongs to someone else, because the handoff is built from it.
 6. **Keep the person's details in their own folder** (see Keeping it private).
 7. **If the resume belongs to someone else,** finish with the handoff below, so they can carry on without the user.
 8. **Never upload, submit or send anything.** That means applications and messages. Turning the draft into a Google Doc for the person is fine. Show the PDF and wait.
@@ -165,7 +165,7 @@ Example, made up:
 
 - **Section names follow the field,** like Engineering Experience and Engineering Projects for engineers, or Clinical Experience for nurses. On a cold application through a job board, use the standard headings instead (Summary, Experience, Projects, Education, Skills), with any awards under Education, so the parsing software reads them. Direct applications and referrals keep the field's names.
 - **Licences and certifications go with Education,** written the same way as the school line, not on the skills line.
-- **Awards in the field stay,** meaning given for work or study in that field. A general honour like Dean's List is the person's call. Things like a driver's licence don't go on at all.
+- **Awards in the field stay,** meaning given for work or study in that field. A general honour like Dean's List is the person's call. Things like a driver's licence don't go on at all. The LinkedIn playbook uses a broader test on purpose, since LinkedIn has room, so an award can be off the resume and still on LinkedIn.
 
 **The summary**
 
@@ -222,6 +222,8 @@ Run every check and say which passed and which didn't:
 14. Every skill on the skills line has a bullet that shows it, except basic tools like Excel, languages and certifications
 15. Every "by" is a cause the person confirmed, not just something that came first
 
+**The check is for the user.** When the resume belongs to someone else, it goes after the handoff, addressed to the user, so it never gets passed on. The pass and fail list never goes on the second tab. What the person still has to do, like ★ lines, blanks or a page count to check, goes in their next steps there as tasks.
+
 Then:
 - Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead
 - Add new bullets to the bank and new facts to the story bank. If there's no Story Bank.md yet, make it from the blank template, or with these fields if it isn't there: role, situation, what they did, the result with its number, whether the work caused it, what it proves and whether it's on the resume yet
@@ -231,8 +233,8 @@ Then:
 **Then match LinkedIn**, after the person has seen the PDF. In a handoff, these go into the next steps on the second tab instead:
 
 1. Point them to the [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
-2. Check the job titles, companies and dates match the resume exactly.
-3. Check skills and tools both ways. If the About or Skills on LinkedIn mention software that isn't on the resume, or the other way around, flag it and let the person decide which one changes.
+2. Check the job titles, companies and dates match the resume exactly. A role this resume cut only to fit the page or this post can stay on LinkedIn, with the same title, company and dates as the standard resume. That isn't a mismatch.
+3. Check skills and tools both ways. If the About or Skills on LinkedIn mention software that isn't on the resume, or the other way around, flag it. The person decides which one changes, or keeps both as they are. Basic tools like Word, Google Docs or Excel can be on LinkedIn without being on the resume, so don't flag those.
 4. Move school and capstone projects into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to the school with "Associated with", tag the skills and add media. LinkedIn sections can't be moved, so the best project also goes in Featured.
 
 ---
@@ -241,7 +243,7 @@ Then:
 
 When the resume belongs to someone the user is helping, it doesn't end with a finished draft. They need to be able to carry on and check their own resume without the user.
 
-1. **Start the second tab with a note,** and point to it from the overall comment on the name. In the user's voice: they're not an expert in this person's field, so this is mostly formatting and a strong direction, and the person should adjust anything that seems off.
+1. **Start the second tab with a note,** and point to it from the overall comment on the name. In the user's voice: the person should adjust anything that seems off. If the user isn't an expert in this person's field, say so, and that this is mostly formatting and a strong direction. If you don't know, ask the user. Never say it as a fact you've guessed.
 2. **Comments ask them to do the work.** Write "Add it if you've done it", never "Tell me and I'll add it".
 3. **A second tab in the doc** (or a separate doc that starts with the note, if it isn't in Google Docs) that:
    - explains every decision and why, from the Decision Log.md

@@ -33,7 +33,7 @@ Download [`linkedin-playbook.md`](linkedin-playbook.md), put it in your job sear
 Read the LinkedIn Playbook file and update my LinkedIn for [TARGET ROLE]. Here's my profile [LINK OR SCREENSHOTS], my resume and 2 to 3 job posts: [PASTE JOB POSTS]
 ```
 
-Claude reads your profile, works through the 5 steps and the extras, and writes everything out for you to change yourself. It never edits or posts anything on your profile. If you ran the [Resume Audit](../04-resume-audit/) first, it starts from your new resume.
+Claude reads your profile, works through the 5 steps and the extras, and writes everything out for you to change yourself. It never edits or posts anything on your profile. If you ran the [Resume Audit](../04-resume-audit/) first, it starts from your new resume and also reads your Bullet Bank.md. Anything it writes from a line still marked ★ waits for your OK, the same as on your resume.
 
 Not using the file? Copy the [master prompt](#the-master-prompt), fill in the brackets and paste it into Claude. Want more control? Go step by step below, so you can review and tweak each part as you go. All three get you to the same place.
 
@@ -43,11 +43,12 @@ When I ran this on a friend's profile, everything came back written about my fri
 
 - **Write it to them, in your voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags
 - **Make change, keep and delete clear.** Mark what to change, leave everything else alone, and cross out what comes off
-- **Say you're not an expert in their field.** Open or close with it: it's mostly formatting and a strong direction, so they should adjust anything that seems off
+- **Open or close with a note.** Tell them to adjust anything that seems off. If you're not an expert in their field, say so, and that it's mostly formatting and a strong direction. Claude asks you rather than guessing
 - **If you can't answer for them, don't stop.** Give your pick for a choice and leave a `[__]` blank for a fact, mark both for them to check, and carry on
 - **Give them a visual mock of the finished profile.** An HTML page laid out like their profile, with your notes beside each section and a switch to hide them, so they can see it the way a recruiter would. Send it as a file, never as a page published online
 - **Keep employer and client work out** of Featured and posts unless the employer says it's okay. Client names, photos, documents and anything that isn't public count. What they learned and how they work, with no client named, doesn't. Mark any idea that needs the OK, and tell them to ask their manager first
 - **Set Open to Work to Recruiters only while they're still employed,** and tell them why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it
+- **The check is for you.** Claude's list of which checks passed comes after the handoff, addressed to you, so it never gets passed on to them
 - **Keep their details private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example you share about what you learned is made up
 
 ## What you need
@@ -55,10 +56,10 @@ When I ran this on a friend's profile, everything came back written about my fri
 - Claude (any plan)
 - The Claude desktop app with Cowork, if you're using the file (Claude Code works too)
 - The [`linkedin-playbook.md`](linkedin-playbook.md) file from this folder, if you're using it
-- Your resume
+- Your resume, plus your Bullet Bank.md if you ran the Resume Audit first
 - A link to your LinkedIn profile, or screenshots of it: header, About, every role, education, projects, skills and Featured. Claude reads the live profile when it can open it in your browser, and the screenshots are the fallback
 - 2 to 3 real job posts for the role you want. Claude pulls your keywords from them, so they match what companies are actually asking for
-- A few facts later steps need, so Claude asks once: the city you live in or are moving to, whether you're still employed, whether unrelated roles like seasonal work should stay and their months, remote and employment types for Open to Work, whether your employer is OK with your work being shown, every language you speak and your level, what each award is, and each certification's issuing organization and whether it's still in progress
+- A few facts later steps need, so Claude asks once: the city you live in or are moving to, whether you're still employed, whether unrelated roles like seasonal work should stay and their months, remote and employment types for Open to Work, whether your employer is OK with your work being shown, every language you speak and your level, what each award is, each certification's issuing organization and whether it's still in progress, why any role came off your resume if your Decision Log doesn't say, and, if it's someone else's profile, whether you work in their field
 
 Run all 5 prompts in **one** Claude conversation, not five separate chats. Steps 2 to 5 say "above" because they build on the resume, profile and job posts you share in Step 1.
 
@@ -163,7 +164,7 @@ When I ran this on a friend's early career profile, I had to decide on my own wh
 3. **Projects stay in the Projects section.** Give each one a short paragraph and 2 to 4 Focus Areas, like a job (see Step 2). Link each one to your school with "Associated with", tag the skills you used, and add media once you have it
 4. **Featured is how a project gets seen first,** since the Projects section can't be moved up
 5. **Licenses & certifications.** Add any you hold, with the issuing organization. Recruiters filter by them. One you're still working on stays off until you've earned it, and your About can say you're working toward it
-6. **Honors & awards.** Look up what each award is first, or say what it was for. Keep the ones that are rare, competitive or in your field. Cut general scholarships for entry-level roles
+6. **Honors & awards.** Look up what each award is first, or say what it was for. Keep the ones that are rare, competitive or in your field. Dean's List, general scholarships and other general honours are your call, the same as on your resume, though I'd cut general scholarships for entry-level roles. This is broader than the Resume Audit's test on purpose, since LinkedIn has room
 7. **Your About matches the level you're aiming for.** Open on the work you do now, then your thread, then how you work. Use school work as evidence, not as a chapter in school-to-job order
 
 ---
@@ -318,17 +319,18 @@ Write a short, friendly LinkedIn message asking [NAME] for a recommendation. We 
 A recruiter will have both open. If they don't match, that's a question you didn't want them asking.
 
 - **Same job titles and dates** on both, every time. LinkedIn needs a month and year, so seasonal work like "Summers 2023 – 2024" goes in as its first and last months, with Seasonal as the employment type. That's not a mismatch
-- **Same skills and tools, both ways.** If your About or Skills mention software that isn't on your resume, or the other way around, decide which one changes
+- **A role your resume cut only to fit the page or one post can stay on LinkedIn,** with the same title, company and dates as your standard resume. That's not a mismatch either
+- **Same skills and tools, both ways.** If your About or Skills mention software that isn't on your resume, or the other way around, decide which one changes, or keep both as they are. Basic tools like Word, Google Docs or Excel can be on LinkedIn without being on your resume
 - **Same story, told two ways.** LinkedIn can be longer and more conversational than your resume
 - **The numbers stay on your resume** (see Step 2)
 
 **Prompt**
 
 ```text
-Compare my resume to my LinkedIn above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Seasonal work entered as its first and last months, with Seasonal as the employment type, counts as a match. Then list every skill or tool that's on one but not the other, in both directions, and let me decide which side changes. Don't rewrite anything else.
+Compare my resume to my LinkedIn above. List every place where a job title, company name or date doesn't match exactly, and tell me which one to change so they line up. Seasonal work entered as its first and last months, with Seasonal as the employment type, counts as a match, and so does a role my resume cut only to fit the page or one post that I keep on LinkedIn with the same title, company and dates as my standard resume. Then list every skill or tool that's on one but not the other, in both directions, except basic tools like Word, Google Docs or Excel, which can be on LinkedIn only. For each one, let me decide which side changes, or keep both as they are. Don't rewrite anything else.
 ```
 
-You're done when your photo and banner are up, your location is a city, you've asked for at least one recommendation, and your titles and dates match your resume.
+You're done when your photo and banner are up, your location is a city, you've asked for at least one recommendation, and your titles and dates match your resume, except where they differ on purpose.
 
 ---
 
