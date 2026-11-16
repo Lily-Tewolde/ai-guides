@@ -390,33 +390,44 @@ You're done when the version that's going out matches your house style.
 
 **Pre-send checks**
 
-1. One page, checked in the format that's going out. If Claude can't open that format, the page count is unchecked, not passed
-2. Every heading keeps with the next line, so none is stranded at the foot of a page
+Claude runs every one and says which passed and which didn't. They're the same checks, in the same words, as Step 9 in [`resume-audit.md`](resume-audit.md), and "the person" is whoever the resume belongs to. "The second tab" is the handoff tab from [Handing it off to someone else](#handing-it-off-to-someone-else), and "the reply" is Claude's:
+
+1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If that format couldn't be opened, the page count is unchecked, not passed
+2. Every heading keeps with the next line, so none is stranded at the bottom of a page. Without the final format, this is unchecked, not passed
 3. No em dashes, and en dashes only in date ranges
-4. Numbers match your canonical table, and look-alike numbers (users vs signups) are never swapped. On a first build, every number matches what you gave, written one way
-5. Nothing from the "never write" list
-6. Every ★ bullet has your sign-off on the wording, and no ★ shows on the page. On a draft going back to someone, every line still waiting for their OK has a comment asking them to check it. On a first build, one comment on the name covers every new line, the new lines get listed for you, and the line comments are only for blanks and questions
-7. No client or partner names you're not allowed to share, and no vendor names you've decided to keep off
-8. No repeated opening verbs in adjacent bullets, across role boundaries too
-9. No terminal periods, no first person, no experience bullet over 2 lines. Without the final format, line length is unchecked, not passed
-10. Summary scaffolding untouched, labels and nouns only, and it still has the summary shape from Step 5. On a first build the summary is new and ★ instead
-11. Header is consistent: name, then one contact line
-12. Font no smaller than the minimum in your rules file, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and you were told
-13. No `[__]` blanks on the version that goes out. On a draft going back to someone, every blank is still highlighted
-14. Every requirement and responsibility from the post is in the coverage table, and every gap went back as a question, not onto the page
+4. Numbers match the canonical numbers in My Resume Rules.md, and look-alike numbers (users vs signups) are never swapped. On a first build, every number on the page matches what the person gave, written one way
+5. Nothing from the Never write list, in My Resume Rules.md or at the bottom of Bullet Bank.md
+6. Every bullet on the page is in the bank, every ★ bullet has the person's OK on its wording, and no ★ shows on the page. On a draft going back to the person, every line still waiting for their OK has a comment asking them to check it. On a first build, where every line is ★, one comment on the name says every line is new and needs their OK, and the second tab lists them, or the end of the reply if there's no second tab. Line comments are only for blanks and questions
+7. No client, partner or vendor name the person isn't allowed to share or has decided to keep off, including everything on the Names I can't share list
+8. No repeated opening verbs in a row, across roles too
+9. No periods at the end, no first person, no experience bullet over 2 lines. Without the final format, line length is unchecked, not passed
+10. Summary unchanged from the one at the top of Bullet Bank.md except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead. Without the final format, its length is unchecked, not passed
+11. Header follows the house style, unless the person's rules or template say otherwise: name, then one contact line of phone, email and LinkedIn, with no location
+12. Font no smaller than the person's minimum in My Resume Rules.md, or 10pt if they haven't set one, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and the person was told
+13. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
+14. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
 15. Every skill on the skills line has a bullet that shows it, except basic tools like Excel, languages and certifications
-16. Every "by" is a cause you confirmed, not just something that came first
-17. Saved as .docx + .pdf in the company folder under your naming convention, with any older version in `version history/`. In Google Docs, edit the one doc in place instead
-18. New bullets added back to the bank, and new facts to your story bank, the same day
-19. You see it before it's uploaded or sent
-20. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
-21. Note which resume went (standard or tailored) so you can compare reply rates later
-22. When a recruiter asks for it by message, write the note, attach the PDF and send them together
+16. Every "by" is a cause the person confirmed, not just something that came first
+
+If a check fails, Claude fixes it before anything is saved, or asks you when it's your call. Then Claude does these and says each one is done, the same as in resume-audit.md:
+
+- Save the .docx and .pdf in the company folder under the naming convention in Step 7, and move any older version to `version history/`. In Google Docs, edit the one doc in place instead
+- Add new bullets to the bank and new facts to the story bank, the same day. If there's no Story Bank.md yet, make it from the blank template, or with these fields if it isn't there: role, situation, what they did, the result with its number, whether the work caused it, what it proves and whether it's on the resume yet
+- If there's a Decision Log.md, check every decision from this tailor is in it, and add any that are missing
+- Show the person the PDF, or the Google Doc if it lives there, and **wait**. Don't upload or send anything until they say so
+
+**Yours to do when it goes out**
+
+Claude can't upload or send anything for you, so these are on you:
+
+1. After uploading to an application form, check the attached file name and re-check the form. Resume parsers re-fill fields: I've seen long answers emptied and a location field filled from the resume's location line
+2. Note which resume went (standard or tailored) so you can compare reply rates later
+3. When a recruiter asks for it by message, write the note, attach the PDF and send them together
 
 **Prompt**
 
 ```
-Before I send it run every pre-send check and tell me which ones passed and which didn't: one page in the format that's going out, nothing below my minimum font size, no ★ on the page, every [__] blank still highlighted, every line of the post in the coverage table with the gaps as questions, every listed skill backed by a bullet, every "by" a cause I confirmed, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table, nothing from my never-write list, no client names, no repeated opening verbs, no periods or first person, and the summary scaffolding unchanged. Mark line length and the page count unchecked if you can't see the final format. Then save the .docx and .pdf to the company folder with the right file name, move any older version to version history, add any new bullets to my bank, and show me the PDF. Don't upload or send anything until I say so.
+Before I send it, run every pre-send check and tell me which passed and which didn't: one page in the format that's going out, no heading stranded at the bottom of a page, no em dashes, numbers matching my canonical table with no look-alikes swapped, nothing from my never-write list in my rules file or bullet bank, every bullet on the page in my bank with every ★ line OK'd and no ★ on the page, no names I can't share, no repeated opening verbs, no periods or first person, the summary scaffolding unchanged, the header as my name then one contact line of phone, email and LinkedIn with no location, nothing below my minimum font size, every [__] blank still highlighted on a draft and none on the version that goes out, every line of the post in the coverage table with the gaps as questions, every listed skill backed by a bullet, and every "by" a cause I confirmed. Mark line length, stranded headings and the page count unchecked if you can't see the final format. If a check fails, fix it first or ask me. Then save the .docx and .pdf to the company folder as Firstname Lastname - Company (Role as posted), move any older version to version history, add new bullets to my bank and new facts to my story bank, check my Decision Log, if I keep one, has every decision from this tailor and add any that are missing, and show me the PDF. Don't upload or send anything until I say so.
 ```
 
 You're done when every check passes and you've seen the PDF.
