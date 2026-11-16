@@ -204,30 +204,31 @@ Example, made up:
 
 ## Step 9: Check, save and show 🤖 then 🙋
 
-Run every check and say which passed and which didn't:
+Run every check and say which passed and which didn't. They're the same checks, in the same words, as Step 9 in the guide's README, which also lists what only the person can do after it goes out:
 
-1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If you couldn't open it, this is unchecked, not passed
-2. No heading stranded at the bottom of a page
+1. One page, checked in the final format (Google Docs or the PDF, whichever is going out). If that format couldn't be opened, the page count is unchecked, not passed
+2. Every heading keeps with the next line, so none is stranded at the bottom of a page. Without the final format, this is unchecked, not passed
 3. No em dashes, and en dashes only in date ranges
-4. Numbers match the canonical numbers in My Resume Rules.md. On a first build, every number on the page matches what the person gave, written one way
-5. Nothing from the Never write list
-6. Every ★ bullet has the person's OK, and no ★ shows on the page. On a draft going back to the person, every line still waiting for their OK has a comment asking them to check it. On a first build, where every line is ★, one comment on the name says every line is new and needs their OK, and the second tab lists them, or the end of your reply if there's no second tab. Line comments are only for blanks and questions
-7. No names from the Names I can't share list
+4. Numbers match the canonical numbers in My Resume Rules.md, and look-alike numbers (users vs signups) are never swapped. On a first build, every number on the page matches what the person gave, written one way
+5. Nothing from the Never write list, in My Resume Rules.md or at the bottom of Bullet Bank.md
+6. Every bullet on the page is in the bank, every ★ bullet has the person's OK on its wording, and no ★ shows on the page. On a draft going back to the person, every line still waiting for their OK has a comment asking them to check it. On a first build, where every line is ★, one comment on the name says every line is new and needs their OK, and the second tab lists them, or the end of the reply if there's no second tab. Line comments are only for blanks and questions
+7. No client, partner or vendor name the person isn't allowed to share or has decided to keep off, including everything on the Names I can't share list
 8. No repeated opening verbs in a row, across roles too
 9. No periods at the end, no first person, no experience bullet over 2 lines. Without the final format, line length is unchecked, not passed
-10. Summary unchanged except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead. Without the final format, its length is unchecked, not passed
-11. Font no smaller than the person's minimum, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and the person was told
-12. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
-13. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
-14. Every skill on the skills line has a bullet that shows it, except basic tools like Excel, languages and certifications
-15. Every "by" is a cause the person confirmed, not just something that came first
+10. Summary unchanged from the one at the top of Bullet Bank.md except the labels and nouns, and it follows the summary shape in Step 5. On a first build the summary is new, so it's ★ instead. Without the final format, its length is unchecked, not passed
+11. Header follows the house style, unless the person's rules or template say otherwise: name, then one contact line of phone, email and LinkedIn, with no location
+12. Font no smaller than the person's minimum in My Resume Rules.md, or 10pt if they haven't set one, and any overflow fixed in order: spacing, then wording, then the weakest bullet that isn't a skill's only proof. If one had to go, its skill came off the skills line too, and the person was told
+13. No `[__]` blank on the version that goes out. On a draft going back to the person, every blank is still highlighted
+14. Every requirement and responsibility from the post is in the coverage table, and every gap went to the person as a question, not onto the page
+15. Every skill on the skills line has a bullet that shows it, except basic tools like Excel, languages and certifications
+16. Every "by" is a cause the person confirmed, not just something that came first
 
 **The check is for the user.** When the resume belongs to someone else, it goes after the handoff, addressed to the user, so it never gets passed on. The pass and fail list never goes on the second tab. What the person still has to do, like ★ lines, blanks or a page count to check, goes in their next steps there as tasks.
 
-Then:
-- Save the .docx and .pdf in the company folder, and move any older version to `version history/`. In Google Docs, edit in place instead
-- Add new bullets to the bank and new facts to the story bank. If there's no Story Bank.md yet, make it from the blank template, or with these fields if it isn't there: role, situation, what they did, the result with its number, whether the work caused it, what it proves and whether it's on the resume yet
-- If there's a Decision Log.md, check every decision from this tailor is in it
+If a check fails, fix it before anything is saved, or ask the person when it's their call. Then do these, and say each one is done:
+- Save the .docx and .pdf in the company folder under the naming convention in Step 7, and move any older version to `version history/`. In Google Docs, edit the one doc in place instead
+- Add new bullets to the bank and new facts to the story bank, the same day. If there's no Story Bank.md yet, make it from the blank template, or with these fields if it isn't there: role, situation, what they did, the result with its number, whether the work caused it, what it proves and whether it's on the resume yet
+- If there's a Decision Log.md, check every decision from this tailor is in it, and add any that are missing
 - Show the person the PDF, or the Google Doc if it lives there, and **wait**. Don't upload or send anything until they say so
 
 **Then match LinkedIn**, after the person has seen the PDF. In a handoff, these go into the next steps on the second tab instead:
