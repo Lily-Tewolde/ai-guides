@@ -108,7 +108,7 @@ This is the whole method on one resume, from the PDF to the matching LinkedIn. E
 | 2026-10-06 | Tailored instead of sending the standard version | Her old resume didn't show any of the post's responsibilities |
 | 2026-10-06 | Left "event registration platforms" off the page | It's a gap, and Maya confirmed she hasn't used one |
 | 2026-10-06 | Moved the capstone from Experience to Event Projects | It wasn't paid work, so it isn't a job title |
-| 2026-10-06 | Removed the barista role | Maya decided it doesn't help for event roles, and the space went to the capstone |
+| 2026-10-06 | Removed the barista role | Only for this post: Maya decided it doesn't help here, and the space went to the capstone. It can stay on LinkedIn |
 | 2026-10-06 | Budget bullet says "flagging overages to the planner" | The planner owns the budget, so the bullet doesn't claim more than she did |
 | 2026-10-06 | Led the current role with the vendor delays bullet | Vendor logistics and run-of-show are the core of the post |
 | 2026-10-06 | Named the sections Event Experience and Event Projects | Section names follow the field, and she's applying on Brightwater's own site, not through a job board |
@@ -129,7 +129,8 @@ After Maya saw the PDF, she ran the [LinkedIn playbook](../02-linkedin-playbook/
 
 - **Titles and dates** already matched, except the capstone. It was in Experience as "Event Lead". It moved to Projects, linked to Northfield University with "Associated with", with its skills tagged. It also went in Featured, since the Projects section sits low on the page.
 - **Skills both ways.** LinkedIn listed "Event registration software", which she hasn't used, so it came off. It also listed Canva, which isn't on the resume. She used it for the gala invitations, so it stayed on LinkedIn, tagged on the gala project.
-- **Barista role.** Off the resume, but Maya kept it on LinkedIn, which has room for more history than one page.
+- **Barista role.** Off the resume, but Maya kept it on LinkedIn, which has room for more history than one page. The Decision Log says it came off for space and for this post, so it isn't a mismatch.
+- **Dean's List.** Off the resume by Maya's choice. LinkedIn's award test is broader, so it was her call again, and she left it off.
 - **Focus Areas** for Event Assistant, with no numbers:
   - Event logistics (run-of-show schedules, vendor arrivals, day-of coordination)
   - Registration tracking (RSVP reconciliation, weekly client reports)
