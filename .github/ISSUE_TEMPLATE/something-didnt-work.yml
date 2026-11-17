@@ -1,0 +1,51 @@
+name: Something didn't work
+description: Tell me where a guide went wrong for you
+title: "Didn't work: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling me! Issues here are public, so please don't paste or attach anything private. That means your resume or any line from it, someone else's details, real file names, screenshots that show any of those, or anything from work you can't share. A short description is plenty, and a made-up example works too.
+  - type: dropdown
+    id: guide
+    attributes:
+      label: Which guide?
+      options:
+        - The 5-Step LinkedIn Playbook
+        - How to audit and tailor your resume with Claude
+        - How to organize your Desktop with Claude
+        - How to organize a messy image folder with Claude
+    validations:
+      required: true
+  - type: input
+    id: step
+    attributes:
+      label: Which step?
+      description: 'A step number or section name. If Claude ran the whole guide for you, "not sure" is fine.'
+      placeholder: e.g. Step 3, the Start here prompt, or not sure
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: What you did and what Claude did, in your own words. If you paste what Claude wrote, take out anything private first.
+      placeholder: e.g. I pasted the LinkedIn Step 3 prompt and Claude gave me 8 skills instead of 5
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Optional. What you thought would happen instead.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you using Claude?
+      options:
+        - Claude chat (app or website)
+        - Cowork (in the Claude desktop app)
+        - Claude Code
+        - Somewhere else
+    validations:
+      required: true

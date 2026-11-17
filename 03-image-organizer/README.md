@@ -79,6 +79,6 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
 
 ---
 
-Something didn't work? [Open an issue](https://github.com/Lily-Tewolde/ai-guides/issues) and tell me what happened.
+Something didn't work? [Open an issue](https://github.com/Lily-Tewolde/ai-guides/issues/new?template=something-didnt-work.yml) and tell me what happened.
 
 Made by [Lily Tewolde](https://github.com/Lily-Tewolde). Find me on TikTok at [@lilytewolde](https://www.tiktok.com/@lilytewolde) and on Instagram at [@promptesss](https://www.instagram.com/promptesss).
