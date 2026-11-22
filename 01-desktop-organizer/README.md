@@ -52,16 +52,17 @@ Read the Desktop Organizer file and organize my Desktop.
    - which areas you're done with
    - what to do with other people's documents
    - whether you want your files renamed
+   - whether Downloads should end up empty
 
    You're done when Claude shows you a proposed map of 5 to 8 folders.
 5. **Check the map before anything moves.** Change anything that doesn't fit, then say yes. Claude won't move a single file until you do.
    You're done when you've said yes.
 6. **Let Claude file everything.** It moves files into the new folders and puts anything that looks like junk in a `_TO_DELETE/` folder instead of deleting it. That includes exact duplicates, installers for apps you already have, and zips you've already unzipped. Older versions go to a `_superseded/` folder next to the current one.
-   You're done when everything has a home.
-7. **Optional: let Claude rename your files.** Only if you said yes in step 4. It uses `Type - Detail - Date`, like `Phone Bill - 2025-11.pdf`, and it checks what each file is before naming it.
+   You're done when everything is filed or flagged.
+7. **Optional: let Claude rename your files.** Only if you said yes in Step 4. It uses `Type - Detail - Date`, like `Phone Bill - 2025-11.pdf`, and it checks what each file is before naming it.
    You're done when the names make sense without opening anything.
 8. **Check nothing was lost.** Claude compares the file count and total size from before and after, and checks every file it moved between folders.
-   You're done when Claude reports the number of folders, what moved where, what it flagged, and that the before and after numbers match.
+   You're done when Claude reports the number of folders, what moved where, what it flagged, and that the before and after numbers match, or why they don't.
 9. **Empty `_TO_DELETE/` yourself.** Look through it first. Deleting is always your call. Then empty the Trash.
    You're done when both are empty.
 10. **Optional: schedule the monthly tidy.** The rulebook has a 5-minute routine at the bottom. It clears out Downloads too. Ask Claude to run it on the first of every month.
@@ -74,9 +75,9 @@ Read the Desktop Organizer file and organize my Desktop.
 
 💡 **Big folders get their own map.** For a business or a big project, Claude adds a `00 FOLDER MAP.md` file at the top that says what each subfolder holds.
 
-💡 **Filenames lie.** A file called `Party Checklist.pdf` can turn out to be a lease. Claude opens files to check what they are, so things don't get filed by a bad name.
+💡 **Don't trust the filename.** A file called `Party Checklist.pdf` can turn out to be a lease. Claude opens files to check what they are, so things don't get filed by a bad name.
 
-💡 **Photos go to the Image Organizer.** Claude gathers your images into one folder and leaves the sorting to the [Image Organizer](../03-image-organizer/image-organizer.md). Both guides use the same folder map.
+💡 **Photos go to the Image Organizer.** Claude gathers your images into one folder and leaves the sorting to the [Image Organizer](../03-image-organizer/). Both guides use the same folder map.
 
 ⚠️ **Moving out of Downloads asks for permission to delete.** Cowork shows a deletion prompt because a move is a copy, then removing the original. Nothing gets thrown away. Say yes.
 

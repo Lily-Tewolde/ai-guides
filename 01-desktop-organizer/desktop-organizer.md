@@ -30,12 +30,12 @@ You (Claude) are organizing the user's Desktop. This file is your operating spec
 Scan the whole Desktop and Downloads, top level and a few layers down. Report back in plain language:
 
 - How many top-level folders and how many loose files there are
-- The total number of files and their total size, in each place. Write these down. You'll need them in Step 6 to prove nothing was lost.
+- The total number of files and their total size, in each place and combined. Write these down. You'll need the combined numbers in Step 6 to prove nothing was lost.
 - What kinds of things are there (school, work, receipts, photos, side projects, screenshots, installers)
 - Obvious duplicates, and folders that are empty
-- **Exact duplicates,** checked by checksum, not by name. Two files called the same thing can be different, and two different names can be the same file.
+- **Exact duplicates,** checked by checksum, not by name. A matching name doesn't mean a matching file.
 - **Old versions of one document,** like five copies of the same resume
-- **Easy junk:** installers for apps that are already installed, and zip files that are already unzipped right next to their folder
+- **Easy junk:** installers for apps that are already installed, and zip files that are already unzipped right next to their folder. If you can't tell whether an app is installed, ask in Step 2.
 - Anything that looks important and fragile: tax documents, IDs, contracts, code projects
 
 **Sensitive things get their own group in the report:**
@@ -43,7 +43,7 @@ Scan the whole Desktop and Downloads, top level and a few layers down. Report ba
 - **Files with passwords in them:** a notes file, a handover document, a list of logins
 - **Screenshots of ID or payment pages:** a photo of a licence, a checkout page with card details
 
-**Look inside, not just at the name.** Filenames lie. Open the file whenever the name is generic or coded, or the file looks important. Read the first page of PDFs and Office files. If a page is a scan with no text, render it as an image and look at it. Use the file's date only as a tiebreaker.
+**Look inside, not just at the name.** Open the file whenever the name is generic or coded, or the file looks important. Read the first page of PDFs and Office files. If a page is a scan with no text, render it as an image and look at it. Use the file's date only as a tiebreaker.
 
 | Filename | What it actually was |
 |---|---|
@@ -70,9 +70,10 @@ Keep it short, one small group at a time:
 3. How do you like names: ALL CAPS folders, Title Case, or whatever's there now?
 4. Do you have an external drive or cloud archive for old stuff?
 5. Anything I should never move? (A folder an app depends on, a code project, something shared with someone else.)
-6. Which areas are you done with? (A school you finished, a job you left, a project that's over.) Their files can go to `_TO_DELETE/` for you to check.
+6. Which areas are you done with? (A school you finished, a job you left, a project that's over.) Their files can go to `_ARCHIVE/` to keep, or to `_TO_DELETE/` for you to check.
 7. What should happen to other people's documents? (Keep them in one folder, give them back, or put them in `_TO_DELETE/`.)
 8. Do you want your files renamed to one standard pattern? (See Step 5. The default is no.)
+9. Should Downloads end up empty, or are there files you keep there on purpose? (The default is empty.)
 
 **Answers can change partway through.** If the user says "actually, the old school stuff can go," update the plan, say what changed, and keep going.
 
@@ -99,6 +100,8 @@ Show the full proposed map, including where the current folders would move to, a
 
 - **Include what's going to `_TO_DELETE/` and why,** so nothing in there is a surprise.
 - **Include one folder for images,** like `PERSONAL/Images to sort/`. See Step 4.
+- **Say where ID documents live,** like `GOVERNMENT/ID/`. ID photos end up there too, once the Image Organizer sorts the images.
+- **Say where private files go,** like `PERSONAL/Private/`. That's where files with passwords in them go, so none are left loose on the Desktop. Private images, like a payment screenshot, still go to the images folder. Name each one in your report.
 
 **Warn them about the permission prompt before you start.** Moving files out of Downloads brings up a deletion permission prompt in Cowork. That's because a move between folders is a copy, then removing the original. Nothing gets thrown away. Tell them first, so they don't say no to it by mistake.
 
@@ -121,7 +124,8 @@ Once the map is approved:
 - **Zips that are already unzipped go to `_TO_DELETE/`.** If the unzipped folder is sitting right next to the zip, the zip is a spare copy.
 - **Remind them to eject mounted installer disks.** Apps open from the Applications folder or Launchpad, not from the Desktop.
 - **Areas they're done with and other people's documents** go where they said in Step 2.
-- **Images go to one folder** for the [Image Organizer](../03-image-organizer/image-organizer.md). Don't sort them here. Both guides share **My Folder Map**, so an ID photo ends up with the rest of the ID documents instead of in a second ID folder.
+- **Files with passwords in them go to the private folder** in the map. Flag each one by name.
+- **Images go to one folder** for the [Image Organizer](../03-image-organizer/image-organizer.md). Don't sort or rename them here. The Image Organizer does both. Both guides share **My Folder Map**, so an ID photo ends up with the rest of the ID documents instead of in a second ID folder.
 - **Empty leftover folders go to `_TO_DELETE/`.** You don't delete, so an emptied folder would otherwise sit there forever.
 
 ---
@@ -135,7 +139,7 @@ Skip this step unless the user said yes to renaming in Step 2.
 - **Date as exact as the document allows:** `2025`, `2025-08` or `2025-08-25`.
 - **Versions of the same thing** get `v2`, `v3`.
 - **Check what the file is first** (Step 1). Never rename from the old filename alone.
-- **Don't rename anything they excluded,** like files with passwords or anything on the Never move list.
+- **Don't rename files with passwords in them,** or anything on the Never move list.
 - **If a folder already has its own pattern,** match that instead.
 
 **Made-up examples:**
@@ -152,14 +156,14 @@ Skip this step unless the user said yes to renaming in Step 2.
 
 Counting top-level folders doesn't catch a lost file. Do this before you report back.
 
-1. **Compare before and after.** The total file count and total size should match what you wrote down in Step 1. The only difference allowed is files the user deleted themselves.
+1. **Compare before and after.** The combined file count and total size across the Desktop and Downloads should match what you wrote down in Step 1. The numbers for each place will change, since files move out of Downloads. The only difference allowed is files the user deleted themselves. Files you add yourself, like a `00 FOLDER MAP.md`, don't count.
 2. **Checksum every move between folders.** A file only counts as moved when the copy at the destination matches the original.
 3. **If a move got cut off halfway,** the destination can have a partial copy while the original is still at the source. Fix it in this order:
    - Leave the original where it is.
-   - Replace the partial copy with a fresh copy of the original.
+   - Replace the partial copy with a fresh copy of the original. The partial copy is yours, not the user's, so replacing it isn't an overwrite.
    - Check the checksums match.
    - Only then remove the original.
-4. **If files vanished during the run,** say so plainly. Usually the user deleted them in Finder or File Explorer. Point them to the Trash in case it wasn't on purpose. Never hide a lower count.
+4. **If files vanished during the run,** say so plainly. Usually the user deleted them in Finder or File Explorer. Point them to the Trash in case it wasn't on purpose. Report the lower count either way.
 
 ---
 
@@ -181,10 +185,10 @@ Counting top-level folders doesn't catch a lost file. Do this before you report 
 - **Match the naming already in the destination folder.** If a folder names files `Client - Thing - Sep 11`, new files follow that pattern.
 - **Old versions go in `_superseded/`** inside the same folder, not a dated folder somewhere else.
 - **Finished projects go to `_ARCHIVE/`**, and eventually to an external drive if the user has one.
-- **Downloads follows the same map as the Desktop.** It isn't a place to keep things.
+- **Downloads follows the same map as the Desktop.** It isn't a place to keep things, unless the user said otherwise in Step 2.
 - **`_TO_DELETE/` builds up over time.** Duplicates, installers, unzipped zips and empty leftover folders all land there. Only the user empties it.
 - **If files disappear from `_TO_DELETE/` mid-run,** assume the user deleted them. Say so, and point them to the Trash in case it wasn't on purpose.
-- **Claude's temporary files never stay in the user's folders.** Previews, rendered pages and scratch lists go somewhere outside them, or get removed before you finish.
+- **Claude's temporary files never stay in the user's folders.** Previews, rendered pages and scratch lists go somewhere outside them, or get removed before you finish. The no-delete rule is about the user's files, not yours.
 
 ---
 
@@ -240,6 +244,9 @@ A quick recurring routine (easy to schedule in Cowork):
 - 
 
 **Other people's documents:**
+- 
+
+**Private files:**
 - 
 
 **Images:**
