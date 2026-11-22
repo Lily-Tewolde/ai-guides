@@ -4,6 +4,8 @@
 
 I built this to clean up my own messy image folders with Claude. A filename like `IMG_4821.png` doesn't tell you much, so Claude opens every image to see what's in it, asks how you want things grouped, and only then moves anything. It never deletes. This guide gives you the rulebook and walks you through your first cleanup.
 
+It also works as the second half of my [Desktop Organizer](../01-desktop-organizer/). Run that one first, and this one sorts the images it gathered into the same folders.
+
 ## At a glance
 
 | | |
@@ -11,6 +13,7 @@ I built this to clean up my own messy image folders with Claude. A filename like
 | **Difficulty** | Easy, no coding |
 | **Time** | One sitting for most folders. Big folders take longer because Claude opens every image |
 | **You'll end up with** | Your images sorted into folders you picked, a list of likely duplicates for you to decide on, and nothing deleted |
+| **Private images** | ID photos and other private images filed where you chose, not mixed in with everything else |
 
 ## Start here
 
@@ -22,12 +25,19 @@ Read the Image Organizer file and organize the images in my Downloads folder.
 
 If your mess lives somewhere else, like your Screenshots or Desktop folder, swap in that folder's name.
 
+**Ran the Desktop Organizer first?** Point Claude at the one folder it gathered your images into, and use this prompt instead:
+
+```text
+Read the Image Organizer file and organize the images in the folder the Desktop Organizer gathered. Use the same folder map.
+```
+
 ## What you need
 
 - The Claude desktop app with Cowork (Claude Code works too)
 - The messy folder connected as a folder in Cowork
 - Any folders you want images sent to, connected too (for example, your project folders)
 - The [`image-organizer.md`](image-organizer.md) file from this folder
+- If you ran the Desktop Organizer: its `desktop-organizer.md`, with your folder map filled in, and your Desktop connected in Cowork
 
 ## Steps
 
@@ -38,6 +48,7 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
 3. **Paste the prompt** from Start here.
    You're done when Claude tells you how many images it found and what file types they are.
 4. **Let Claude look at every image.** It opens each one and notes what it shows, like a screenshot of a receipt, a logo, a product photo or a design you saved for ideas. The filename is only a hint. What's in the picture decides where it goes.
+   For a lot of images, Claude makes numbered contact sheets of about 20 thumbnails each, plus an index file, so it can look faster. It converts HEIC photos first, since lots of tools can't open them, and keeps those working files out of your folders, or cleans them up before it finishes.
    You're done when Claude shows you a summary of what it found and two or three ways to group it.
 5. **Pick how you want them grouped.** Choose one of Claude's options or mix them. You can group:
 
@@ -46,6 +57,14 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
    - by date
 
    Rename any folder, and tell Claude your project names so it can match images to them. Claude won't move a single file until you say yes.
+   Claude also asks about a few tricky ones:
+
+   - **Private images:** where they go. If you ran the Desktop Organizer, ID photos go to the ID folder in its map and other private images to its private folder. Otherwise they stay where they are, unless you pick a place. Either way, none go in the delete pile without Claude saying so. Payment and health claim screenshots get flagged by name, even if you're deleting them.
+   - **Photos of you or your friends:** if any are headed for delete, Claude checks once and names what's included.
+   - **Bursts and near-duplicates:** Claude offers to keep the best 3 to 5 instead of all or nothing.
+   - **Delete candidates:** whether they stay in this folder or move to `_TO_DELETE/Images/`. Either way, nothing gets deleted.
+   - **Renaming:** optional. If you say yes, names follow `Type - Detail - Date`, using the date the photo was taken, like `Photo - Beach Day - 2025-07-12.jpg`.
+
    You're done when you've said yes to the plan.
 6. **Let Claude sort.** It does three things:
 
@@ -55,7 +74,7 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
 
    Anything it isn't sure about stays where it is and gets flagged.
    You're done when Claude reports what moved where, the delete candidates and what it flagged.
-7. **Decide on what's left.** The images still in the original folder are the delete candidates and the flagged ones. Claude lists each delete candidate next to the file that already covers it. Look through them and delete what you don't want yourself. Deleting is always your call.
+7. **Decide on what's left.** The images still in the original folder are the delete candidates and the flagged ones. Claude lists each delete candidate next to the file that already covers it, or the reason you gave. Look through them and delete what you don't want yourself. Deleting is always your call. If you picked `_TO_DELETE/Images/`, the delete candidates are in there instead, and the original folder only has what Claude left for you to decide on.
    You're done when every image left in the folder is one you chose to keep there.
 8. **Optional: use big folders mode.** For hundreds of images across several projects, the rulebook has a mode where you run one Claude chat per project and each one claims only its own images. See the tip below.
 
@@ -69,7 +88,11 @@ If your mess lives somewhere else, like your Screenshots or Desktop folder, swap
 
 💡 **Big folders mode.** Open a separate Claude chat for each project and paste: "Read the Image Organizer file. Use big folders mode. You own the images for [project name], and its folder is [folder name]." Each chat takes only its own images and leaves the rest. When they're all done, run one normal cleanup on what's left.
 
-⚠️ **Screenshots can hold private stuff.** Claude flags images that look like passwords, bank details or ID cards instead of filing them. Check those yourself.
+⚠️ **Screenshots can hold private stuff.** Claude flags images that look like passwords, bank details or ID cards instead of filing them. Check those yourself. The exception is a place you pick in step 5, like your ID folder.
+
+⚠️ **Photos of people are hard to get back.** If you say "delete everything," that can sweep in photos of you and your friends. Claude checks once before those go in the delete pile. Read the list it names before you say yes.
+
+💡 **Run the Desktop Organizer first.** It gathers your images into one folder and says where your ID documents live. This guide then uses the same folder map, so you don't end up with two ID folders.
 
 ⚠️ **iCloud files can look broken.** If the folder syncs to iCloud, some images show up but aren't downloaded yet. Download them first. Claude flags any image it can't open instead of guessing.
 

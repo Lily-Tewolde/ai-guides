@@ -4,6 +4,8 @@ Drop this file into the folder you want cleaned up, connect that folder in Cowor
 
 Claude opens every image to see what it actually shows, suggests a few ways to group them, and sorts them once you pick one. After that, this file becomes the rulebook, so new images get sorted the same way every time.
 
+**Using the Desktop Organizer too?** Run it first. It gathers your images into one folder and leaves a folder map behind. Then run this guide on that one folder, and it sorts into the same folder map. ID photos go to the ID folder that map names, so you don't end up with two ID folders.
+
 Each step is tagged:
 - 🤖 **Auto**: Claude does this for you
 - 🙋 **You decide**: Claude asks, you answer
@@ -20,6 +22,11 @@ You (Claude) are organizing the images in a folder the user names. This file is 
 2. **Every run after that:** read this whole file first, especially **My Image Plan** at the bottom. Sort new images by that plan and only ask about images that don't fit it. The plan in this file outranks anything you remember.
 3. **When the user changes their mind** about where something goes, update My Image Plan in the same session.
 4. **If the user says "big folders mode,"** skip Step 3 and follow the Big folders mode section. Steps 1, 2 and 4 still apply.
+5. **If the user ran the Desktop Organizer first,** work only on the one folder it gathered the images into, and use its **My Folder Map**. If you're not sure whether they ran it, ask.
+   - The map is in `desktop-organizer.md`, usually on the Desktop. If you can't find it, ask.
+   - Use the map's folders as your destinations first. ID photos go to the ID folder it names. Other private images go to its private folder.
+   - If a folder in the map doesn't exist yet, put it in your Step 3 plan and create it where the map says once it's approved. Never make a second ID folder somewhere else.
+   - New folders still go through Step 3. Once they're made, add them to My Folder Map, and fix any line about images that's no longer true, so the next Desktop Organizer run knows.
 
 ---
 
@@ -44,10 +51,21 @@ For each image, note in a word or two:
 - **What it is:** screenshot, photo, logo, icon, design or mockup, illustration, document or receipt, meme, inspiration
 - **What it's about:** the app, website, product, place or project it shows, if you can tell
 - **The date,** if it's in the filename or the file's info. If there's no reliable date, say so. Don't guess.
+  - For photos, use the date the photo was taken (from its EXIF info) when it has one. That's more reliable than the file date, which changes when a photo gets copied or downloaded.
 - **Duplicates:** the same image, or an older and newer version of it. Compare by name, size, dimensions and what's in the picture.
+- **Bursts and near-duplicates:** lots of shots of the same moment, like ten photos of the same group pose or a run of nearly identical screenshots. Note them as one set.
+- **People:** whether it's a photo of the user or their friends. These need an extra check before anything gets deleted (see Step 3).
 - **Private stuff:** anything that looks like a password, bank or card details, an ID card, a medical record or someone's home address. Mark it private. Don't file it anywhere until the user decides.
+  - Payment screens and health claim screenshots count as private too.
 
 For big folders, work in batches of about 50 and keep your notes as you go, so you don't lose track.
+
+**Contact sheets make this faster:**
+- **Convert HEIC first.** Lots of tools can't open HEIC photos. Make JPG copies to look at (for example with `sips` on a Mac, or ImageMagick). These copies are only for looking. Never move them into the user's folders.
+- **Make numbered sheets.** Put about 20 thumbnails on each sheet and label each one with a number (`#1`, `#2` and so on). Number them straight through, so the second sheet starts at `#21`.
+- **Keep an index file.** It maps each number to its filename, so `#14` always points to one exact file.
+- **Keep your working files out of the user's folders.** Build the sheets, the index and the HEIC copies in a scratch folder outside the user's folders. If you have to build them inside, delete them before you finish. They're your working files, not the user's images, so the no-delete rule doesn't cover them.
+- **Open the full image when a thumbnail isn't clear.**
 
 ---
 
@@ -70,8 +88,16 @@ For each option, show the folder names, how many images would go in each and two
 1. Which option do you want, or how should I change it?
 2. What are your projects called? (Only if you're grouping by project. Use their names, not your guesses.)
 3. Where should the sorted folders live? Inside this folder, or in existing folders somewhere else, like your project folders?
-4. Want me to rename generic names like `IMG_4821.png` so they say what's in them? (Default: no.)
+4. Want me to rename generic names like `IMG_4821.png` so they say what's in them? (Default: no, or whatever My Folder Map's file naming says.) If yes, I'll use `Type - Detail - Date`, with the date the photo was taken.
 5. Anything I should leave exactly where it is?
+6. Where should private images go? (Default: ID photos to the ID folder in My Folder Map, and other private images to its private folder. With no folder map, they stay where they are and get listed.)
+7. Should delete candidates stay in this folder, or move to `_TO_DELETE/Images/`? Moving them is handy if you want this folder empty of images when we're done. If you don't have a `_TO_DELETE/` yet, where should I make it? Either way, I don't delete anything. You empty it.
+
+**Plan for the tricky ones too:**
+- **Private images get a destination, not just a flag.** ID photos, like a driver's licence or a health card, go to the ID folder in My Folder Map, if the user ran the Desktop Organizer. If an ID might be someone else's, ask where it goes. If the map has a folder for other people's documents, suggest that. Never put an ID photo in the delete pile without saying so.
+- **Payment and health claim screenshots get flagged by name,** even if the user wants them deleted. They should know exactly what's in the pile.
+- **Photos of the user or their friends:** if the plan sends any of these to delete, confirm once and name what's included. For example: "This includes your graduation photos and the beach day with your friends. Delete those too?" Ask once for the whole group, not once per photo.
+- **Bursts and near-duplicates:** offer "keep the best 3 to 5" instead of all or nothing. Show which ones you'd keep and why, like sharpest or eyes open.
 
 Show the full plan, including every new folder you'd create, and **wait for a yes** before moving anything.
 
@@ -82,10 +108,14 @@ Show the full plan, including every new folder you'd create, and **wait for a ye
 Once the plan is approved, decide one of these for each image:
 
 1. **Belongs in a folder in the plan:** move it there.
-2. **Already covered:** the same image, or a newer version of it, already exists at the destination. Don't move it. Add it to the delete candidates list with the matching file named next to it.
+2. **Already covered:** the same image, or a newer version of it, already exists at the destination. Don't move it there. Add it to the delete candidates list with the matching file named next to it, and it goes wherever delete candidates go. If both copies are in this folder, keep the one with the cleaner name.
 3. **Inspiration, not used yet:** keep it. Move it into the inspiration folder. If the project has no inspiration folder, create one inside that project's folder. Never treat an unused inspiration image as junk.
 4. **Private:** leave it where it is and list it for the user.
+   - If the user gave private images a destination in Step 3, like the ID folder, move them there instead and still list them.
 5. **Unclear:** if you can't tell which folder it belongs in, or whether it's inspiration or an asset, leave it where it is and flag it. Don't guess.
+6. **Burst or near-duplicate:** keep the shots the user picked and sort them like any other image. The rest become delete candidates, each listed next to the kept shot that covers it.
+7. **Photo of the user or their friends headed for delete:** only if the user confirmed it in Step 3. If they didn't, leave it where it is and ask.
+8. **The user wants it gone:** if the user asked in Step 3 to get rid of it, it becomes a delete candidate, listed with the reason they gave. That includes private images, which still get named in the report. Photos of the user or their friends still need the check in decision 7.
 
 **While you move:**
 - **Move, don't copy.** Copies are how duplicates happen.
@@ -93,6 +123,14 @@ Once the plan is approved, decide one of these for each image:
 - **Check every move.** After each one, confirm the file is in the new place and gone from the old one. If it isn't, stop and tell the user.
 - **Never rename** unless the user said yes to renaming in Step 3, or to avoid an overwrite.
 - **Only create folders that are in the approved plan.** If an image needs a folder that isn't in it, leave the image and ask.
+- **Delete candidates go where the user picked.** They stay in the source folder, or move to `_TO_DELETE/Images/` if that's what the user approved. Use the same `_TO_DELETE/` folder the Desktop Organizer uses if there is one. If there isn't, make it where the user said in Step 3, not inside the source folder, so the source folder can end up empty of images. It's a move you approved, not a delete.
+
+**If the user said yes to renaming:**
+- **Use `Type - Detail - Date`.** For example: `Photo - Beach Day - 2025-07-12.jpg`, `Screenshot - Flight Booking - 2025-03-02.png`, `Logo - Dark Version.png`.
+- **Use the date the photo was taken,** from its EXIF info, not the file date. For screenshots, the date in the filename works.
+- **Kept shots from one burst** get `2`, `3` and so on at the end, like `Photo - Graduation - 2025-06-20 2.heic`.
+- **No reliable date? Leave it off.** For example: `ID - Health Card.jpg`. Don't guess a date.
+- **Match the destination first.** If the folder already has its own naming pattern, follow that instead.
 
 ---
 
@@ -101,10 +139,16 @@ Once the plan is approved, decide one of these for each image:
 Report back:
 - Images moved, grouped by folder, with each new location
 - Inspiration images moved, and any inspiration folders you created
-- Delete candidates, each with the existing file that covers it
+- Delete candidates, each with the existing file that covers it, or the reason the user gave
 - Private images left in place
+- Private images moved to the ID folder, the private folder, or wherever the user picked
+- Any folders you added to My Folder Map
+- Payment and health claim screenshots, flagged by name, even if they're delete candidates
+- Bursts: which shots you kept and which are delete candidates
+- Where the delete candidates are: still in the source folder, or in `_TO_DELETE/Images/`
 - Images left in place and why (unclear, or not part of the plan)
 - Anything you couldn't open or check
+- That your contact sheets, index and HEIC copies are gone from the user's folders
 
 Then fill in **My Image Plan** at the bottom of this file, so the next run sorts the same way.
 
@@ -121,6 +165,7 @@ If you're one of these chats:
 - Leave everything that isn't clearly yours exactly where it is, and add it to a "not mine" list.
 - If an image is already gone when you get to it, another chat probably moved it. Skip it.
 - Never create a folder outside your project's existing folder.
+- Leave private images, bursts and anything headed for delete where they are, and list them. The normal cleanup at the end handles those.
 - Report back the same way as Step 5, plus the "not mine" list.
 
 When every project chat is done, the user runs one normal cleanup on whatever's left.
@@ -130,6 +175,9 @@ When every project chat is done, the user runs one normal cleanup on whatever's 
 ## The rules that keep it clean
 
 - **Don't delete anything.** Deleting is the user's call. You only list candidates.
+- **Your own working files are the exception.** Contact sheets, index files and HEIC copies are yours, so remove them before you finish.
+- **Moving candidates to `_TO_DELETE/Images/` is fine only if the user approved it.** It's a move, not a delete. The user empties it.
+- **Private images never go in the delete pile without saying so.**
 - **Never overwrite.** Keep both files with a name that tells them apart.
 - **Check every move landed.**
 - **Flag, don't guess.** Unclear images stay where they are.
@@ -143,9 +191,12 @@ When every project chat is done, the user runs one normal cleanup on whatever's 
 
 - Don't delete, overwrite or rename anything without asking.
 - Don't sort by filename alone. Look at the image.
-- Don't file private images. List them.
+- Don't file private images. List them. The only exception is a destination the user approved in Step 3, like the ID folder.
 - Don't move images an app or a code project depends on, like the images inside a website project's folder.
 - Don't create a folder to "solve" one odd image. Leave it and flag it.
+- Don't send photos of the user or their friends to delete without confirming once first.
+- Don't leave contact sheets, index files or HEIC copies in the user's folders.
+- Don't make a second ID folder. Use the one My Folder Map names, and create it there if it isn't made yet.
 
 ---
 
@@ -166,8 +217,23 @@ When every project chat is done, the user runs one normal cleanup on whatever's 
 **Rename generic names:**
 - No
 
+**Naming (if renaming):**
+- `Type - Detail - Date`, using the date the photo was taken
+
 **Never move:**
 - 
+
+**Source folder:**
+- 
+
+**Private images go to:**
+- 
+
+**Delete candidates go to:**
+- *(stay in the source folder, or `_TO_DELETE/Images/`)*
+
+**Photos of the user or friends:**
+- Confirm once before any go to delete
 
 ---
 
